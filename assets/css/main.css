@@ -1958,3 +1958,59 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+.footer{
+background:#0f172a;
+color:#fff;
+padding:60px 0 30px;
+}
+
+.footer h3,
+.footer h4{
+color:#fff;
+margin-bottom:20px;
+}
+
+.footer p{
+color:#cbd5e1;
+}
+
+.footer a{
+color:#cbd5e1;
+text-decoration:none;
+}
+
+.footer a:hover{
+color:#e87532;
+}
+
+.footer .social-links a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:38px;
+height:38px;
+background:#1e293b;
+border-radius:50%;
+margin-right:10px;
+font-size:18px;
+color:#fff;
+}
+
+.footer .social-links a:hover{
+background:#e87532;
+color:#fff;
+}
+
+.footer-links{
+list-style:none;
+padding:0;
+}
+
+.footer-links li{
+margin-bottom:10px;
+}
+
+.footer-divider{
+margin:40px 0 20px;
+border-color:#334155;
+}
