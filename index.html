@@ -1,1960 +1,1296 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velocity Rides | Speedboat Adventures — Punnamada, Alappuzha</title>
+  <meta name="description" content="Kerala's most thrilling speedboat & boat adventure experience on Punnamada Lake, Alappuzha. Jet skiing, speedboat tours, sunset cruises & more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:ital,wght@0,300;0,600;0,700;0,800;1,300;1,700&display=swap" rel="stylesheet">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary SEO -->
-    <title>Lakeside Homestay in Punnamada, Alappuzha | Kerala Backwater Stay</title>
-    <meta name="description"
-      content="Stay at Lakeside Homestay in Punnamada, Alappuzha. Enjoy serene Kerala backwaters, comfortable rooms, authentic home-cooked meals, and warm local hospitality. Book your peaceful getaway today.">
-    <meta name="keywords"
-      content="Lakeside Homestay, Alappuzha homestay, Punnamada stay, Kerala backwaters stay, Alleppey homestay, lake view stay Kerala, budget homestay Alappuzha">
-    <meta name="author" content="Lakeside Homestay">
-
-    <!-- Favicon / Logo -->
-    <link rel="icon" href="assets/img/logo.png" type="image/png">
-    <link rel="apple-touch-icon" href="assets/img/logo.png">
-
-    <!-- Open Graph (Facebook, WhatsApp) -->
-    <meta property="og:title" content="Lakeside Homestay | Punnamada, Alappuzha">
-    <meta property="og:description"
-      content="Experience peaceful Kerala backwaters with lake views, cozy rooms, and authentic hospitality at Lakeside Homestay.">
-    <meta property="og:image" content="assets/img/logo.png">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lakeside Homestay | Alappuzha">
-    <meta name="twitter:description"
-      content="Relax by the serene backwaters of Kerala at Lakeside Homestay in Punnamada, Alappuzha.">
-    <meta name="twitter:image" content="assets/img/logo.png">
-
-    <!-- Canonical URL -->
-    <!-- <link rel="canonical" href="https://yourwebsite.com"> -->
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@1,400&display=swap"
-      rel="stylesheet">
-  </head>
   <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --cream: #f5f0e8;
-      --cream2: #ede7d9;
-      --warm: #e8dcc8;
-      --teal: #1a5c52;
-      --teal2: #24776a;
-      --teal3: #0f3d35;
-      --gold: #b8893a;
-      --gold2: #d4a855;
-      --rust: #8b4a2b;
-      --text: #2c1f10;
-      --muted: #6b5a44;
-      --muted2: #9b8a72;
-      --white: #ffffff;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans: 'DM Sans', sans-serif;
-      --italic: 'Playfair Display', serif;
-      --radius: 16px;
+      --navy: #050e1a;
+      --deep: #071628;
+      --ocean: #0a2540;
+      --wave: #0d3b6e;
+      --electric: #00b4ff;
+      --cyan: #00e5ff;
+      --orange: #ff5c1a;
+      --gold: #ffb300;
+      --white: #f0f8ff;
+      --muted: rgba(200,230,255,0.55);
+      --card-bg: rgba(10,37,64,0.6);
+      --glass: rgba(0,180,255,0.07);
+      --glass-border: rgba(0,229,255,0.18);
+      --display: 'Bebas Neue', sans-serif;
+      --cond: 'Barlow Condensed', sans-serif;
+      --body: 'Barlow', sans-serif;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
-      background: var(--cream);
-      color: var(--text);
-      font-family: var(--sans);
-      font-weight: 400;
-      line-height: 1.7;
+      background: var(--navy);
+      color: var(--white);
+      font-family: var(--body);
       overflow-x: hidden;
+      cursor: none;
     }
 
-    ::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: var(--cream2);
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: var(--teal);
-      border-radius: 2px;
-    }
-
-    /* ── NAV ── */
-    nav {
+    /* CUSTOM CURSOR */
+    .cursor {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 200;
-      height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 clamp(20px, 5vw, 80px);
-      background: rgba(245, 240, 232, 0.92);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(184, 137, 58, 0.2);
-      transition: background 0.3s;
-    }
-
-    nav.scrolled {
-      background: rgba(245, 240, 232, 0.98);
-      box-shadow: 0 2px 30px rgba(44, 31, 16, 0.08);
-    }
-
-    .nav-logo {
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-    }
-
-    .nav-logo-main {
-      font-family: var(--serif);
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--teal);
-      line-height: 1;
-      letter-spacing: 0.02em;
-    }
-
-    .nav-logo-sub {
-      font-size: 0.63rem;
-      color: var(--gold);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 36px;
-      list-style: none;
-      align-items: center;
-    }
-
-    .nav-links a {
-      font-size: 0.78rem;
-      font-weight: 500;
-      color: var(--muted);
-      text-decoration: none;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-      position: relative;
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      width: 0;
-      height: 1px;
-      background: var(--gold);
-      transition: width 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: var(--teal);
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    .nav-book {
-      background: var(--teal) !important;
-      color: var(--cream) !important;
-      padding: 10px 24px !important;
-      border-radius: 30px !important;
-      font-weight: 500 !important;
-      letter-spacing: 0.08em !important;
-      transition: all 0.25s !important;
-    }
-
-    .nav-book::after {
-      display: none !important;
-    }
-
-    .nav-book:hover {
-      background: var(--teal2) !important;
-      color: var(--white) !important;
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(26, 92, 82, 0.3) !important;
-    }
-
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      width: 38px;
-      height: 38px;
-      cursor: pointer;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(184, 137, 58, 0.3);
-      border-radius: 8px;
-      background: transparent;
-    }
-
-    .hamburger span {
-      display: block;
-      width: 18px;
-      height: 1.5px;
-      background: var(--teal);
-      border-radius: 2px;
-      transition: all 0.3s;
-    }
-
-    .hamburger.active span:nth-child(1) {
-      transform: translateY(6.5px) rotate(45deg);
-    }
-
-    .hamburger.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-      transform: translateY(-6.5px) rotate(-45deg);
-    }
-
-    .mobile-menu {
-      position: fixed;
-      top: 72px;
-      left: 0;
-      right: 0;
-      background: var(--cream);
-      border-bottom: 1px solid rgba(184, 137, 58, 0.2);
-      padding: 20px clamp(20px, 5vw, 80px) 28px;
-      z-index: 190;
-      display: none;
-      flex-direction: column;
-      gap: 2px;
-      box-shadow: 0 10px 40px rgba(44, 31, 16, 0.1);
-    }
-
-    .mobile-menu.open {
-      display: flex;
-    }
-
-    .mobile-menu a {
-      display: block;
-      padding: 14px 0;
-      font-size: 0.95rem;
-      color: var(--muted);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(184, 137, 58, 0.12);
-      transition: color 0.2s, padding-left 0.2s;
-      font-weight: 500;
-    }
-
-    .mobile-menu a:last-child {
-      border-bottom: none;
-    }
-
-    .mobile-menu a:hover {
-      color: var(--teal);
-      padding-left: 8px;
-    }
-
-    .mobile-menu .mob-book {
-      margin-top: 14px;
-      text-align: center;
-      background: var(--teal);
-      color: var(--cream) !important;
-      padding: 13px 24px !important;
-      border-radius: 30px;
-      border-bottom: none !important;
-      font-weight: 500;
-    }
-
-    @media (max-width: 860px) {
-      .nav-links {
-        display: none;
-      }
-
-      .hamburger {
-        display: flex;
-      }
-    }
-
-    /* ── HERO ── */
-    #hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      padding: 120px clamp(20px, 5vw, 80px) 80px;
-    }
-
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background-image: url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1600&q=80');
-      background-size: cover;
-      background-position: center 40%;
-      background-attachment: fixed;
-    }
-
-    .hero-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom,
-          rgba(15, 61, 53, 0.55) 0%,
-          rgba(15, 61, 53, 0.35) 40%,
-          rgba(15, 61, 53, 0.7) 100%);
-    }
-
-    /* Floating leaf decorations */
-    .leaf {
-      position: absolute;
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.12;
-    }
-
-    .leaf svg {
-      fill: var(--cream);
-    }
-
-    .leaf-1 {
-      top: 12%;
-      left: 5%;
-      width: 180px;
-      transform: rotate(-20deg);
-      animation: floatLeaf 8s ease-in-out infinite;
-    }
-
-    .leaf-2 {
-      bottom: 18%;
-      right: 6%;
-      width: 220px;
-      transform: rotate(30deg);
-      animation: floatLeaf 10s ease-in-out infinite reverse;
-    }
-
-    @keyframes floatLeaf {
-
-      0%,
-      100% {
-        transform: rotate(-20deg) translateY(0);
-      }
-
-      50% {
-        transform: rotate(-20deg) translateY(-12px);
-      }
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      max-width: 780px;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(245, 240, 232, 0.15);
-      border: 1px solid rgba(245, 240, 232, 0.3);
-      backdrop-filter: blur(10px);
-      border-radius: 100px;
-      padding: 8px 20px;
-      font-size: 0.72rem;
-      color: var(--cream);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin-bottom: 28px;
-      font-weight: 500;
-      animation: fadeUp 0.7s ease both;
-    }
-
-    .badge-dot {
-      width: 6px;
-      height: 6px;
+      width: 12px; height: 12px;
+      background: var(--electric);
       border-radius: 50%;
-      background: var(--gold2);
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s, width 0.2s, height 0.2s;
+      mix-blend-mode: screen;
     }
-
-    .hero-h1 {
-      font-family: var(--serif);
-      font-size: clamp(3rem, 7vw, 6.5rem);
-      color: var(--white);
-      line-height: 1.0;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      margin-bottom: 12px;
-      animation: fadeUp 0.7s ease 0.1s both;
-    }
-
-    .hero-h1 em {
-      font-style: italic;
-      font-weight: 300;
-      color: var(--gold2);
-    }
-
-    .hero-location {
-      font-size: 0.82rem;
-      color: rgba(245, 240, 232, 0.75);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 28px;
-      animation: fadeUp 0.7s ease 0.15s both;
-    }
-
-    .hero-location span {
-      color: var(--gold2);
-    }
-
-    .hero-desc {
-      font-size: 1.05rem;
-      color: rgba(245, 240, 232, 0.85);
-      max-width: 520px;
-      margin: 0 auto 44px;
-      line-height: 1.8;
-      font-weight: 300;
-      animation: fadeUp 0.7s ease 0.2s both;
-    }
-
-    .hero-btns {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      flex-wrap: wrap;
-      animation: fadeUp 0.7s ease 0.25s both;
-    }
-
-    .btn-gold {
-      background: var(--gold);
-      color: var(--white);
-      padding: 15px 36px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      transition: all 0.25s;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn-gold:hover {
-      background: var(--gold2);
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(184, 137, 58, 0.4);
-    }
-
-    .btn-ghost {
-      background: rgba(245, 240, 232, 0.12);
-      color: var(--cream);
-      border: 1px solid rgba(245, 240, 232, 0.35);
-      padding: 15px 36px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 0.85rem;
-      letter-spacing: 0.05em;
-      transition: all 0.25s;
-      backdrop-filter: blur(8px);
-    }
-
-    .btn-ghost:hover {
-      background: rgba(245, 240, 232, 0.22);
-      border-color: rgba(245, 240, 232, 0.6);
-    }
-
-    .hero-scroll {
-      position: absolute;
-      bottom: 36px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      color: rgba(245, 240, 232, 0.5);
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      animation: fadeUp 1s ease 0.5s both;
-    }
-
-    .scroll-line {
-      width: 1px;
-      height: 48px;
-      background: linear-gradient(to bottom, rgba(245, 240, 232, 0.5), transparent);
-      animation: scrollLine 2s ease-in-out infinite;
-    }
-
-    @keyframes scrollLine {
-
-      0%,
-      100% {
-        transform: scaleY(1);
-        opacity: 0.5;
-      }
-
-      50% {
-        transform: scaleY(0.5);
-        opacity: 1;
-      }
-    }
-
-    .hero-stats {
-      position: absolute;
-      bottom: 36px;
-      right: clamp(20px, 5vw, 80px);
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      animation: fadeUp 0.8s ease 0.4s both;
-    }
-
-    .hero-stat {
-      background: rgba(245, 240, 232, 0.1);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(245, 240, 232, 0.2);
-      border-radius: 12px;
-      padding: 12px 16px;
-      text-align: center;
-    }
-
-    .hero-stat-n {
-      font-family: var(--serif);
-      font-size: 1.6rem;
-      color: var(--gold2);
-      font-weight: 600;
-      line-height: 1;
-    }
-
-    .hero-stat-l {
-      font-size: 0.6rem;
-      color: rgba(245, 240, 232, 0.65);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-top: 2px;
-    }
-
-    @media (max-width: 600px) {
-      .hero-stats {
-        display: none;
-      }
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(24px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.65s ease, transform 0.65s ease;
-    }
-
-    .reveal.on {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .reveal-left {
-      opacity: 0;
-      transform: translateX(-30px);
-      transition: opacity 0.65s ease, transform 0.65s ease;
-    }
-
-    .reveal-left.on {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    .reveal-right {
-      opacity: 0;
-      transform: translateX(30px);
-      transition: opacity 0.65s ease, transform 0.65s ease;
-    }
-
-    .reveal-right.on {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    /* ── SECTIONS ── */
-    section {
-      position: relative;
-      z-index: 1;
-    }
-
-    .section-inner {
-      padding: 100px clamp(20px, 5vw, 80px);
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 0.68rem;
-      color: var(--gold);
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      font-weight: 500;
-      margin-bottom: 16px;
-    }
-
-    .eyebrow::before,
-    .eyebrow::after {
-      content: '';
-      display: block;
-      width: 30px;
-      height: 1px;
-      background: var(--gold);
+    .cursor-ring {
+      position: fixed;
+      width: 36px; height: 36px;
+      border: 1.5px solid var(--electric);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: all 0.18s ease;
       opacity: 0.5;
     }
 
-    .sec-h2 {
-      font-family: var(--serif);
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      color: var(--teal);
-      font-weight: 600;
-      line-height: 1.1;
-      letter-spacing: -0.015em;
-      margin-bottom: 16px;
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: var(--navy); }
+    ::-webkit-scrollbar-thumb { background: var(--electric); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+      height: 76px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(20px,5vw,72px);
+      transition: all 0.4s;
     }
-
-    .sec-h2 em {
-      font-style: italic;
-      font-weight: 300;
+    nav.scrolled {
+      background: rgba(5,14,26,0.95);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(0,229,255,0.12);
+      box-shadow: 0 0 60px rgba(0,180,255,0.08);
     }
-
-    .sec-sub {
-      color: var(--muted);
-      font-size: 0.94rem;
-      line-height: 1.85;
-      max-width: 500px;
-      margin-bottom: 52px;
-      font-weight: 300;
+    .nav-logo {
+      display: flex; flex-direction: column; text-decoration: none; gap: 1px;
     }
-
-    /* ── INTRO/STORY ── */
-    #story {
-      background: var(--white);
+    .nav-logo-main {
+      font-family: var(--display);
+      font-size: 1.7rem; letter-spacing: 0.04em;
+      color: var(--white); line-height: 1;
     }
-
-    .story-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
+    .nav-logo-main span { color: var(--electric); }
+    .nav-logo-sub {
+      font-family: var(--cond);
+      font-size: 0.62rem; letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--muted); font-weight: 300;
     }
-
-    .story-imgs {
-      position: relative;
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a {
+      font-family: var(--cond); font-size: 0.88rem; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      transition: color 0.2s; position: relative;
     }
-
-    .story-img-main {
-      width: 100%;
-      aspect-ratio: 4/5;
-      object-fit: cover;
-      border-radius: 20px;
-      display: block;
+    .nav-links a:hover { color: var(--electric); }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--electric), var(--cyan));
+      color: var(--navy) !important; font-weight: 700 !important;
+      padding: 10px 26px !important; border-radius: 4px !important;
+      letter-spacing: 0.1em !important;
+      box-shadow: 0 0 24px rgba(0,180,255,0.4);
+      transition: all 0.25s !important;
     }
-
-    .story-img-float {
-      position: absolute;
-      bottom: -30px;
-      right: -30px;
-      width: 55%;
-      aspect-ratio: 1;
-      object-fit: cover;
-      border-radius: 16px;
-      border: 6px solid var(--white);
-      box-shadow: 0 20px 60px rgba(44, 31, 16, 0.15);
+    .nav-cta:hover {
+      transform: translateY(-2px) !important;
+      box-shadow: 0 0 40px rgba(0,229,255,0.6) !important;
     }
-
-    .story-label {
-      position: absolute;
-      top: 24px;
-      left: -20px;
-      background: var(--teal);
-      color: var(--cream);
-      padding: 14px 20px;
-      border-radius: 12px;
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      box-shadow: 0 8px 30px rgba(26, 92, 82, 0.35);
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      width: 40px; height: 40px; cursor: none;
+      align-items: center; justify-content: center;
+      border: 1px solid var(--glass-border); border-radius: 6px;
+      background: transparent;
     }
-
-    .story-label-n {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      color: var(--gold2);
-      display: block;
-      font-weight: 600;
-      line-height: 1;
+    .hamburger span { display: block; width: 20px; height: 1.5px; background: var(--electric); transition: all 0.3s; }
+    .hamburger.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    .mobile-menu {
+      position: fixed; top: 76px; left: 0; right: 0;
+      background: rgba(5,14,26,0.98); backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 20px clamp(20px,5vw,72px) 30px;
+      z-index: 490; display: none; flex-direction: column; gap: 4px;
     }
-
-    .story-text p {
-      font-size: 0.95rem;
-      color: var(--muted);
-      line-height: 1.9;
-      margin-bottom: 18px;
-      font-weight: 300;
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      display: block; padding: 14px 0;
+      font-family: var(--cond); font-size: 1.1rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      border-bottom: 1px solid rgba(0,229,255,0.08);
+      transition: color 0.2s, padding-left 0.2s;
     }
-
-    .story-text p strong {
-      color: var(--teal);
-      font-weight: 600;
+    .mobile-menu a:hover { color: var(--electric); padding-left: 8px; }
+    .mobile-menu .mob-cta {
+      margin-top: 16px; text-align: center;
+      background: linear-gradient(135deg, var(--electric), var(--cyan));
+      color: var(--navy) !important; border-bottom: none !important;
+      border-radius: 4px; padding: 14px 24px !important; font-weight: 700 !important;
     }
+    @media(max-width:900px) { .nav-links { display: none; } .hamburger { display: flex; } }
 
-    .story-features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-top: 32px;
+    /* ── HERO VIDEO ── */
+    #hero {
+      position: relative; min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      overflow: hidden; padding: 0 clamp(20px,5vw,72px);
     }
-
-    .feat-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 14px;
-      background: var(--cream);
-      border-radius: 12px;
-      transition: transform 0.2s;
+    .hero-video-wrap {
+      position: absolute; inset: 0; z-index: 0;
     }
-
-    .feat-item:hover {
-      transform: translateY(-2px);
+    .hero-video-wrap video {
+      width: 100%; height: 100%; object-fit: cover;
     }
-
-    .feat-ico {
-      font-size: 1.3rem;
-      flex-shrink: 0;
-    }
-
-    .feat-item strong {
-      display: block;
-      font-size: 0.82rem;
-      color: var(--teal);
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
-
-    .feat-item span {
-      font-size: 0.74rem;
-      color: var(--muted2);
-    }
-
-    @media (max-width: 860px) {
-      .story-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-      }
-
-      .story-img-float {
-        display: none;
-      }
-    }
-
-    /* ── GALLERY ── */
-    #gallery {
-      background: var(--cream2);
-    }
-
-    .gallery-head {
-      text-align: center;
-      margin-bottom: 52px;
-    }
-
-    .gallery-head .sec-sub {
-      margin: 0 auto 0;
-      text-align: center;
-    }
-
-    .masonry {
-      columns: 3;
-      column-gap: 14px;
-    }
-
-    .masonry-item {
-      break-inside: avoid;
-      margin-bottom: 14px;
-      border-radius: 14px;
-      overflow: hidden;
-      display: block;
-      position: relative;
-    }
-
-    .masonry-item img {
-      width: 100%;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .masonry-item:hover img {
-      transform: scale(1.04);
-    }
-
-    .masonry-item::after {
+    .hero-video-wrap::after {
       content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(15, 61, 53, 0.4) 0%, transparent 50%);
-      opacity: 0;
-      transition: opacity 0.3s;
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(5,14,26,0.3) 0%,
+        rgba(5,14,26,0.1) 30%,
+        rgba(5,14,26,0.2) 60%,
+        rgba(5,14,26,0.92) 100%
+      );
+    }
+    /* Scan line overlay */
+    .hero-video-wrap::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 1;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.04) 2px,
+        rgba(0,0,0,0.04) 4px
+      );
+      pointer-events: none;
     }
 
-    .masonry-item:hover::after {
-      opacity: 1;
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center; max-width: 900px;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--cond); font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--electric);
+      background: rgba(0,180,255,0.1); border: 1px solid rgba(0,180,255,0.3);
+      border-radius: 3px; padding: 8px 18px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.6s ease both;
+    }
+    .tag-pulse {
+      width: 6px; height: 6px; background: var(--cyan);
+      border-radius: 50%; animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(0,229,255,0.6); }
+      50% { box-shadow: 0 0 0 8px rgba(0,229,255,0); }
+    }
+    .hero-h1 {
+      font-family: var(--display);
+      font-size: clamp(4rem, 11vw, 10rem);
+      line-height: 0.92; letter-spacing: 0.02em;
+      color: var(--white); margin-bottom: 16px;
+      animation: fadeUp 0.7s ease 0.1s both;
+    }
+    .hero-h1 .accent { color: var(--electric); display: block; }
+    .hero-h1 .outline {
+      -webkit-text-stroke: 2px rgba(0,229,255,0.5);
+      color: transparent;
+    }
+    .hero-loc {
+      font-family: var(--cond); font-size: 0.85rem; font-weight: 300;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 32px;
+      animation: fadeUp 0.7s ease 0.18s both;
+    }
+    .hero-loc span { color: var(--electric); }
+    .hero-desc {
+      font-size: 1.1rem; font-weight: 300; line-height: 1.75;
+      color: rgba(200,230,255,0.75); max-width: 560px; margin: 0 auto 48px;
+      animation: fadeUp 0.7s ease 0.24s both;
+    }
+    .hero-btns {
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+      animation: fadeUp 0.7s ease 0.3s both;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--orange), var(--gold));
+      color: var(--navy); padding: 16px 40px; border-radius: 4px;
+      font-family: var(--cond); font-size: 0.95rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none; transition: all 0.25s;
+      box-shadow: 0 0 30px rgba(255,92,26,0.4);
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 0 50px rgba(255,92,26,0.6); }
+    .btn-outline {
+      border: 1.5px solid var(--electric); color: var(--electric);
+      padding: 16px 40px; border-radius: 4px;
+      font-family: var(--cond); font-size: 0.95rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none; transition: all 0.25s;
+      backdrop-filter: blur(10px); background: rgba(0,180,255,0.06);
+    }
+    .btn-outline:hover { background: rgba(0,180,255,0.15); transform: translateY(-3px); }
+
+    /* Speed stats ticker */
+    .hero-speed {
+      position: absolute; bottom: 120px; right: clamp(20px,5vw,72px);
+      z-index: 3; display: flex; flex-direction: column; gap: 12px;
+      animation: fadeUp 0.8s ease 0.5s both;
+    }
+    .speed-stat {
+      background: rgba(5,14,26,0.6); backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border); border-radius: 6px;
+      padding: 14px 18px; text-align: right; min-width: 110px;
+    }
+    .speed-num {
+      font-family: var(--display); font-size: 2rem;
+      color: var(--electric); line-height: 1;
+    }
+    .speed-num .unit { font-size: 1rem; color: var(--muted); }
+    .speed-label { font-family: var(--cond); font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+    @media(max-width:600px) { .hero-speed { display: none; } }
+
+    /* Hero scroll cue */
+    .hero-scroll {
+      position: absolute; bottom: 36px; left: 50%;
+      transform: translateX(-50%); z-index: 3;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      animation: fadeUp 1s ease 0.8s both;
+    }
+    .scroll-text { font-family: var(--cond); font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+    .scroll-arrow {
+      width: 24px; height: 24px; border-right: 1.5px solid var(--electric);
+      border-bottom: 1.5px solid var(--electric);
+      transform: rotate(45deg); animation: arrowBounce 1.5s ease-in-out infinite;
+    }
+    @keyframes arrowBounce { 0%,100% { transform: rotate(45deg) translateY(0); } 50% { transform: rotate(45deg) translateY(6px); } }
+
+    @keyframes fadeUp { from { opacity:0; transform:translateY(32px); } to { opacity:1; transform:translateY(0); } }
+
+    /* ── TICKER STRIP ── */
+    .ticker-wrap {
+      background: linear-gradient(90deg, var(--electric), var(--cyan), var(--electric));
+      padding: 14px 0; overflow: hidden; white-space: nowrap;
+    }
+    .ticker-track {
+      display: inline-block; animation: ticker 22s linear infinite;
+    }
+    .ticker-track span {
+      font-family: var(--cond); font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--navy);
+      margin: 0 28px;
+    }
+    .ticker-sep { color: rgba(5,14,26,0.4); }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ── SECTION BASE ── */
+    section { position: relative; z-index: 1; }
+    .sec-pad { padding: 110px clamp(20px,5vw,72px); }
+
+    .eyebrow {
+      font-family: var(--cond); font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.28em; text-transform: uppercase; color: var(--electric);
+      display: flex; align-items: center; gap: 14px; margin-bottom: 16px;
+    }
+    .eyebrow::before { content:''; display:block; width:36px; height:1.5px; background:var(--electric); }
+
+    .sec-h2 {
+      font-family: var(--display);
+      font-size: clamp(2.5rem, 5vw, 5rem); line-height: 0.95;
+      letter-spacing: 0.02em; color: var(--white); margin-bottom: 20px;
+    }
+    .sec-h2 .accent { color: var(--electric); }
+    .sec-h2 .outline {
+      -webkit-text-stroke: 1.5px rgba(0,229,255,0.4); color: transparent;
+    }
+    .sec-sub {
+      font-size: 1rem; font-weight: 300; line-height: 1.8;
+      color: var(--muted); max-width: 520px;
     }
 
-    .masonry-caption {
-      position: absolute;
-      bottom: 16px;
-      left: 16px;
-      right: 16px;
-      color: var(--white);
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      z-index: 1;
-      opacity: 0;
-      transform: translateY(6px);
-      transition: all 0.3s;
-    }
+    /* reveal animations */
+    .reveal { opacity:0; transform:translateY(36px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.on { opacity:1; transform:translateY(0); }
+    .reveal-left { opacity:0; transform:translateX(-36px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.on { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(36px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right.on { opacity:1; transform:translateX(0); }
 
-    .masonry-item:hover .masonry-caption {
-      opacity: 1;
-      transform: translateY(0);
+    /* ── ABOUT ── */
+    #about { background: var(--deep); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
     }
-
-    @media (max-width: 860px) {
-      .masonry {
-        columns: 2;
-      }
+    .about-visual { position: relative; }
+    .about-main-img {
+      width: 100%; aspect-ratio: 3/4; object-fit: cover;
+      border-radius: 8px; display: block;
+      border: 1px solid var(--glass-border);
     }
-
-    @media (max-width: 480px) {
-      .masonry {
-        columns: 1;
-      }
+    .about-float-vid {
+      position: absolute; bottom: -28px; right: -28px;
+      width: 58%; border-radius: 8px; overflow: hidden;
+      border: 3px solid var(--navy);
+      box-shadow: 0 0 60px rgba(0,180,255,0.25);
     }
-
-    /* ── ROOMS ── */
-    #rooms {
-      background: var(--white);
+    .about-float-vid video {
+      width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;
     }
-
-    .rooms-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 24px;
-      margin-top: 52px;
+    .about-badge-num {
+      position: absolute; top: 24px; left: -20px;
+      background: linear-gradient(135deg, var(--electric), var(--cyan));
+      color: var(--navy); padding: 14px 18px; border-radius: 6px;
+      font-family: var(--display); font-size: 2rem; line-height: 1;
+      box-shadow: 0 0 40px rgba(0,180,255,0.4); text-align: center;
     }
-
-    .room-card {
-      background: var(--cream);
-      border-radius: 20px;
-      overflow: hidden;
-      transition: all 0.3s;
-      border: 1px solid rgba(184, 137, 58, 0.1);
+    .about-badge-label { font-family: var(--cond); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; }
+    .about-features {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 36px;
     }
-
-    .room-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 60px rgba(44, 31, 16, 0.12);
+    .af-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 16px; background: var(--glass); border: 1px solid var(--glass-border);
+      border-radius: 8px; transition: background 0.2s, transform 0.2s;
     }
+    .af-item:hover { background: rgba(0,180,255,0.1); transform: translateY(-2px); }
+    .af-ico { font-size: 1.4rem; flex-shrink: 0; }
+    .af-item strong { display: block; font-family: var(--cond); font-size: 0.95rem; font-weight: 600; color: var(--white); letter-spacing: 0.05em; }
+    .af-item span { font-size: 0.78rem; color: var(--muted); }
+    @media(max-width:860px) { .about-grid { grid-template-columns:1fr; gap:50px; } .about-float-vid { display:none; } }
 
-    .room-img-wrap {
-      position: relative;
-      overflow: hidden;
+    /* ── ADVENTURES / PACKAGES ── */
+    #adventures { background: var(--navy); overflow: hidden; }
+    .adv-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 60px;
     }
+    .adv-card {
+      position: relative; border-radius: 10px; overflow: hidden;
+      background: var(--card-bg); border: 1px solid var(--glass-border);
+      transition: all 0.35s; cursor: none;
+    }
+    .adv-card:hover { transform: translateY(-8px); box-shadow: 0 0 60px rgba(0,180,255,0.2); border-color: var(--electric); }
+    .adv-card-media { position: relative; overflow: hidden; }
+    .adv-card-media img, .adv-card-media video {
+      width: 100%; aspect-ratio: 16/10; object-fit: cover;
+      transition: transform 0.5s; display: block;
+    }
+    .adv-card:hover .adv-card-media img,
+    .adv-card:hover .adv-card-media video { transform: scale(1.06); }
+    .adv-card-media::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(5,14,26,0.85) 0%, transparent 55%);
+    }
+    .adv-badge {
+      position: absolute; top: 14px; left: 14px; z-index: 1;
+      background: var(--orange); color: var(--white);
+      font-family: var(--cond); font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 3px;
+    }
+    .adv-play {
+      position: absolute; inset: 0; z-index: 1;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .adv-card:hover .adv-play { opacity: 1; }
+    .play-ico {
+      width: 52px; height: 52px; background: rgba(0,180,255,0.85);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+    }
+    .adv-body { padding: 22px; }
+    .adv-type { font-family: var(--cond); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--electric); margin-bottom: 6px; }
+    .adv-name { font-family: var(--cond); font-size: 1.4rem; font-weight: 700; letter-spacing: 0.03em; color: var(--white); margin-bottom: 8px; }
+    .adv-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.7; margin-bottom: 18px; }
+    .adv-meta { display: flex; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+    .adv-tag { display: inline-flex; align-items: center; gap: 6px; font-family: var(--cond); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; color: var(--muted); background: rgba(0,180,255,0.08); border: 1px solid rgba(0,229,255,0.14); border-radius: 4px; padding: 4px 10px; }
+    .adv-price-row { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid rgba(0,229,255,0.1); }
+    .adv-price { font-family: var(--display); font-size: 1.8rem; color: var(--electric); line-height: 1; }
+    .adv-price span { font-family: var(--cond); font-size: 0.72rem; color: var(--muted); font-weight: 400; }
+    .adv-btn {
+      background: linear-gradient(135deg, var(--electric), var(--cyan));
+      color: var(--navy); padding: 9px 20px; border-radius: 4px;
+      font-family: var(--cond); font-size: 0.8rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+      transition: all 0.2s; box-shadow: 0 0 20px rgba(0,180,255,0.3);
+    }
+    .adv-btn:hover { box-shadow: 0 0 32px rgba(0,229,255,0.5); transform: scale(1.04); }
+    @media(max-width:980px) { .adv-grid { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:600px) { .adv-grid { grid-template-columns: 1fr; } }
 
-    .room-img {
-      width: 100%;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-      display: block;
+    /* ── VIDEO SHOWCASE ── */
+    #showcase {
+      background: var(--deep); padding: 0;
+      position: relative; overflow: hidden;
+    }
+    .showcase-header { padding: 100px clamp(20px,5vw,72px) 0; }
+    .showcase-video-big {
+      margin: 50px 0 0; position: relative;
+    }
+    .showcase-video-big video {
+      width: 100%; max-height: 72vh; object-fit: cover; display: block;
+    }
+    .showcase-video-big::before {
+      content: ''; position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(to bottom, var(--deep) 0%, transparent 20%, transparent 80%, var(--deep) 100%);
+      pointer-events: none;
+    }
+    .showcase-vid-label {
+      position: absolute; bottom: 36px; left: clamp(20px,5vw,72px); z-index: 2;
+      background: rgba(5,14,26,0.7); backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border); border-radius: 8px; padding: 16px 22px;
+    }
+    .showcase-vid-label strong { font-family: var(--cond); font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; display: block; color: var(--white); }
+    .showcase-vid-label span { font-size: 0.78rem; color: var(--muted); }
+    .showcase-mini-grid {
+      display: grid; grid-template-columns: repeat(4,1fr); gap: 3px;
+      padding: 3px;
+    }
+    .mini-vid-wrap { position: relative; overflow: hidden; aspect-ratio: 1; }
+    .mini-vid-wrap video, .mini-vid-wrap img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
       transition: transform 0.5s;
     }
-
-    .room-card:hover .room-img {
-      transform: scale(1.05);
+    .mini-vid-wrap:hover video, .mini-vid-wrap:hover img { transform: scale(1.08); }
+    .mini-vid-wrap::after {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(5,14,26,0.35);
+      transition: background 0.3s;
     }
-
-    .room-badge {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      background: var(--gold);
-      color: var(--white);
-      padding: 5px 14px;
-      border-radius: 20px;
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+    .mini-vid-wrap:hover::after { background: rgba(0,180,255,0.1); }
+    .mini-vid-label {
+      position: absolute; bottom: 12px; left: 12px; z-index: 1;
+      font-family: var(--cond); font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--white);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
     }
+    @media(max-width:600px) { .showcase-mini-grid { grid-template-columns: repeat(2,1fr); } }
 
-    .room-body {
-      padding: 24px;
+    /* ── FLEET / BOATS ── */
+    #fleet { background: var(--navy); }
+    .fleet-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px;
     }
-
-    .room-type {
-      font-size: 0.65rem;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      font-weight: 600;
-      margin-bottom: 6px;
+    .fleet-card {
+      background: var(--card-bg); border: 1px solid var(--glass-border);
+      border-radius: 10px; overflow: hidden; transition: all 0.3s;
     }
-
-    .room-name {
-      font-family: var(--serif);
-      font-size: 1.35rem;
-      color: var(--teal);
-      font-weight: 600;
-      margin-bottom: 8px;
-      letter-spacing: -0.01em;
+    .fleet-card:hover { border-color: var(--electric); box-shadow: 0 0 50px rgba(0,180,255,0.15); }
+    .fleet-img-wrap { position: relative; overflow: hidden; }
+    .fleet-img-wrap img {
+      width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;
+      transition: transform 0.5s;
     }
-
-    .room-desc {
-      font-size: 0.8rem;
-      color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 18px;
+    .fleet-card:hover .fleet-img-wrap img { transform: scale(1.04); }
+    .fleet-badge {
+      position: absolute; top: 14px; right: 14px;
+      background: rgba(5,14,26,0.8); backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      font-family: var(--cond); font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--electric);
+      padding: 5px 12px; border-radius: 3px;
     }
+    .fleet-body { padding: 24px; }
+    .fleet-name { font-family: var(--display); font-size: 1.6rem; color: var(--white); letter-spacing: 0.02em; margin-bottom: 8px; }
+    .fleet-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.7; margin-bottom: 18px; }
+    .fleet-specs { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+    .fleet-spec { text-align: center; background: rgba(0,180,255,0.06); border: 1px solid rgba(0,229,255,0.1); border-radius: 6px; padding: 12px 8px; }
+    .fleet-spec-val { font-family: var(--display); font-size: 1.4rem; color: var(--electric); line-height: 1; }
+    .fleet-spec-label { font-family: var(--cond); font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+    @media(max-width:760px) { .fleet-grid { grid-template-columns: 1fr; } }
 
-    .room-amenities {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 20px;
+    /* ── EXPERIENCE STRIP ── */
+    #experience-strip {
+      position: relative; overflow: hidden; padding: 0;
     }
-
-    .amenity {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 0.7rem;
-      color: var(--muted2);
-      background: var(--white);
-      border-radius: 20px;
-      padding: 4px 12px;
-      border: 1px solid rgba(155, 138, 114, 0.2);
+    .exp-bg-vid { position: absolute; inset: 0; z-index: 0; }
+    .exp-bg-vid video { width: 100%; height: 100%; object-fit: cover; }
+    .exp-bg-vid::after {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(5,14,26,0.78);
     }
-
-    .amenity-ico {
-      font-size: 0.85rem;
+    .exp-strip-inner {
+      position: relative; z-index: 1;
+      padding: 110px clamp(20px,5vw,72px);
     }
-
-    .room-price {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 18px;
-      border-top: 1px solid rgba(184, 137, 58, 0.15);
+    .exp-cards-grid {
+      display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; margin-top: 60px;
     }
-
-    .price-val {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      color: var(--teal);
-      font-weight: 700;
-    }
-
-    .price-val span {
-      font-size: 0.75rem;
-      color: var(--muted2);
-      font-family: var(--sans);
-      font-weight: 400;
-    }
-
-    .room-btn {
-      background: var(--teal);
-      color: var(--cream);
-      padding: 9px 20px;
-      border-radius: 30px;
-      font-size: 0.76rem;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-
-    .room-btn:hover {
-      background: var(--teal2);
-      transform: scale(1.04);
-    }
-
-    /* ── EXPERIENCE ── */
-    #experience {
-      background: var(--teal3);
-      position: relative;
-      overflow: hidden;
-    }
-
-    #experience::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&q=40');
-      background-size: cover;
-      background-position: center;
-      opacity: 0.08;
-    }
-
-    .exp-inner {
-      position: relative;
-      z-index: 1;
-    }
-
-    .exp-inner .sec-h2 {
-      color: var(--cream);
-    }
-
-    .exp-inner .sec-sub {
-      color: rgba(237, 231, 217, 0.7);
-    }
-
-    .exp-inner .eyebrow {
-      color: var(--gold2);
-    }
-
-    .exp-inner .eyebrow::before,
-    .exp-inner .eyebrow::after {
-      background: var(--gold2);
-    }
-
-    .exp-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
     .exp-card {
-      background: rgba(245, 240, 232, 0.06);
-      border: 1px solid rgba(245, 240, 232, 0.12);
-      border-radius: 18px;
-      padding: 30px 24px;
-      transition: all 0.3s;
-      position: relative;
-      overflow: hidden;
+      background: rgba(5,14,26,0.5); border: 1px solid var(--glass-border);
+      border-radius: 10px; padding: 28px 22px;
+      transition: all 0.3s; backdrop-filter: blur(12px);
     }
+    .exp-card:hover { background: rgba(0,180,255,0.1); transform: translateY(-4px); border-color: var(--electric); }
+    .exp-icon { font-size: 2.2rem; margin-bottom: 14px; display: block; }
+    .exp-card h4 { font-family: var(--cond); font-size: 1.2rem; font-weight: 700; letter-spacing: 0.05em; color: var(--white); margin-bottom: 8px; }
+    .exp-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.7; }
+    @media(max-width:860px) { .exp-cards-grid { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:480px) { .exp-cards-grid { grid-template-columns: 1fr; } }
 
-    .exp-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--gold), transparent);
-      opacity: 0;
-      transition: opacity 0.3s;
+    /* ── GALLERY MASONRY ── */
+    #gallery { background: var(--deep); }
+    .gal-head { margin-bottom: 50px; }
+    .masonry {
+      columns: 4; column-gap: 8px;
     }
-
-    .exp-card:hover {
-      background: rgba(245, 240, 232, 0.1);
-      transform: translateY(-4px);
+    .masonry-item {
+      break-inside: avoid; margin-bottom: 8px;
+      border-radius: 6px; overflow: hidden; position: relative; display: block;
     }
-
-    .exp-card:hover::before {
-      opacity: 1;
+    .masonry-item img, .masonry-item video {
+      width: 100%; display: block; transition: transform 0.5s;
     }
-
-    .exp-icon {
-      font-size: 2rem;
-      margin-bottom: 16px;
-      display: block;
+    .masonry-item::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(5,14,26,0.6) 0%, transparent 50%);
+      opacity: 0; transition: opacity 0.3s;
     }
-
-    .exp-card h4 {
-      font-family: var(--serif);
-      font-size: 1.15rem;
-      color: var(--cream);
-      font-weight: 600;
-      margin-bottom: 8px;
+    .masonry-item:hover::after { opacity: 1; }
+    .masonry-item:hover img, .masonry-item:hover video { transform: scale(1.04); }
+    .masonry-cap {
+      position: absolute; bottom: 12px; left: 12px; right: 12px;
+      font-family: var(--cond); font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--white);
+      z-index: 1; opacity: 0; transform: translateY(6px); transition: all 0.3s;
     }
-
-    .exp-card p {
-      font-size: 0.8rem;
-      color: rgba(237, 231, 217, 0.65);
-      line-height: 1.7;
-    }
-
-    /* ── LOCATION ── */
-    #location {
-      background: var(--cream2);
-    }
-
-    .loc-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 72px;
-      align-items: center;
-    }
-
-    .loc-map {
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(44, 31, 16, 0.12);
-      aspect-ratio: 1;
-      background: var(--warm);
-    }
-
-    .loc-map iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-
-    .loc-cards {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin-top: 32px;
-    }
-
-    .loc-card {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 18px 20px;
-      background: var(--white);
-      border-radius: 14px;
-      border: 1px solid rgba(184, 137, 58, 0.12);
-      transition: all 0.2s;
-    }
-
-    .loc-card:hover {
-      border-color: rgba(26, 92, 82, 0.25);
-      transform: translateX(4px);
-    }
-
-    .loc-ico {
-      font-size: 1.4rem;
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(26, 92, 82, 0.08);
-      border-radius: 10px;
-      flex-shrink: 0;
-    }
-
-    .loc-card strong {
-      display: block;
-      font-size: 0.84rem;
-      color: var(--teal);
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
-
-    .loc-card span {
-      font-size: 0.76rem;
-      color: var(--muted);
-    }
-
-    @media (max-width: 860px) {
-      .loc-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-    }
+    .masonry-item:hover .masonry-cap { opacity: 1; transform: translateY(0); }
+    @media(max-width:900px) { .masonry { columns: 3; } }
+    @media(max-width:600px) { .masonry { columns: 2; } }
+    @media(max-width:400px) { .masonry { columns: 1; } }
 
     /* ── REVIEWS ── */
-    #reviews {
-      background: var(--white);
+    #reviews { background: var(--navy); }
+    .rev-head { text-align: center; margin-bottom: 54px; }
+    .rev-head .sec-sub { margin: 0 auto; text-align: center; }
+    .rev-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 20px;
     }
-
-    .reviews-head {
-      text-align: center;
-      margin-bottom: 52px;
-    }
-
-    .reviews-head .sec-sub {
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .review-card {
-      background: var(--cream);
-      border-radius: 18px;
-      padding: 28px;
-      border: 1px solid rgba(184, 137, 58, 0.1);
-      position: relative;
+    .rev-card {
+      background: var(--card-bg); border: 1px solid var(--glass-border);
+      border-radius: 10px; padding: 28px; position: relative; overflow: hidden;
       transition: transform 0.2s;
     }
-
-    .review-card:hover {
-      transform: translateY(-3px);
+    .rev-card:hover { transform: translateY(-3px); border-color: rgba(0,229,255,0.3); }
+    .rev-card::before {
+      content: '"'; position: absolute; top: 8px; right: 16px;
+      font-family: var(--display); font-size: 7rem; color: var(--electric);
+      opacity: 0.07; line-height: 1;
     }
-
-    .review-card::before {
-      content: '"';
-      position: absolute;
-      top: 12px;
-      right: 20px;
-      font-family: var(--serif);
-      font-size: 5rem;
-      color: var(--gold2);
-      opacity: 0.15;
-      line-height: 1;
+    .rev-stars { color: var(--gold); font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .rev-text { font-size: 0.86rem; color: var(--muted); line-height: 1.8; font-weight: 300; font-style: italic; margin-bottom: 22px; }
+    .reviewer { display: flex; align-items: center; gap: 12px; }
+    .rev-init {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--electric), var(--wave));
+      color: var(--white); display: flex; align-items: center; justify-content: center;
+      font-family: var(--cond); font-size: 0.9rem; font-weight: 700; flex-shrink: 0;
     }
+    .reviewer strong { display: block; font-family: var(--cond); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; color: var(--white); }
+    .reviewer span { font-size: 0.72rem; color: var(--muted); }
+    @media(max-width:860px) { .rev-grid { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:560px) { .rev-grid { grid-template-columns: 1fr; } }
 
-    .stars {
-      color: var(--gold);
-      font-size: 0.9rem;
-      margin-bottom: 14px;
-      letter-spacing: 2px;
+    /* ── SAFETY ── */
+    #safety { background: var(--deep); }
+    .safety-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .safety-img-wrap { position: relative; border-radius: 10px; overflow: hidden; }
+    .safety-img-wrap img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+    .safety-img-wrap::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(0,180,255,0.2), transparent);
     }
-
-    .review-text {
-      font-size: 0.86rem;
-      color: var(--muted);
-      line-height: 1.8;
-      margin-bottom: 20px;
-      font-style: italic;
-      font-weight: 300;
+    .safety-list { display: flex; flex-direction: column; gap: 14px; margin-top: 30px; }
+    .safety-item {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 18px 20px; background: var(--glass); border: 1px solid var(--glass-border);
+      border-radius: 8px; transition: all 0.2s;
     }
+    .safety-item:hover { border-color: var(--electric); background: rgba(0,180,255,0.1); }
+    .safety-ico { font-size: 1.4rem; flex-shrink: 0; }
+    .safety-item strong { display: block; font-family: var(--cond); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.05em; color: var(--white); margin-bottom: 2px; }
+    .safety-item span { font-size: 0.78rem; color: var(--muted); }
+    @media(max-width:860px) { .safety-grid { grid-template-columns: 1fr; gap: 40px; } }
 
-    .reviewer {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    /* ── LOCATION ── */
+    #location { background: var(--navy); }
+    .loc-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 72px; align-items: center; }
+    .loc-map { border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 0 60px rgba(0,180,255,0.15); aspect-ratio: 1; }
+    .loc-map iframe { width: 100%; height: 100%; border: none; display: block; filter: grayscale(30%) invert(20%); }
+    .loc-cards { display: flex; flex-direction: column; gap: 12px; margin-top: 30px; }
+    .loc-card {
+      display: flex; align-items: center; gap: 16px;
+      padding: 16px 18px; background: var(--glass); border: 1px solid var(--glass-border);
+      border-radius: 8px; text-decoration: none; transition: all 0.2s;
     }
+    .loc-card:hover { border-color: var(--electric); transform: translateX(4px); background: rgba(0,180,255,0.1); }
+    .loc-ico { font-size: 1.3rem; width: 42px; height: 42px; background: rgba(0,180,255,0.1); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .loc-card strong { display: block; font-family: var(--cond); font-size: 0.88rem; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .loc-card span { font-size: 0.76rem; color: var(--muted); }
+    @media(max-width:860px) { .loc-grid { grid-template-columns: 1fr; gap: 40px; } }
 
-    .reviewer-init {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--teal);
-      color: var(--cream);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.85rem;
-      font-weight: 600;
-      flex-shrink: 0;
-    }
-
-    .reviewer strong {
-      display: block;
-      font-size: 0.83rem;
-      color: var(--teal);
-      font-weight: 600;
-    }
-
-    .reviewer span {
-      font-size: 0.72rem;
-      color: var(--muted2);
-    }
-
-    /* ── FOOD ── */
-    #food {
-      background: var(--teal);
-      position: relative;
-      overflow: hidden;
-    }
-
-    #food::after {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      right: 0;
-      height: 120px;
-      background: var(--cream);
-      clip-path: ellipse(60% 100% at 50% 100%);
-    }
-
-    .food-inner {
-      position: relative;
-      z-index: 1;
-    }
-
-    .food-inner .sec-h2 {
-      color: var(--cream);
-    }
-
-    .food-inner .sec-sub {
-      color: rgba(237, 231, 217, 0.75);
-    }
-
-    .food-inner .eyebrow {
-      color: var(--gold2);
-    }
-
-    .food-inner .eyebrow::before,
-    .food-inner .eyebrow::after {
-      background: var(--gold2);
-    }
-
-    .food-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .food-imgs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    .food-img {
-      border-radius: 14px;
-      overflow: hidden;
-    }
-
-    .food-img:first-child {
-      grid-row: span 2;
-    }
-
-    .food-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.4s;
-    }
-
-    .food-img:hover img {
-      transform: scale(1.05);
-    }
-
-    .food-img-1 {
-      aspect-ratio: 3/4;
-    }
-
-    .food-img-2 {
-      aspect-ratio: 4/3;
-    }
-
-    .food-items {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 30px;
-    }
-
-    .food-item {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 16px 20px;
-      background: rgba(245, 240, 232, 0.08);
-      border-radius: 12px;
-      border: 1px solid rgba(245, 240, 232, 0.12);
-      transition: background 0.2s;
-    }
-
-    .food-item:hover {
-      background: rgba(245, 240, 232, 0.14);
-    }
-
-    .food-ico {
-      font-size: 1.5rem;
-    }
-
-    .food-item strong {
-      display: block;
-      font-size: 0.85rem;
-      color: var(--cream);
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
-
-    .food-item span {
-      font-size: 0.76rem;
-      color: rgba(237, 231, 217, 0.65);
-    }
-
-    @media (max-width: 860px) {
-      .food-grid {
-        grid-template-columns: 1fr;
-        gap: 36px;
-      }
-    }
-
-    /* ── CONTACT/BOOKING ── */
-    #book {
-      background: var(--cream);
-      padding-top: 0;
-    }
-
-    .book-inner {
-      padding: 100px clamp(20px, 5vw, 80px);
-    }
-
-    .book-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 72px;
-      align-items: start;
-    }
-
-    .book-left .sec-sub {
-      margin-bottom: 36px;
-    }
-
-    .contact-items {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 18px 20px;
-      background: var(--white);
-      border-radius: 14px;
-      border: 1px solid rgba(184, 137, 58, 0.12);
-      text-decoration: none;
-      transition: all 0.22s;
-    }
-
-    .contact-item:hover {
-      border-color: var(--teal2);
-      transform: translateX(4px);
-      box-shadow: 0 4px 20px rgba(26, 92, 82, 0.1);
-    }
-
-    .ci-ico {
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      background: rgba(26, 92, 82, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      flex-shrink: 0;
-    }
-
-    .contact-item strong {
-      display: block;
-      font-size: 0.83rem;
-      color: var(--teal);
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
-
-    .contact-item span {
-      font-size: 0.76rem;
-      color: var(--muted);
-    }
-
+    /* ── BOOKING ── */
+    #book { background: var(--deep); }
+    .book-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 72px; align-items: start; }
     .book-form {
-      background: var(--white);
-      border-radius: 22px;
-      padding: 36px;
-      border: 1px solid rgba(184, 137, 58, 0.12);
-      box-shadow: 0 10px 50px rgba(44, 31, 16, 0.07);
+      background: var(--card-bg); border: 1px solid var(--glass-border);
+      border-radius: 12px; padding: 38px;
+      box-shadow: 0 0 80px rgba(0,180,255,0.1);
     }
-
-    .form-title {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      color: var(--teal);
-      font-weight: 600;
-      margin-bottom: 6px;
+    .form-title { font-family: var(--display); font-size: 2rem; letter-spacing: 0.02em; color: var(--white); margin-bottom: 4px; }
+    .form-sub { font-size: 0.8rem; color: var(--muted); margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-family: var(--cond); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 7px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; background: rgba(5,14,26,0.6); border: 1px solid var(--glass-border);
+      border-radius: 6px; padding: 12px 14px; font-size: 0.86rem; color: var(--white);
+      font-family: var(--body); outline: none; transition: border-color 0.2s, box-shadow 0.2s;
     }
-
-    .form-sub {
-      font-size: 0.8rem;
-      color: var(--muted2);
-      margin-bottom: 28px;
+    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(200,230,255,0.25); }
+    .form-group select option { background: var(--deep); color: var(--white); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--electric); box-shadow: 0 0 0 3px rgba(0,180,255,0.15);
     }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    .form-group {
-      margin-bottom: 14px;
-    }
-
-    .form-group label {
-      display: block;
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      margin-bottom: 7px;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      background: var(--cream);
-      border: 1px solid rgba(184, 137, 58, 0.2);
-      border-radius: 10px;
-      padding: 12px 14px;
-      font-size: 0.86rem;
-      color: var(--text);
-      font-family: var(--sans);
-      transition: border-color 0.2s, box-shadow 0.2s;
-      outline: none;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: var(--teal2);
-      box-shadow: 0 0 0 3px rgba(26, 92, 82, 0.1);
-    }
-
-    .form-group textarea {
-      resize: vertical;
-      min-height: 90px;
-    }
-
+    .form-group textarea { resize: vertical; min-height: 90px; }
     .form-submit {
-      width: 100%;
-      background: var(--teal);
-      color: var(--cream);
-      border: none;
-      padding: 15px;
-      border-radius: 12px;
-      font-size: 0.88rem;
-      font-weight: 600;
-      font-family: var(--sans);
-      letter-spacing: 0.05em;
-      cursor: pointer;
-      transition: all 0.25s;
-      margin-top: 6px;
+      width: 100%; background: linear-gradient(135deg, var(--electric), var(--cyan));
+      color: var(--navy); border: none; padding: 15px;
+      border-radius: 6px; font-family: var(--cond); font-size: 0.9rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase; cursor: none;
+      transition: all 0.25s; margin-top: 8px;
+      box-shadow: 0 0 28px rgba(0,180,255,0.35);
     }
-
-    .form-submit:hover {
-      background: var(--teal2);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(26, 92, 82, 0.3);
+    .form-submit:hover { transform: translateY(-2px); box-shadow: 0 0 48px rgba(0,229,255,0.5); }
+    .book-contact { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
+    .book-contact-item {
+      display: flex; align-items: center; gap: 16px; padding: 18px 20px;
+      background: var(--glass); border: 1px solid var(--glass-border);
+      border-radius: 8px; text-decoration: none; transition: all 0.2s;
     }
+    .book-contact-item:hover { border-color: var(--electric); transform: translateX(4px); }
+    .bci-ico { width: 42px; height: 42px; background: rgba(0,180,255,0.12); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .book-contact-item strong { display: block; font-family: var(--cond); font-size: 0.88rem; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .book-contact-item span { font-size: 0.76rem; color: var(--muted); }
+    @media(max-width:860px) { .book-grid { grid-template-columns: 1fr; gap: 40px; } .form-row { grid-template-columns: 1fr; } }
 
-    @media (max-width: 860px) {
-      .book-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .form-row {
-        grid-template-columns: 1fr;
-      }
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--wave) 0%, var(--ocean) 50%, var(--deep) 100%);
+      padding: 80px clamp(20px,5vw,72px);
+      text-align: center; position: relative; overflow: hidden;
     }
-
-    /* ── AVAILABILITY STRIP ── */
-    .avail-strip {
-      background: var(--teal);
-      padding: 18px clamp(20px, 5vw, 80px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+    .cta-band::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, rgba(0,180,255,0.15) 0%, transparent 70%);
     }
-
-    .avail-dot2 {
-      width: 8px;
-      height: 8px;
-      background: #4ade80;
-      border-radius: 50%;
-      flex-shrink: 0;
-      animation: avpulse 2s infinite;
-    }
-
-    @keyframes avpulse {
-
-      0%,
-      100% {
-        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5)
-      }
-
-      50% {
-        box-shadow: 0 0 0 6px rgba(74, 222, 128, 0)
-      }
-    }
-
-    .avail-strip p {
-      color: rgba(237, 231, 217, 0.9);
-      font-size: 0.83rem;
-      font-weight: 400;
-    }
-
-    .avail-strip strong {
-      color: var(--gold2);
-    }
-
-    .avail-strip a {
-      background: var(--gold);
-      color: var(--white);
-      padding: 9px 22px;
-      border-radius: 30px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-      white-space: nowrap;
-    }
-
-    .avail-strip a:hover {
-      background: var(--gold2);
-    }
+    .cta-band h2 { font-family: var(--display); font-size: clamp(2.5rem,6vw,5.5rem); letter-spacing: 0.02em; color: var(--white); position: relative; z-index: 1; margin-bottom: 16px; }
+    .cta-band h2 span { color: var(--electric); }
+    .cta-band p { font-size: 1rem; color: var(--muted); max-width: 480px; margin: 0 auto 36px; position: relative; z-index: 1; font-weight: 300; }
+    .cta-band-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
 
     /* ── FOOTER ── */
     footer {
-      background: var(--teal3);
-      color: rgba(237, 231, 217, 0.7);
-      padding: 60px clamp(20px, 5vw, 80px) 30px;
+      background: rgba(5,14,26,0.99);
+      border-top: 1px solid var(--glass-border);
+      padding: 70px clamp(20px,5vw,72px) 30px;
     }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 50px; }
+    .footer-brand-name { font-family: var(--display); font-size: 2rem; letter-spacing: 0.04em; color: var(--white); }
+    .footer-brand-name span { color: var(--electric); }
+    .footer-brand-sub { font-family: var(--cond); font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 14px; }
+    .footer-brand p { font-size: 0.8rem; color: var(--muted); line-height: 1.75; max-width: 230px; }
+    .footer-col h5 { font-family: var(--cond); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--electric); margin-bottom: 18px; }
+    .footer-col a { display: block; font-size: 0.8rem; color: var(--muted); text-decoration: none; margin-bottom: 10px; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--electric); }
+    .footer-bottom { border-top: 1px solid rgba(0,229,255,0.08); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.74rem; color: var(--muted); }
+    .footer-bottom span { color: var(--electric); }
+    @media(max-width:860px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    @media(max-width:480px) { .footer-grid { grid-template-columns: 1fr; } }
 
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 48px;
-      margin-bottom: 48px;
-    }
-
-    .footer-brand .footer-logo {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      color: var(--cream);
-      font-weight: 700;
-      letter-spacing: 0.01em;
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    .footer-brand .footer-logo-sub {
-      font-size: 0.63rem;
-      color: var(--gold2);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      display: block;
-      margin-bottom: 16px;
-    }
-
-    .footer-brand p {
-      font-size: 0.8rem;
-      line-height: 1.75;
-      max-width: 240px;
-    }
-
-    .footer-col h5 {
-      font-size: 0.72rem;
-      color: var(--cream);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      margin-bottom: 18px;
-    }
-
-    .footer-col a {
-      display: block;
-      font-size: 0.8rem;
-      color: rgba(237, 231, 217, 0.6);
-      text-decoration: none;
-      margin-bottom: 10px;
-      transition: color 0.2s;
-    }
-
-    .footer-col a:hover {
-      color: var(--gold2);
-    }
-
-    .footer-bottom {
-      border-top: 1px solid rgba(245, 240, 232, 0.1);
-      padding-top: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-      font-size: 0.74rem;
-    }
-
-    @media (max-width: 860px) {
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ── BACK TO TOP ── */
+    /* Back to top */
     #btt {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      width: 44px;
-      height: 44px;
-      background: var(--teal);
-      color: var(--cream);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      text-decoration: none;
-      cursor: pointer;
-      opacity: 0;
-      pointer-events: none;
-      transition: all 0.3s;
-      z-index: 50;
-      box-shadow: 0 6px 24px rgba(26, 92, 82, 0.35);
+      position: fixed; bottom: 28px; right: 28px; z-index: 50;
+      width: 46px; height: 46px; background: linear-gradient(135deg, var(--electric), var(--cyan));
+      color: var(--navy); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; text-decoration: none; cursor: none;
+      opacity: 0; pointer-events: none; transition: all 0.3s;
+      font-family: var(--cond); font-weight: 700;
+      box-shadow: 0 0 28px rgba(0,180,255,0.4);
     }
+    #btt.show { opacity: 1; pointer-events: all; }
+    #btt:hover { transform: translateY(-3px); box-shadow: 0 0 44px rgba(0,229,255,0.6); }
 
-    #btt.show {
-      opacity: 1;
-      pointer-events: all;
+    /* Glitch text effect */
+    .glitch {
+      position: relative; display: inline-block;
     }
+    .glitch::before, .glitch::after {
+      content: attr(data-text);
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    .glitch::before {
+      color: var(--orange); clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+      transform: translateX(-2px); opacity: 0;
+      animation: glitch1 4s infinite 2s;
+    }
+    .glitch::after {
+      color: var(--electric); clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+      transform: translateX(2px); opacity: 0;
+      animation: glitch2 4s infinite 2s;
+    }
+    @keyframes glitch1 { 0%,94%,100% { opacity:0; } 95% { opacity:0.7; transform:translateX(-4px); } 97% { opacity:0; transform:translateX(0); } }
+    @keyframes glitch2 { 0%,94%,100% { opacity:0; } 96% { opacity:0.7; transform:translateX(4px); } 98% { opacity:0; transform:translateX(0); } }
 
-    #btt:hover {
-      background: var(--teal2);
-      transform: translateY(-3px);
+    /* Water shimmer line */
+    .water-line {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--electric), var(--cyan), var(--electric), transparent);
+      animation: waterShimmer 3s ease-in-out infinite;
     }
-
-    /* ── WAVE DIVIDER ── */
-    .wave-div {
-      overflow: hidden;
-      line-height: 0;
-    }
-
-    .wave-div svg {
-      display: block;
-    }
+    @keyframes waterShimmer { 0%,100% { opacity:0.5; } 50% { opacity:1; } }
   </style>
 </head>
-
 <body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
   <!-- ── NAV ── -->
   <nav id="mainNav">
     <a href="#hero" class="nav-logo">
-      <span class="nav-logo-main">Lakeside Homestay</span>
-      <span class="nav-logo-sub">Punnamada · Alappuzha</span>
+      <span class="nav-logo-main">VELOCITY<span> RIDES</span></span>
+      <span class="nav-logo-sub">Speedboat Adventures · Punnamada</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#story">About</a></li>
-      <li><a href="#rooms">Rooms</a></li>
-      <li><a href="#experience">Experiences</a></li>
-      <li><a href="#food">Food</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#adventures">Adventures</a></li>
+      <li><a href="#fleet">Our Fleet</a></li>
+      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#location">Location</a></li>
-      <li><a href="#book" class="nav-book">Book Now</a></li>
+      <li><a href="#book" class="nav-cta">⚡ Book Now</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#story" onclick="closeMenu()">About</a>
-    <a href="#rooms" onclick="closeMenu()">Rooms</a>
-    <a href="#experience" onclick="closeMenu()">Experiences</a>
-    <a href="#food" onclick="closeMenu()">Food</a>
-    <a href="#location" onclick="closeMenu()">Location</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#adventures" onclick="closeMenu()">Adventures</a>
+    <a href="#fleet" onclick="closeMenu()">Our Fleet</a>
+    <a href="#gallery" onclick="closeMenu()">Gallery</a>
     <a href="#reviews" onclick="closeMenu()">Reviews</a>
-    <a href="#book" onclick="closeMenu()" class="mob-book">📅 Book Now</a>
+    <a href="#safety" onclick="closeMenu()">Safety</a>
+    <a href="#location" onclick="closeMenu()">Location</a>
+    <a href="#book" onclick="closeMenu()" class="mob-cta">⚡ Book Now</a>
   </div>
 
-  <!-- ── HERO ── -->
+  <!-- ── HERO VIDEO ── -->
   <section id="hero">
-    <div class="hero-bg"></div>
-
-    <!-- Leaf decorations -->
-    <div class="leaf leaf-1">
-      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M100,10 C140,60 170,120 160,200 C150,250 120,280 100,290 C80,280 50,250 40,200 C30,120 60,60 100,10Z" />
-      </svg>
-    </div>
-    <div class="leaf leaf-2">
-      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M100,10 C140,60 170,120 160,200 C150,250 120,280 100,290 C80,280 50,250 40,200 C30,120 60,60 100,10Z" />
-      </svg>
+    <div class="hero-video-wrap">
+      <!-- REPLACE src with your actual speedboat video -->
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1400&q=80">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
     </div>
 
     <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Punnamada Lake · Alappuzha, Kerala
+      <div class="hero-tag">
+        <span class="tag-pulse"></span>
+        Kerala's #1 Speedboat Adventure
       </div>
 
       <h1 class="hero-h1">
-        Wake Up to the<br>
-        <em>Backwaters</em>
+        <span class="outline">FEEL THE</span>
+        <span class="accent glitch" data-text="THRILL">THRILL</span>
+        ON THE WATER
       </h1>
 
-      <p class="hero-location">📍 Punnamada · <span>Alappuzha</span> · Kerala, India</p>
+      <p class="hero-loc">⚡ Punnamada Lake · <span>Alappuzha</span> · Kerala, India</p>
 
       <p class="hero-desc">
-        Immerse yourself in the serene beauty of Punnamada Lake. Our family-run homestay offers authentic Kerala living,
-        home-cooked meals, and unforgettable backwater experiences.
+        Blast across the legendary Punnamada Lake at full throttle. Jet ski, speedboat tours, banana boat rides, 
+        and more — built for adventure seekers in the heart of Kerala's backwaters.
       </p>
 
       <div class="hero-btns">
-        <a href="#book" class="btn-gold">📅 Book Your Stay</a>
-        <a href="#story" class="btn-ghost">Explore Homestay</a>
+        <a href="#book" class="btn-primary">⚡ Book an Adventure</a>
+        <a href="#adventures" class="btn-outline">View Packages ↓</a>
       </div>
     </div>
 
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hero-stat-n">4.9</div>
-        <div class="hero-stat-l">Rating</div>
+    <div class="hero-speed">
+      <div class="speed-stat">
+        <div class="speed-num">80 <span class="unit">km/h</span></div>
+        <div class="speed-label">Max Speed</div>
       </div>
-      <div class="hero-stat">
-        <div class="hero-stat-n">500+</div>
-        <div class="hero-stat-l">Guests</div>
+      <div class="speed-stat">
+        <div class="speed-num">4.9</div>
+        <div class="speed-label">Rating</div>
       </div>
-      <div class="hero-stat">
-        <div class="hero-stat-n">5</div>
-        <div class="hero-stat-l">Lake Rooms</div>
+      <div class="speed-stat">
+        <div class="speed-num">2K+</div>
+        <div class="speed-label">Riders</div>
       </div>
     </div>
 
     <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      Scroll
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-arrow"></div>
     </div>
   </section>
 
-  <!-- ── AVAILABILITY STRIP ── -->
-  <div class="avail-strip">
-    <span class="avail-dot2"></span>
-    <p><strong>Rooms Available</strong> — Book directly with us for the best rates, no hidden fees!</p>
-    <a href="#book">Check Availability →</a>
+  <!-- ── TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>⚡ Speedboat Rides</span><span class="ticker-sep">◆</span>
+      <span>🏄 Jet Skiing</span><span class="ticker-sep">◆</span>
+      <span>🍌 Banana Boat</span><span class="ticker-sep">◆</span>
+      <span>🌅 Sunset Cruises</span><span class="ticker-sep">◆</span>
+      <span>🚤 Houseboat Tours</span><span class="ticker-sep">◆</span>
+      <span>🎣 Fishing Trips</span><span class="ticker-sep">◆</span>
+      <span>🏆 Nehru Trophy Boat Race</span><span class="ticker-sep">◆</span>
+      <span>🌿 Backwater Exploration</span><span class="ticker-sep">◆</span>
+      <span>⚡ Speedboat Rides</span><span class="ticker-sep">◆</span>
+      <span>🏄 Jet Skiing</span><span class="ticker-sep">◆</span>
+      <span>🍌 Banana Boat</span><span class="ticker-sep">◆</span>
+      <span>🌅 Sunset Cruises</span><span class="ticker-sep">◆</span>
+      <span>🚤 Houseboat Tours</span><span class="ticker-sep">◆</span>
+      <span>🎣 Fishing Trips</span><span class="ticker-sep">◆</span>
+      <span>🏆 Nehru Trophy Boat Race</span><span class="ticker-sep">◆</span>
+      <span>🌿 Backwater Exploration</span><span class="ticker-sep">◆</span>
+    </div>
   </div>
 
-  <!-- ── STORY ── -->
-  <section id="story">
-    <div class="section-inner">
-      <div class="story-grid">
-        <div class="story-imgs reveal-left">
-          <img class="story-img-main" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
-            alt="Lakeside Homestay view">
-          <img class="story-img-float" src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=400&q=80"
-            alt="Kerala backwaters">
-          <div class="story-label">
-            <span class="story-label-n">10+</span>
-            Years of Hospitality
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="sec-pad">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <img class="about-main-img" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Speedboat on Punnamada Lake">
+          <div class="about-float-vid">
+            <!-- REPLACE with your drone/action video -->
+            <video autoplay muted loop playsinline>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="about-badge-num">
+            8+<br><span class="about-badge-label">Years of Speed</span>
           </div>
         </div>
 
-        <div class="about-text reveal-right">
-          <div class="eyebrow">Our Story</div>
-          <h2 class="sec-h2">A Home by the<br><em>Punnamada Lake</em></h2>
-          <div class="story-text">
-            <p>Nestled on the banks of the famous <strong>Punnamada Lake</strong> — home to the legendary Nehru Trophy
-              Boat Race — our family homestay has been welcoming travellers from around the world for over a decade.</p>
-            <p>We believe in giving you the <strong>real Kerala experience</strong>: waking up to the sounds of birds
-              and rippling water, savouring authentic home-cooked breakfast, watching the sunrise paint the backwaters
-              gold, and ending your evening watching the stars reflect on the lake.</p>
-            <p>Our warm family will make you feel not like a guest, but like you've come home.</p>
-          </div>
+        <div class="reveal-right">
+          <div class="eyebrow">Who We Are</div>
+          <h2 class="sec-h2">Kerala's Most<br><span class="accent">THRILLING</span><br><span class="outline">WATER RIDES</span></h2>
+          <p class="sec-sub" style="margin-bottom:32px;">
+            Based right on the banks of the iconic Punnamada Lake in Alappuzha, Velocity Rides has been delivering 
+            heart-pounding water adventures since 2016. We are a licensed, safety-first adventure operator with 
+            a fleet of high-performance boats and certified instructors.
+          </p>
 
-          <div class="story-features">
-            <div class="feat-item">
-              <span class="feat-ico">🌅</span>
-              <div>
-                <strong>Lakefront Views</strong>
-                <span>Unobstructed Punnamada Lake panorama</span>
-              </div>
+          <div class="about-features">
+            <div class="af-item">
+              <span class="af-ico">⚡</span>
+              <div><strong>High Performance Fleet</strong><span>Latest speedboats & jet skis</span></div>
             </div>
-            <div class="feat-item">
-              <span class="feat-ico">🏠</span>
-              <div>
-                <strong>Family Run</strong>
-                <span>Warm, personal hospitality</span>
-              </div>
+            <div class="af-item">
+              <span class="af-ico">🛡️</span>
+              <div><strong>Safety First</strong><span>Life jackets & certified guides</span></div>
             </div>
-            <div class="feat-item">
-              <span class="feat-ico">🍛</span>
-              <div>
-                <strong>Home Cooking</strong>
-                <span>Authentic Kerala meals daily</span>
-              </div>
+            <div class="af-item">
+              <span class="af-ico">📜</span>
+              <div><strong>Licensed Operator</strong><span>Kerala Tourism approved</span></div>
             </div>
-            <div class="feat-item">
-              <span class="feat-ico">🚤</span>
-              <div>
-                <strong>Boat Rides</strong>
-                <span>Backwater shikara & canoe trips</span>
-              </div>
+            <div class="af-item">
+              <span class="af-ico">📸</span>
+              <div><strong>GoPro Action Shots</strong><span>Capture your ride in 4K</span></div>
             </div>
-            <div class="feat-item">
-              <span class="feat-ico">📡</span>
-              <div>
-                <strong>Free Wi-Fi</strong>
-                <span>Stay connected if you must</span>
-              </div>
+            <div class="af-item">
+              <span class="af-ico">🌅</span>
+              <div><strong>Punnamada Lake</strong><span>Home of the Nehru Trophy</span></div>
             </div>
-            <div class="feat-item">
-              <span class="feat-ico">🌿</span>
-              <div>
-                <strong>Eco Friendly</strong>
-                <span>Sustainable & responsible stays</span>
-              </div>
+            <div class="af-item">
+              <span class="af-ico">👨‍👩‍👧</span>
+              <div><strong>All Ages Welcome</strong><span>Family-friendly adventures</span></div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ADVENTURES / PACKAGES ── -->
+  <section id="adventures">
+    <div class="sec-pad">
+      <div class="eyebrow reveal">Adventure Packages</div>
+      <h2 class="sec-h2 reveal">CHOOSE YOUR<br><span class="accent">ADVENTURE</span></h2>
+      <p class="sec-sub reveal">Every package includes life jacket, safety briefing, and certified guide. Book directly for best price.</p>
+
+      <div class="adv-grid">
+
+        <!-- Card 1 -->
+        <div class="adv-card reveal">
+          <div class="adv-card-media">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700&q=80" alt="Speedboat Blast">
+            <span class="adv-badge">🔥 Most Popular</span>
+            <div class="adv-play"><div class="play-ico">▶</div></div>
+          </div>
+          <div class="adv-body">
+            <div class="adv-type">Thrill Ride</div>
+            <div class="adv-name">Speedboat Blast</div>
+            <p class="adv-desc">Strap in and hold tight as we take you on a full-throttle run across Punnamada Lake, reaching speeds up to 80 km/h. The ultimate adrenaline hit on the backwaters.</p>
+            <div class="adv-meta">
+              <span class="adv-tag">⏱ 30 mins</span>
+              <span class="adv-tag">👥 Up to 6</span>
+              <span class="adv-tag">🎯 All levels</span>
+            </div>
+            <div class="adv-price-row">
+              <div class="adv-price">₹1,200 <span>/ person</span></div>
+              <a href="#book" class="adv-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="adv-card reveal">
+          <div class="adv-card-media">
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=700&q=80" alt="Jet Ski">
+            <span class="adv-badge">⚡ High Octane</span>
+            <div class="adv-play"><div class="play-ico">▶</div></div>
+          </div>
+          <div class="adv-body">
+            <div class="adv-type">Jet Ski</div>
+            <div class="adv-name">Solo Jet Ski</div>
+            <p class="adv-desc">Take control of a high-powered jet ski and carve through the open lake. Instructors guide you for your first 10 minutes, then it's all yours to explore.</p>
+            <div class="adv-meta">
+              <span class="adv-tag">⏱ 20 mins</span>
+              <span class="adv-tag">👤 Solo/Duo</span>
+              <span class="adv-tag">📜 ID required</span>
+            </div>
+            <div class="adv-price-row">
+              <div class="adv-price">₹1,800 <span>/ session</span></div>
+              <a href="#book" class="adv-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="adv-card reveal">
+          <div class="adv-card-media">
+            <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=700&q=80" alt="Banana Boat">
+            <div class="adv-play"><div class="play-ico">▶</div></div>
+          </div>
+          <div class="adv-body">
+            <div class="adv-type">Group Fun</div>
+            <div class="adv-name">Banana Boat Ride</div>
+            <p class="adv-desc">Grip tight, scream loud! Our famous banana boat ride is perfect for groups and families. Get dragged across the lake, try not to fall off — and laugh when you do.</p>
+            <div class="adv-meta">
+              <span class="adv-tag">⏱ 15 mins</span>
+              <span class="adv-tag">👥 4–8 people</span>
+              <span class="adv-tag">😂 Family fave</span>
+            </div>
+            <div class="adv-price-row">
+              <div class="adv-price">₹600 <span>/ person</span></div>
+              <a href="#book" class="adv-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="adv-card reveal">
+          <div class="adv-card-media">
+            <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=700&q=80" alt="Sunset Cruise">
+            <span class="adv-badge">🌅 Romantic</span>
+            <div class="adv-play"><div class="play-ico">▶</div></div>
+          </div>
+          <div class="adv-body">
+            <div class="adv-type">Scenic Tour</div>
+            <div class="adv-name">Sunset Speed Cruise</div>
+            <p class="adv-desc">A high-speed tour of Punnamada Lake timed perfectly with the Kerala sunset. Watch the golden light paint the backwaters from the bow of our speedboat.</p>
+            <div class="adv-meta">
+              <span class="adv-tag">⏱ 1 hour</span>
+              <span class="adv-tag">👥 Up to 8</span>
+              <span class="adv-tag">📸 Photo stops</span>
+            </div>
+            <div class="adv-price-row">
+              <div class="adv-price">₹2,500 <span>/ boat</span></div>
+              <a href="#book" class="adv-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="adv-card reveal">
+          <div class="adv-card-media">
+            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=700&q=80" alt="Backwater Explorer">
+            <div class="adv-play"><div class="play-ico">▶</div></div>
+          </div>
+          <div class="adv-body">
+            <div class="adv-type">Canal Tour</div>
+            <div class="adv-name">Backwater Explorer</div>
+            <p class="adv-desc">Venture into the narrow village canals on a smaller speedboat. Discover local life, paddy fields, Chinese fishing nets, and hidden waterways most tourists never see.</p>
+            <div class="adv-meta">
+              <span class="adv-tag">⏱ 2 hours</span>
+              <span class="adv-tag">👥 Up to 6</span>
+              <span class="adv-tag">🗺 Guide included</span>
+            </div>
+            <div class="adv-price-row">
+              <div class="adv-price">₹3,200 <span>/ boat</span></div>
+              <a href="#book" class="adv-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="adv-card reveal">
+          <div class="adv-card-media">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" alt="Full Day Package">
+            <span class="adv-badge">💎 Best Value</span>
+            <div class="adv-play"><div class="play-ico">▶</div></div>
+          </div>
+          <div class="adv-body">
+            <div class="adv-type">Full Day Bundle</div>
+            <div class="adv-name">Ultimate Water Day</div>
+            <p class="adv-desc">The complete Velocity Rides experience: speedboat blast + jet ski session + banana boat + sunset cruise + backwater explorer. All in one unforgettable day on the lake.</p>
+            <div class="adv-meta">
+              <span class="adv-tag">⏱ Full day</span>
+              <span class="adv-tag">👥 Up to 8</span>
+              <span class="adv-tag">🍱 Lunch included</span>
+            </div>
+            <div class="adv-price-row">
+              <div class="adv-price">₹5,999 <span>/ person</span></div>
+              <a href="#book" class="adv-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEO SHOWCASE ── -->
+  <section id="showcase">
+    <div class="showcase-header">
+      <div class="eyebrow reveal">In Action</div>
+      <h2 class="sec-h2 reveal">WATCH THE<br><span class="accent">SPEED</span></h2>
+    </div>
+
+    <div class="showcase-video-big reveal">
+      <!-- REPLACE with your best action reel video -->
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1400&q=60">
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+      </video>
+      <div class="showcase-vid-label">
+        <strong>SPEEDBOAT BLAST — PUNNAMADA LAKE</strong>
+        <span>0–80 km/h in under 10 seconds · Kerala Backwaters</span>
+      </div>
+    </div>
+
+    <div class="water-line"></div>
+
+    <div class="showcase-mini-grid">
+      <!-- REPLACE these with your action images/videos -->
+      <div class="mini-vid-wrap">
+        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&q=80" alt="Jet ski">
+        <span class="mini-vid-label">Jet Ski</span>
+      </div>
+      <div class="mini-vid-wrap">
+        <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=500&q=80" alt="Banana boat">
+        <span class="mini-vid-label">Banana Boat</span>
+      </div>
+      <div class="mini-vid-wrap">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&q=80" alt="Speedboat">
+        <span class="mini-vid-label">Full Throttle</span>
+      </div>
+      <div class="mini-vid-wrap">
+        <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=500&q=80" alt="Sunset">
+        <span class="mini-vid-label">Sunset Cruise</span>
+      </div>
+      <div class="mini-vid-wrap">
+        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&q=80" alt="Backwaters">
+        <span class="mini-vid-label">Backwaters</span>
+      </div>
+      <div class="mini-vid-wrap">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80" alt="Lake View">
+        <span class="mini-vid-label">Lake View</span>
+      </div>
+      <div class="mini-vid-wrap">
+        <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=500&q=80" alt="Canal">
+        <span class="mini-vid-label">Canal Rides</span>
+      </div>
+      <div class="mini-vid-wrap">
+        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=500&q=80" alt="Group ride">
+        <span class="mini-vid-label">Group Tours</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FLEET ── -->
+  <section id="fleet">
+    <div class="sec-pad">
+      <div class="eyebrow reveal">Our Fleet</div>
+      <h2 class="sec-h2 reveal">BUILT FOR<br><span class="accent">SPEED</span></h2>
+      <p class="sec-sub reveal">All vessels are maintained to the highest safety standards, licensed by Kerala Maritime Board, and equipped with the latest safety gear.</p>
+
+      <div class="fleet-grid">
+
+        <div class="fleet-card reveal">
+          <div class="fleet-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700&q=80" alt="Thunderstrike">
+            <span class="fleet-badge">⚡ Flagship</span>
+          </div>
+          <div class="fleet-body">
+            <div class="fleet-name">THUNDERSTRIKE</div>
+            <p class="fleet-desc">Our most powerful vessel — a 200HP marine inboard speedboat that can reach 80 km/h. Used for our signature speedboat blast and VIP sunset experiences.</p>
+            <div class="fleet-specs">
+              <div class="fleet-spec"><div class="fleet-spec-val">200</div><div class="fleet-spec-label">HP Engine</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">80</div><div class="fleet-spec-label">km/h Max</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">8</div><div class="fleet-spec-label">Passengers</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">GoPro</div><div class="fleet-spec-label">4K Cam</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card reveal">
+          <div class="fleet-img-wrap">
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=700&q=80" alt="Jet Ski Fleet">
+            <span class="fleet-badge">🏄 Solo Ride</span>
+          </div>
+          <div class="fleet-body">
+            <div class="fleet-name">JET SKI PRO X</div>
+            <p class="fleet-desc">Our fleet of Yamaha WaveRunner jet skis — the gold standard for personal watercraft. Responsive, powerful, and perfect for riders of all experience levels.</p>
+            <div class="fleet-specs">
+              <div class="fleet-spec"><div class="fleet-spec-val">110</div><div class="fleet-spec-label">HP Engine</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">65</div><div class="fleet-spec-label">km/h Max</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">2</div><div class="fleet-spec-label">Riders</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">Yamaha</div><div class="fleet-spec-label">Brand</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card reveal">
+          <div class="fleet-img-wrap">
+            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=700&q=80" alt="Explorer Boat">
+          </div>
+          <div class="fleet-body">
+            <div class="fleet-name">WATER EXPLORER</div>
+            <p class="fleet-desc">A versatile 75HP speedboat ideal for backwater canal exploration tours. Shallow draft allows us to venture into the narrow village waterways inaccessible to larger boats.</p>
+            <div class="fleet-specs">
+              <div class="fleet-spec"><div class="fleet-spec-val">75</div><div class="fleet-spec-label">HP Engine</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">45</div><div class="fleet-spec-label">km/h Max</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">6</div><div class="fleet-spec-label">Passengers</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">Low</div><div class="fleet-spec-label">Draft</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card reveal">
+          <div class="fleet-img-wrap">
+            <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=700&q=80" alt="Party Raft">
+            <span class="fleet-badge">🍌 Group Fun</span>
+          </div>
+          <div class="fleet-body">
+            <div class="fleet-name">PARTY BANANA</div>
+            <p class="fleet-desc">Our oversized banana boat can hold up to 10 riders for maximum chaos. Towed at 40 km/h, it twists, turns, and dunks everyone into the lake — guaranteed laughter.</p>
+            <div class="fleet-specs">
+              <div class="fleet-spec"><div class="fleet-spec-val">40</div><div class="fleet-spec-label">km/h Tow</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">10</div><div class="fleet-spec-label">Riders</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">100%</div><div class="fleet-spec-label">Wipeout</div></div>
+              <div class="fleet-spec"><div class="fleet-spec-val">😂</div><div class="fleet-spec-label">Fun Rated</div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE STRIP (video bg) ── -->
+  <section id="experience-strip">
+    <div class="exp-bg-vid">
+      <!-- REPLACE with aerial/drone footage of Punnamada -->
+      <video autoplay muted loop playsinline>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="exp-strip-inner">
+      <div class="eyebrow reveal">The Full Experience</div>
+      <h2 class="sec-h2 reveal">MORE THAN<br><span class="accent">JUST SPEED</span></h2>
+      <p class="sec-sub reveal">We curate the complete water adventure experience at Punnamada. Here's everything that awaits you.</p>
+
+      <div class="exp-cards-grid">
+        <div class="exp-card reveal">
+          <span class="exp-icon">⚡</span>
+          <h4>Full Throttle Rides</h4>
+          <p>Nothing beats the feeling of water spray and wind at 80 km/h on the open lake.</p>
+        </div>
+        <div class="exp-card reveal">
+          <span class="exp-icon">🏆</span>
+          <h4>Nehru Trophy Site</h4>
+          <p>Ride the very waters of the legendary snake boat race — feel the history beneath you.</p>
+        </div>
+        <div class="exp-card reveal">
+          <span class="exp-icon">📸</span>
+          <h4>GoPro 4K Footage</h4>
+          <p>Every ride is filmed. Take home a 4K action video of your adventure.</p>
+        </div>
+        <div class="exp-card reveal">
+          <span class="exp-icon">🌅</span>
+          <h4>Sunset on the Lake</h4>
+          <p>Time your ride for golden hour. Punnamada sunsets are simply extraordinary.</p>
+        </div>
+        <div class="exp-card reveal">
+          <span class="exp-icon">👨‍🏫</span>
+          <h4>Expert Instructors</h4>
+          <p>Certified, experienced, and passionate guides who put your safety first, always.</p>
+        </div>
+        <div class="exp-card reveal">
+          <span class="exp-icon">🎉</span>
+          <h4>Group Events</h4>
+          <p>Corporate outings, bachelor parties, family reunions — we handle the whole experience.</p>
+        </div>
+        <div class="exp-card reveal">
+          <span class="exp-icon">🚁</span>
+          <h4>Drone Photography</h4>
+          <p>Add a drone photo/video session to your package for epic aerial shots of your ride.</p>
+        </div>
+        <div class="exp-card reveal">
+          <span class="exp-icon">🍛</span>
+          <h4>Kerala Meal Break</h4>
+          <p>Recharge between rides with a traditional Kerala fish curry meal from our lakeside partner.</p>
         </div>
       </div>
     </div>
@@ -1962,269 +1298,61 @@
 
   <!-- ── GALLERY ── -->
   <section id="gallery">
-    <div class="section-inner">
-      <div class="gallery-head reveal">
-        <div class="eyebrow">Gallery</div>
-        <h2 class="sec-h2">Life at the <em>Lakeside</em></h2>
-        <p class="sec-sub">A glimpse of what awaits you — where the water meets the sky.</p>
+    <div class="sec-pad">
+      <div class="gal-head">
+        <div class="eyebrow reveal">Gallery</div>
+        <h2 class="sec-h2 reveal">LIVE THE<br><span class="accent">MOMENT</span></h2>
+        <p class="sec-sub reveal" style="margin:0 auto;text-align:center;">Photos and videos from real rides on Punnamada Lake. Replace with your own media!</p>
       </div>
 
       <div class="masonry">
         <div class="masonry-item reveal">
-          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80" alt="Backwaters Kerala">
-          <span class="masonry-caption">Punnamada Lake at dawn</span>
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Speedboat">
+          <span class="masonry-cap">Full Throttle</span>
         </div>
         <div class="masonry-item reveal">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Lake view">
-          <span class="masonry-caption">Morning mist on the water</span>
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80" alt="Punnamada">
+          <span class="masonry-cap">Punnamada Lake</span>
         </div>
         <div class="masonry-item reveal">
-          <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=600&q=80" alt="Houseboat">
-          <span class="masonry-caption">Traditional Kerala houseboat</span>
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Jet ski">
+          <span class="masonry-cap">Jet Ski Session</span>
         </div>
         <div class="masonry-item reveal">
-          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="Room">
-          <span class="masonry-caption">Lake-view room</span>
-        </div>
-        <div class="masonry-item reveal">
-          <img src="https://images.unsplash.com/photo-1547481887-a26e2cacb5b2?w=600&q=80" alt="Kerala food">
-          <span class="masonry-caption">Kerala sadya feast</span>
-        </div>
-        <div class="masonry-item reveal">
-          <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80" alt="Garden">
-          <span class="masonry-caption">Tropical garden terrace</span>
+          <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&q=80" alt="Banana boat">
+          <span class="masonry-cap">Banana Boat Chaos</span>
         </div>
         <div class="masonry-item reveal">
           <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=600&q=80" alt="Sunset">
-          <span class="masonry-caption">Golden hour on the lake</span>
+          <span class="masonry-cap">Golden Hour</span>
         </div>
         <div class="masonry-item reveal">
-          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Canoe">
-          <span class="masonry-caption">Shikara boat experience</span>
+          <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=600&q=80" alt="Canal">
+          <span class="masonry-cap">Backwater Canals</span>
         </div>
         <div class="masonry-item reveal">
-          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" alt="Bedroom">
-          <span class="masonry-caption">Cosy bedroom retreat</span>
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Lake">
+          <span class="masonry-cap">Morning Mist</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── ROOMS ── -->
-  <section id="rooms">
-    <div class="section-inner">
-      <div class="eyebrow reveal">Our Rooms</div>
-      <h2 class="sec-h2 reveal">Sleep With the Lake<br><em>as Your Neighbour</em></h2>
-      <p class="sec-sub reveal">Every room is designed to keep you close to nature — with private balconies, clean
-        linens, and the sound of water to lull you to sleep.</p>
-
-      <div class="rooms-grid">
-
-        <div class="room-card reveal">
-          <div class="room-img-wrap">
-            <img class="room-img" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80"
-              alt="Lake View Suite">
-            <span class="room-badge">Best Seller</span>
-          </div>
-          <div class="room-body">
-            <div class="room-type">Premium Room</div>
-            <div class="room-name">Lake View Suite</div>
-            <p class="room-desc">Our finest room with floor-to-ceiling views of Punnamada Lake. A private balcony,
-              king-size bed, and ensuite bathroom make this the ultimate backwater retreat.</p>
-            <div class="room-amenities">
-              <span class="amenity"><span class="amenity-ico">🛏️</span> King Bed</span>
-              <span class="amenity"><span class="amenity-ico">🌊</span> Lake View</span>
-              <span class="amenity"><span class="amenity-ico">🛁</span> Ensuite</span>
-              <span class="amenity"><span class="amenity-ico">📺</span> Smart TV</span>
-              <span class="amenity"><span class="amenity-ico">❄️</span> AC</span>
-            </div>
-            <div class="room-price">
-              <div class="price-val">₹4,500 <span>/ night</span></div>
-              <a href="#book" class="room-btn">Book Now</a>
-            </div>
-          </div>
+        <div class="masonry-item reveal">
+          <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80" alt="Adventure">
+          <span class="masonry-cap">Group Adventure</span>
         </div>
-
-        <div class="room-card reveal">
-          <div class="room-img-wrap">
-            <img class="room-img" src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80"
-              alt="Garden Room">
-          </div>
-          <div class="room-body">
-            <div class="room-type">Standard Room</div>
-            <div class="room-name">Garden Retreat</div>
-            <p class="room-desc">A comfortable room opening to our lush tropical garden. Cool breezes, birdsong
-              mornings, and a warm attached bathroom. Perfect for a peaceful nature escape.</p>
-            <div class="room-amenities">
-              <span class="amenity"><span class="amenity-ico">🛏️</span> Double Bed</span>
-              <span class="amenity"><span class="amenity-ico">🌿</span> Garden View</span>
-              <span class="amenity"><span class="amenity-ico">🚿</span> Attached Bath</span>
-              <span class="amenity"><span class="amenity-ico">❄️</span> AC</span>
-              <span class="amenity"><span class="amenity-ico">📡</span> Wi-Fi</span>
-            </div>
-            <div class="room-price">
-              <div class="price-val">₹2,800 <span>/ night</span></div>
-              <a href="#book" class="room-btn">Book Now</a>
-            </div>
-          </div>
+        <div class="masonry-item reveal">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="Riders">
+          <span class="masonry-cap">Happy Riders</span>
         </div>
-
-        <div class="room-card reveal">
-          <div class="room-img-wrap">
-            <img class="room-img" src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80"
-              alt="Family Room">
-            <span class="room-badge">Family Pick</span>
-          </div>
-          <div class="room-body">
-            <div class="room-type">Family Room</div>
-            <div class="room-name">Family Lake Villa</div>
-            <p class="room-desc">Spacious room for families with two bedrooms, a shared living area, and a semi-private
-              terrace overlooking the lake. Memories made here last a lifetime.</p>
-            <div class="room-amenities">
-              <span class="amenity"><span class="amenity-ico">🛏️</span> 2 Bedrooms</span>
-              <span class="amenity"><span class="amenity-ico">🌊</span> Lake View</span>
-              <span class="amenity"><span class="amenity-ico">🛁</span> 2 Bathrooms</span>
-              <span class="amenity"><span class="amenity-ico">🪑</span> Living Area</span>
-              <span class="amenity"><span class="amenity-ico">❄️</span> AC</span>
-            </div>
-            <div class="room-price">
-              <div class="price-val">₹6,500 <span>/ night</span></div>
-              <a href="#book" class="room-btn">Book Now</a>
-            </div>
-          </div>
+        <div class="masonry-item reveal">
+          <img src="https://images.unsplash.com/photo-1547481887-a26e2cacb5b2?w=600&q=80" alt="Kerala">
+          <span class="masonry-cap">Kerala Spirit</span>
         </div>
-
-        <div class="room-card reveal">
-          <div class="room-img-wrap">
-            <img class="room-img" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80"
-              alt="Backwater Cottage">
-          </div>
-          <div class="room-body">
-            <div class="room-type">Heritage Stay</div>
-            <div class="room-name">Backwater Cottage</div>
-            <p class="room-desc">A standalone traditional Kerala cottage with bamboo furniture, thatched accents, and
-              your very own private sit-out facing the water. The most immersive experience we offer.</p>
-            <div class="room-amenities">
-              <span class="amenity"><span class="amenity-ico">🏡</span> Private Cottage</span>
-              <span class="amenity"><span class="amenity-ico">🌊</span> Waterfront</span>
-              <span class="amenity"><span class="amenity-ico">🛁</span> Ensuite</span>
-              <span class="amenity"><span class="amenity-ico">🪑</span> Private Sit-Out</span>
-            </div>
-            <div class="room-price">
-              <div class="price-val">₹5,200 <span>/ night</span></div>
-              <a href="#book" class="room-btn">Book Now</a>
-            </div>
-          </div>
+        <div class="masonry-item reveal">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" alt="Leisure">
+          <span class="masonry-cap">After the Ride</span>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── EXPERIENCES ── -->
-  <section id="experience">
-    <div class="section-inner exp-inner">
-      <div class="eyebrow reveal">Experiences</div>
-      <h2 class="sec-h2 reveal">More Than a Stay —<br><em>A Kerala Journey</em></h2>
-      <p class="sec-sub reveal" style="color:rgba(237,231,217,0.7);margin-bottom:52px;">
-        We arrange everything so you can simply be present and soak in the magic of Alappuzha.
-      </p>
-
-      <div class="exp-grid">
-        <div class="exp-card reveal">
-          <span class="exp-icon">🚤</span>
-          <h4>Shikara Boat Rides</h4>
-          <p>Drift through the serene backwater canals at sunrise or sunset on a traditional shikara. Watch local life
-            unfold on the water.</p>
-        </div>
-        <div class="exp-card reveal">
-          <span class="exp-icon">🏆</span>
-          <h4>Nehru Trophy Boat Race</h4>
-          <p>Witness the iconic Nehru Trophy Boat Race on Punnamada Lake — one of India's most thrilling sporting
-            spectacles, right at your doorstep.</p>
-        </div>
-        <div class="exp-card reveal">
-          <span class="exp-icon">🐟</span>
-          <h4>Local Fishing</h4>
-          <p>Join our host family for an early morning fishing trip on the lake using traditional Kerala nets and
-            methods.</p>
-        </div>
-        <div class="exp-card reveal">
-          <span class="exp-icon">🌿</span>
-          <h4>Ayurveda Wellness</h4>
-          <p>We arrange authentic Ayurvedic massage and wellness sessions with certified practitioners to rejuvenate
-            body and mind.</p>
-        </div>
-        <div class="exp-card reveal">
-          <span class="exp-icon">🌾</span>
-          <h4>Village Walk</h4>
-          <p>Explore the backwater villages, paddy fields, coconut groves, and local life on a guided morning walk with
-            our family.</p>
-        </div>
-        <div class="exp-card reveal">
-          <span class="exp-icon">🍳</span>
-          <h4>Kerala Cooking Class</h4>
-          <p>Learn to cook authentic Kerala dishes — fish curry, appam, karimeen pollichathu — with our hosts in a
-            hands-on kitchen session.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── FOOD ── -->
-  <section id="food">
-    <div class="section-inner food-inner">
-      <div class="food-grid">
-        <div class="food-imgs reveal-left">
-          <div class="food-img food-img-1">
-            <img src="https://images.unsplash.com/photo-1547481887-a26e2cacb5b2?w=500&q=80" alt="Kerala food">
-          </div>
-          <div class="food-img food-img-2">
-            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80" alt="Kerala breakfast">
-          </div>
-          <div class="food-img food-img-2">
-            <img src="https://images.unsplash.com/photo-1630409346824-4f0e7b080087?w=400&q=80" alt="Fish curry">
-          </div>
-        </div>
-
-        <div class="reveal-right">
-          <div class="eyebrow">Food & Meals</div>
-          <h2 class="sec-h2" style="color:var(--cream);">Taste the Soul<br>of <em>Kerala</em></h2>
-          <p
-            style="color:rgba(237,231,217,0.75);font-size:0.93rem;line-height:1.85;font-weight:300;margin-bottom:28px;">
-            Every meal at Lakeside Homestay is cooked fresh by our family using locally sourced ingredients — spices
-            from our garden, fish from the lake, and vegetables from nearby farms.
-          </p>
-          <div class="food-items">
-            <div class="food-item">
-              <span class="food-ico">☀️</span>
-              <div>
-                <strong>Kerala Breakfast</strong>
-                <span>Puttu & kadala, appam & stew, idiyappam, fresh coconut chutney</span>
-              </div>
-            </div>
-            <div class="food-item">
-              <span class="food-ico">🍛</span>
-              <div>
-                <strong>Lunch & Dinner</strong>
-                <span>Fish curry, karimeen pollichathu, avial, sambar, rice & Kerala sides</span>
-              </div>
-            </div>
-            <div class="food-item">
-              <span class="food-ico">🥥</span>
-              <div>
-                <strong>Fresh Coconut Water</strong>
-                <span>Straight from our garden — the perfect backwater refresher</span>
-              </div>
-            </div>
-            <div class="food-item">
-              <span class="food-ico">🎉</span>
-              <div>
-                <strong>Special Sadya on Request</strong>
-                <span>Full 24-item Kerala feast served on banana leaf</span>
-              </div>
-            </div>
-          </div>
+        <div class="masonry-item reveal">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Evening">
+          <span class="masonry-cap">Lake at Dusk</span>
         </div>
       </div>
     </div>
@@ -2232,148 +1360,148 @@
 
   <!-- ── REVIEWS ── -->
   <section id="reviews">
-    <div class="section-inner">
-      <div class="reviews-head">
-        <div class="eyebrow reveal">Guest Reviews</div>
-        <h2 class="sec-h2 reveal">What Our Guests Say</h2>
-        <p class="sec-sub reveal">Over 500 families from across the world have stayed with us — here's what some of them
-          felt.</p>
+    <div class="sec-pad">
+      <div class="rev-head">
+        <div class="eyebrow reveal">Reviews</div>
+        <h2 class="sec-h2 reveal">RIDERS'<br><span class="accent">STORIES</span></h2>
+        <p class="sec-sub reveal">2,000+ riders. Countless smiles. Hear what they had to say.</p>
       </div>
 
-      <div class="reviews-grid">
-
-        <div class="review-card reveal">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">One of the most beautiful places we've ever stayed. Waking up to the lake view,
-            home-cooked Kerala breakfast, the shikara ride at sunset — absolute magic. The family treated us like their
-            own.</p>
+      <div class="rev-grid">
+        <div class="rev-card reveal">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">The speedboat blast was absolutely insane — I was screaming the entire time! The instructor was professional and made us feel completely safe while going at full speed. Best ₹1,200 I've ever spent in Kerala!</p>
           <div class="reviewer">
-            <div class="reviewer-init">PR</div>
-            <div>
-              <strong>Priya Ramesh</strong>
-              <span>Bangalore · Stayed 3 nights</span>
-            </div>
+            <div class="rev-init">AK</div>
+            <div><strong>Arjun Kumar</strong><span>Bangalore · Speedboat Blast</span></div>
           </div>
         </div>
 
-        <div class="review-card reveal">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">Lakeside Homestay is everything Alappuzha should be. The cottage we stayed in was
-            traditional, clean, and utterly peaceful. The food was the highlight — best fish curry I've ever had in my
-            life!</p>
+        <div class="rev-card reveal">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">Did the full day package with my family — 6 of us, ages 12 to 55. Everyone had the time of their lives. The banana boat was pure comedy gold. The sunset cruise at the end was magical. 10/10 recommend!</p>
           <div class="reviewer">
-            <div class="reviewer-init">AK</div>
-            <div>
-              <strong>Arjun K.</strong>
-              <span>Chennai · Stayed 2 nights</span>
-            </div>
+            <div class="rev-init">PR</div>
+            <div><strong>Priya Rajan</strong><span>Chennai · Full Day Package</span></div>
           </div>
         </div>
 
-        <div class="review-card reveal">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">We came for the Nehru Trophy boat race and stayed for the experience. The hosts
-            organised everything — boat rides, village walk, cooking class. Felt like we truly lived in Kerala for a few
-            days.</p>
+        <div class="rev-card reveal">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">Came to Alleppey expecting houseboats, left obsessed with speedboats! The jet ski session on Punnamada Lake was incredible. GoPro footage they gave us is already getting thousands of views on Instagram.</p>
           <div class="reviewer">
-            <div class="reviewer-init">SM</div>
-            <div>
-              <strong>Sarah & Mike</strong>
-              <span>UK · Stayed 4 nights</span>
-            </div>
+            <div class="rev-init">SM</div>
+            <div><strong>Sam & Meera</strong><span>Delhi · Jet Ski + Sunset</span></div>
           </div>
         </div>
 
-        <div class="review-card reveal">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">Brought my parents here for a family holiday. The family-room with the lake terrace was
-            perfect. Parents were overwhelmed with how welcoming the hosts were. Will 100% return!</p>
+        <div class="rev-card reveal">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">Organized a corporate team outing for 30 people. Velocity Rides managed everything flawlessly — multiple boats, the banana boat, photography, and even arranged a Kerala lunch. Professional and so much fun!</p>
           <div class="reviewer">
-            <div class="reviewer-init">VS</div>
-            <div>
-              <strong>Vikram S.</strong>
-              <span>Mumbai · Stayed 3 nights</span>
-            </div>
+            <div class="rev-init">VN</div>
+            <div><strong>Vikram N.</strong><span>Mumbai · Corporate Event</span></div>
           </div>
         </div>
 
-        <div class="review-card reveal">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">Just wow. I came solo to disconnect and ended up discovering the real India — the
-            canals, the coconut trees, the simple life. The host family makes you feel like you belong here. Simply
-            unforgettable.</p>
+        <div class="rev-card reveal">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">I'm from the UK and have tried watersports worldwide. This was genuinely one of the best experiences I've had. The combination of the lake location, friendly team, and pure speed is unbeatable. Will return!</p>
           <div class="reviewer">
-            <div class="reviewer-init">LF</div>
-            <div>
-              <strong>Lucas F.</strong>
-              <span>France · Stayed 5 nights</span>
-            </div>
+            <div class="rev-init">JW</div>
+            <div><strong>James W.</strong><span>UK · Backwater Explorer</span></div>
           </div>
         </div>
 
-        <div class="review-card reveal">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">Stayed during our honeymoon. The Lake View Suite was incredibly romantic — the sunrise
-            over the lake, breakfast on the balcony, the serenity all around. Couldn't have asked for a better start to
-            our life together.</p>
+        <div class="rev-card reveal">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">Booked the sunset cruise for our anniversary. Absolutely stunning — cruising at speed with the sunset turning the water gold, just the two of us. The team even surprised us with a little decoration on the boat. Perfect!</p>
           <div class="reviewer">
-            <div class="reviewer-init">NR</div>
-            <div>
-              <strong>Neha & Rahul</strong>
-              <span>Delhi · Honeymoon Stay</span>
-            </div>
+            <div class="rev-init">NR</div>
+            <div><strong>Nisha & Rohit</strong><span>Hyderabad · Sunset Cruise</span></div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
+  <!-- ── SAFETY ── -->
+  <section id="safety">
+    <div class="sec-pad">
+      <div class="safety-grid">
+        <div class="reveal-left">
+          <div class="eyebrow">Safety First</div>
+          <h2 class="sec-h2">YOUR SAFETY IS<br><span class="accent">NON-NEGOTIABLE</span></h2>
+          <p class="sec-sub" style="margin-bottom:0;">Speed is thrilling. Safety makes it possible. Every ride at Velocity Rides follows strict maritime safety protocols.</p>
+          <div class="safety-list">
+            <div class="safety-item">
+              <span class="safety-ico">🦺</span>
+              <div><strong>Life Jackets Always</strong><span>CE-certified life jackets for every rider, every ride — no exceptions.</span></div>
+            </div>
+            <div class="safety-item">
+              <span class="safety-ico">👨‍✈️</span>
+              <div><strong>Certified Operators</strong><span>All our boat operators are Kerala Maritime Board certified with 5+ years of experience.</span></div>
+            </div>
+            <div class="safety-item">
+              <span class="safety-ico">📋</span>
+              <div><strong>Safety Briefing</strong><span>Every guest receives a thorough safety briefing before any ride begins.</span></div>
+            </div>
+            <div class="safety-item">
+              <span class="safety-ico">🔧</span>
+              <div><strong>Daily Maintenance</strong><span>All vessels undergo daily inspection and maintenance by certified marine engineers.</span></div>
+            </div>
+            <div class="safety-item">
+              <span class="safety-ico">📞</span>
+              <div><strong>Emergency Protocols</strong><span>Direct line to Alappuzha Coast Guard. First aid trained crew on every boat.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="safety-img-wrap reveal-right">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Safety on board">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <div class="cta-band">
+    <h2>READY TO <span>RIDE?</span></h2>
+    <p>Don't just see Punnamada Lake — feel it at full speed. Book your adventure now.</p>
+    <div class="cta-band-btns">
+      <a href="#book" class="btn-primary">⚡ Book Now</a>
+      <a href="https://wa.me/919876543210" class="btn-outline" target="_blank">💬 WhatsApp Us</a>
+    </div>
+  </div>
+
   <!-- ── LOCATION ── -->
   <section id="location">
-    <div class="section-inner">
+    <div class="sec-pad">
       <div class="loc-grid">
         <div class="reveal-left">
           <div class="eyebrow">Find Us</div>
-          <h2 class="sec-h2">At the Heart of<br><em>Punnamada Lake</em></h2>
-          <p class="sec-sub">We are located at Punnamada, Alappuzha — a 10-minute drive from Alappuzha town centre and 2
-            minutes walk from the Nehru Trophy Boat Race finish point.</p>
+          <h2 class="sec-h2">RIGHT ON<br><span class="accent">PUNNAMADA</span></h2>
+          <p class="sec-sub">We operate daily from the Punnamada Lake jetty in Alappuzha — the same iconic water body that hosts the Nehru Trophy Boat Race every year.</p>
 
           <div class="loc-cards">
             <div class="loc-card">
               <div class="loc-ico">📍</div>
-              <div>
-                <strong>Address</strong>
-                <span>Punnamada, Alappuzha (Alleppey), Kerala – 688013</span>
-              </div>
+              <div><strong>Our Location</strong><span>Punnamada, Alappuzha (Alleppey), Kerala – 688013</span></div>
             </div>
             <div class="loc-card">
               <div class="loc-ico">✈️</div>
-              <div>
-                <strong>From Cochin Airport</strong>
-                <span>~85 km · 1.5 hrs by taxi or AC bus</span>
-              </div>
+              <div><strong>From Cochin Airport</strong><span>~85 km · 1.5 hrs by taxi or AC bus</span></div>
             </div>
             <div class="loc-card">
               <div class="loc-ico">🚉</div>
-              <div>
-                <strong>From Alappuzha Railway Station</strong>
-                <span>~4 km · 10 mins by auto-rickshaw or taxi</span>
-              </div>
+              <div><strong>From Alappuzha Railway Station</strong><span>~4 km · 10 mins by auto or taxi</span></div>
             </div>
             <div class="loc-card">
-              <div class="loc-ico">🚤</div>
-              <div>
-                <strong>Houseboat Junction</strong>
-                <span>5 min walk to the main houseboat jetty</span>
-              </div>
+              <div class="loc-ico">⏰</div>
+              <div><strong>Operating Hours</strong><span>7:00 AM – 6:30 PM · Every day</span></div>
             </div>
-            <a href="https://wa.me/919876543210" class="loc-card" target="_blank" style="text-decoration:none;">
+            <a href="https://wa.me/919876543210" class="loc-card" target="_blank">
               <div class="loc-ico">📞</div>
-              <div>
-                <strong>Need a Pickup?</strong>
-                <span>WhatsApp us — we arrange airport & station pickup!</span>
-              </div>
+              <div><strong>Need a Transfer?</strong><span>WhatsApp us — we'll arrange your pickup!</span></div>
             </a>
           </div>
         </div>
@@ -2381,9 +1509,8 @@
         <div class="loc-map reveal-right">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79261.63938821523!2d76.27566842027171!3d9.549791243603089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0885adc190d321%3A0x37a7b9217eca459!2sLAKE%20SIDE%20HOMESTAY!5e0!3m2!1sen!2sin!4v1777568601244!5m2!1sen!2sin"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Punnamada Lake, Alappuzha">
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Punnamada Lake, Alappuzha">
           </iframe>
         </div>
       </div>
@@ -2391,51 +1518,36 @@
   </section>
 
   <!-- ── BOOKING ── -->
-  <section id="book" style="background:var(--cream);">
-    <div class="book-inner">
+  <section id="book">
+    <div class="sec-pad">
       <div class="book-grid">
-        <div class="book-left reveal-left">
-          <div class="eyebrow">Book Your Stay</div>
-          <h2 class="sec-h2">Reserve Your<br><em>Backwater Escape</em></h2>
-          <p class="sec-sub">Book directly with us for the best price — no booking fee, no hidden charges. We'll
-            personally confirm your reservation within a few hours.</p>
-
-          <div class="contact-items">
-            <a href="https://wa.me/919876543210" class="contact-item" target="_blank">
-              <div class="ci-ico">📱</div>
-              <div>
-                <strong>WhatsApp Us</strong>
-                <span>+91 98765 43210 — fastest response!</span>
-              </div>
+        <div class="reveal-left">
+          <div class="eyebrow">Book Your Ride</div>
+          <h2 class="sec-h2">RESERVE YOUR<br><span class="accent">ADVENTURE</span></h2>
+          <p class="sec-sub">Book directly with us — no middlemen, no extra charges. We confirm within hours and can accommodate last-minute bookings with a WhatsApp.</p>
+          <div class="book-contact">
+            <a href="https://wa.me/919876543210" class="book-contact-item" target="_blank">
+              <div class="bci-ico">📱</div>
+              <div><strong>WhatsApp Us — Fastest!</strong><span>+91 98765 43210 · Usually replies in minutes</span></div>
             </a>
-            <a href="tel:+919876543210" class="contact-item">
-              <div class="ci-ico">📞</div>
-              <div>
-                <strong>Call Us</strong>
-                <span>+91 98765 43210 · Available 7am–9pm</span>
-              </div>
+            <a href="tel:+919876543210" class="book-contact-item">
+              <div class="bci-ico">📞</div>
+              <div><strong>Call Us</strong><span>+91 98765 43210 · 7 AM – 7 PM daily</span></div>
             </a>
-            <a href="mailto:stay@lakesidehomestay.in" class="contact-item">
-              <div class="ci-ico">✉️</div>
-              <div>
-                <strong>Email Us</strong>
-                <span>stay@lakesidehomestay.in</span>
-              </div>
+            <a href="mailto:rides@velocityrides.in" class="book-contact-item">
+              <div class="bci-ico">✉️</div>
+              <div><strong>Email</strong><span>rides@velocityrides.in</span></div>
             </a>
-            <div class="contact-item" style="cursor:default;">
-              <div class="ci-ico">🕐</div>
-              <div>
-                <strong>Check-in / Check-out</strong>
-                <span>Check-in: 12:00 PM · Check-out: 11:00 AM</span>
-              </div>
+            <div class="book-contact-item" style="cursor:default;">
+              <div class="bci-ico">⚡</div>
+              <div><strong>Operating Hours</strong><span>7:00 AM – 6:30 PM · 365 days a year</span></div>
             </div>
           </div>
         </div>
 
         <div class="book-form reveal-right">
-          <div class="form-title">Make a Booking Enquiry</div>
-          <p class="form-sub">Fill this form and we'll get back to you within a few hours.</p>
-
+          <div class="form-title">BOOK NOW</div>
+          <p class="form-sub">Fill the form and we'll confirm your slot within a few hours.</p>
           <div class="form-row">
             <div class="form-group">
               <label>First Name</label>
@@ -2447,52 +1559,59 @@
             </div>
           </div>
           <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="you@example.com">
-          </div>
-          <div class="form-group">
             <label>Phone / WhatsApp</label>
             <input type="tel" placeholder="+91 98765 43210">
           </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="you@email.com">
+          </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Check-in Date</label>
+              <label>Date</label>
               <input type="date">
             </div>
             <div class="form-group">
-              <label>Check-out Date</label>
-              <input type="date">
+              <label>Preferred Time</label>
+              <select>
+                <option>7:00 AM – 9:00 AM</option>
+                <option>9:00 AM – 11:00 AM</option>
+                <option>11:00 AM – 1:00 PM</option>
+                <option>2:00 PM – 4:00 PM</option>
+                <option>4:00 PM – 6:30 PM (Sunset)</option>
+              </select>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Room Type</label>
+              <label>Adventure Package</label>
               <select>
-                <option value="">Select a room...</option>
-                <option>Lake View Suite – ₹4,500/night</option>
-                <option>Garden Retreat – ₹2,800/night</option>
-                <option>Family Lake Villa – ₹6,500/night</option>
-                <option>Backwater Cottage – ₹5,200/night</option>
+                <option value="">Choose a package...</option>
+                <option>Speedboat Blast – ₹1,200/person</option>
+                <option>Solo Jet Ski – ₹1,800/session</option>
+                <option>Banana Boat – ₹600/person</option>
+                <option>Sunset Speed Cruise – ₹2,500/boat</option>
+                <option>Backwater Explorer – ₹3,200/boat</option>
+                <option>Ultimate Water Day – ₹5,999/person</option>
               </select>
             </div>
             <div class="form-group">
-              <label>Number of Guests</label>
+              <label>No. of People</label>
               <select>
-                <option>1 Guest</option>
-                <option>2 Guests</option>
-                <option>3 Guests</option>
-                <option>4 Guests</option>
-                <option>5+ Guests</option>
+                <option>1–2 people</option>
+                <option>3–4 people</option>
+                <option>5–8 people</option>
+                <option>9–15 people</option>
+                <option>16+ (Group booking)</option>
               </select>
             </div>
           </div>
           <div class="form-group">
-            <label>Special Requests (optional)</label>
-            <textarea placeholder="Early check-in, airport pickup, dietary needs, honeymoon setup..."></textarea>
+            <label>Special Requests</label>
+            <textarea placeholder="GoPro footage, corporate event, anniversary setup, drone photography..."></textarea>
           </div>
-          <button class="form-submit"
-            onclick="alert('Thank you! We will contact you shortly to confirm your booking. 🙏')">
-            📅 Send Booking Enquiry
+          <button class="form-submit" onclick="alert('🚀 Booking request received! Our team will WhatsApp you within a few hours. Get ready to ride!')">
+            ⚡ CONFIRM BOOKING REQUEST
           </button>
         </div>
       </div>
@@ -2503,92 +1622,99 @@
   <footer>
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="footer-logo">Lakeside Homestay</span>
-        <span class="footer-logo-sub">Punnamada · Alappuzha</span>
-        <p>A family-run haven on the banks of Punnamada Lake, offering authentic Kerala backwater experiences, warm
-          hospitality, and home-cooked meals.</p>
+        <span class="footer-brand-name">VELOCITY<span> RIDES</span></span>
+        <span class="footer-brand-sub">Speedboat Adventures · Punnamada Lake</span>
+        <p>Kerala's most exhilarating water adventure experience, operating daily on the legendary Punnamada Lake in the heart of Alappuzha's backwaters.</p>
       </div>
-
       <div class="footer-col">
         <h5>Navigate</h5>
-        <a href="#story">About Us</a>
+        <a href="#about">About Us</a>
+        <a href="#adventures">Packages</a>
+        <a href="#fleet">Our Fleet</a>
         <a href="#gallery">Gallery</a>
-        <a href="#rooms">Our Rooms</a>
-        <a href="#experience">Experiences</a>
-        <a href="#food">Food & Meals</a>
         <a href="#reviews">Reviews</a>
+        <a href="#safety">Safety</a>
         <a href="#location">Location</a>
       </div>
-
       <div class="footer-col">
-        <h5>Our Rooms</h5>
-        <a href="#rooms">Lake View Suite</a>
-        <a href="#rooms">Garden Retreat</a>
-        <a href="#rooms">Family Lake Villa</a>
-        <a href="#rooms">Backwater Cottage</a>
+        <h5>Adventures</h5>
+        <a href="#adventures">Speedboat Blast</a>
+        <a href="#adventures">Solo Jet Ski</a>
+        <a href="#adventures">Banana Boat</a>
+        <a href="#adventures">Sunset Cruise</a>
+        <a href="#adventures">Backwater Explorer</a>
+        <a href="#adventures">Ultimate Water Day</a>
       </div>
-
       <div class="footer-col">
         <h5>Contact</h5>
         <a href="tel:+919876543210">📞 +91 98765 43210</a>
         <a href="https://wa.me/919876543210">💬 WhatsApp</a>
-        <a href="mailto:stay@lakesidehomestay.in">✉️ stay@lakesidehomestay.in</a>
+        <a href="mailto:rides@velocityrides.in">✉️ rides@velocityrides.in</a>
         <a href="#location">📍 Punnamada, Alappuzha</a>
+        <a href="#book">⏰ Open 7AM – 6:30PM</a>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <span>© 2026 Lakeside Homestay, Punnamada, Alappuzha, Kerala. All rights reserved.</span>
-      <span style="color:var(--gold2);">Made with 🌿 in Kerala</span>
+      <span>© 2026 Velocity Rides, Punnamada, Alappuzha, Kerala. All rights reserved.</span>
+      <span>Made with <span>⚡</span> in Kerala</span>
     </div>
   </footer>
 
   <a href="#hero" id="btt">↑</a>
 
   <script>
+    // Custom Cursor
+    const cursor = document.getElementById('cursor');
+    const cursorRing = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      setTimeout(() => {
+        cursorRing.style.left = e.clientX + 'px';
+        cursorRing.style.top = e.clientY + 'px';
+      }, 60);
+    });
+    document.querySelectorAll('a, button, .adv-card, .fleet-card, .rev-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width = '20px'; cursor.style.height = '20px';
+        cursorRing.style.width = '50px'; cursorRing.style.height = '50px';
+        cursorRing.style.borderColor = 'var(--orange)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '12px'; cursor.style.height = '12px';
+        cursorRing.style.width = '36px'; cursorRing.style.height = '36px';
+        cursorRing.style.borderColor = 'var(--electric)';
+      });
+    });
+
     // Nav scroll
     const nav = document.getElementById('mainNav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 80);
-    }, { passive: true });
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 80), { passive: true });
 
     // Hamburger
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     let menuOpen = false;
-
-    function openMenu() {
-      menuOpen = true;
-      hamburger.classList.add('active');
-      mobileMenu.classList.add('open');
-    }
-    function closeMenu() {
-      menuOpen = false;
-      hamburger.classList.remove('active');
-      mobileMenu.classList.remove('open');
-    }
-
-    hamburger.addEventListener('click', e => {
-      e.stopPropagation();
-      menuOpen ? closeMenu() : openMenu();
-    });
-    document.addEventListener('click', e => {
-      if (menuOpen && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) closeMenu();
-    });
+    function openMenu() { menuOpen = true; hamburger.classList.add('active'); mobileMenu.classList.add('open'); }
+    function closeMenu() { menuOpen = false; hamburger.classList.remove('active'); mobileMenu.classList.remove('open'); }
+    hamburger.addEventListener('click', e => { e.stopPropagation(); menuOpen ? closeMenu() : openMenu(); });
+    document.addEventListener('click', e => { if (menuOpen && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) closeMenu(); });
     window.addEventListener('scroll', () => { if (menuOpen) closeMenu(); }, { passive: true });
 
     // Reveal on scroll
-    const revealObs = new IntersectionObserver(entries => {
+    const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
     }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObs.observe(el));
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => obs.observe(el));
 
     // Back to top
     const btt = document.getElementById('btt');
-    window.addEventListener('scroll', () => {
-      btt.classList.toggle('show', window.scrollY > 400);
-    }, { passive: true });
+    window.addEventListener('scroll', () => btt.classList.toggle('show', scrollY > 400), { passive: true });
+
+    // Stagger reveal delays for grids
+    document.querySelectorAll('.adv-grid .adv-card, .fleet-grid .fleet-card, .rev-grid .rev-card, .exp-cards-grid .exp-card').forEach((el, i) => {
+      el.style.transitionDelay = (i % 4) * 0.1 + 's';
+    });
   </script>
 </body>
-
 </html>
