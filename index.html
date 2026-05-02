@@ -2,71 +2,47 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>N FLY Speedboat Alappuzha | Punnamada Lake Boat Ride Kerala</title>
-
   <meta name="description"
-    content="Experience N FLY — Alappuzha’s most iconic speedboat on Punnamada Lake. Book high-speed rides, sunset cruises, and private boat tours in Kerala backwaters. Direct booking, no commission.">
-
+    content="Experience N FLY — Alappuzha's most iconic speedboat on Punnamada Lake. Book high-speed rides, sunset cruises, and private boat tours in Kerala backwaters. Direct booking, no commission.">
   <meta name="keywords"
     content="N Fly speedboat, Alappuzha speedboat, Punnamada lake boat ride, Alleppey boating, Kerala backwater speedboat, speed boat Kerala, boat ride Alappuzha, sunset cruise Alleppey">
-
   <meta name="author" content="N FLY Speedboat">
-
   <meta name="robots" content="index, follow">
-
   <link rel="canonical" href="https://nfly.starkcabs.in/">
-
-  <!-- Favicon -->
   <link rel="icon" href="assets/img/logo.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/logo.png">
-
-  <!-- Theme Color (Mobile Browser UI) -->
   <meta name="theme-color" content="#00ff9c">
-
-  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
   <meta property="og:title" content="N FLY Speedboat | Punnamada Lake, Alappuzha">
   <meta property="og:description"
-    content="Ride Kerala’s most iconic speedboat. Book thrilling rides, sunset cruises & private tours on Punnamada Lake.">
+    content="Ride Kerala's most iconic speedboat. Book thrilling rides, sunset cruises & private tours on Punnamada Lake.">
   <meta property="og:image" content="https://nfly.starkcabs.in/assets/img/logo.png">
   <meta property="og:url" content="https://nfly.starkcabs.in/">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="N FLY Speedboat Alappuzha">
   <meta name="twitter:description" content="High-speed boat rides & sunset cruises in Kerala backwaters.">
   <meta name="twitter:image" content="https://nfly.starkcabs.in/assets/img/logo.png">
-
-  <!-- Local Business Schema (VERY IMPORTANT FOR GOOGLE) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TouristAttraction",
-  "name": "N FLY Speedboat",
-  "description": "Premium speedboat rides on Punnamada Lake, Alappuzha, Kerala.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Alappuzha",
-    "addressRegion": "Kerala",
-    "addressCountry": "India"
-  },
-  "areaServed": "Kerala",
-  "url": "https://nfly.starkcabs.in",
-  "image": "https://nfly.starkcabs.in/assets/img/logo.png"
-}
-</script>
-
-  <!-- Google Fonts (Optimized Loading) -->
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "N FLY Speedboat",
+    "description": "Premium speedboat rides on Punnamada Lake, Alappuzha, Kerala.",
+    "address": {"@type": "PostalAddress","addressLocality": "Alappuzha","addressRegion": "Kerala","addressCountry": "India"},
+    "areaServed": "Kerala",
+    "url": "https://nfly.starkcabs.in",
+    "image": "https://nfly.starkcabs.in/assets/img/logo.png"
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
     rel="stylesheet">
+
   <style>
     *,
     *::before,
@@ -82,35 +58,26 @@
       --obsidian3: #111a14;
       --charcoal: #1a2420;
       --charcoal2: #243028;
-
       --emerald: #1a7a45;
       --emerald2: #22a05a;
       --emerald3: #2bc56e;
       --emerald-dim: rgba(34, 160, 90, 0.15);
       --emerald-glow: rgba(43, 197, 110, 0.08);
-
       --gold: #c9a84c;
       --gold2: #e4c06e;
       --gold3: #f2d689;
       --gold-dim: rgba(201, 168, 76, 0.15);
-
       --white: #ffffff;
       --cream: #f5f0e8;
-      --cream2: #ede7d9;
-      --parchment: #e8e0ce;
-
       --text-primary: rgba(255, 255, 255, 0.95);
       --text-secondary: rgba(255, 255, 255, 0.5);
       --text-muted: rgba(255, 255, 255, 0.28);
-
       --glass: rgba(255, 255, 255, 0.04);
       --glass-border: rgba(255, 255, 255, 0.08);
       --glass-hover: rgba(255, 255, 255, 0.07);
-
       --serif: 'Cormorant Garamond', Georgia, serif;
       --sans: 'Syne', sans-serif;
       --mono: 'JetBrains Mono', monospace;
-
       --r: 14px;
       --r-lg: 22px;
       --r-xl: 32px;
@@ -130,8 +97,16 @@
       cursor: none;
     }
 
+    /* ── iOS: make sure videos never block layout ── */
+    video {
+      -webkit-playsinline: true;
+      display: block;
+      /* Prevent iOS from showing default video controls overlay */
+      -webkit-appearance: none;
+    }
+
     /* ────────────────────────────────────
-       CUSTOM CURSOR
+       CUSTOM CURSOR (desktop only)
     ──────────────────────────────────── */
     .cursor-dot {
       position: fixed;
@@ -164,9 +139,18 @@
       border-color: var(--gold);
     }
 
-    /* ────────────────────────────────────
-       SCROLLBAR
-    ──────────────────────────────────── */
+    @media (hover: none) {
+
+      .cursor-dot,
+      .cursor-ring {
+        display: none;
+      }
+
+      body {
+        cursor: auto;
+      }
+    }
+
     ::-webkit-scrollbar {
       width: 2px;
     }
@@ -312,7 +296,7 @@
       gap: 6px;
       width: 44px;
       height: 44px;
-      cursor: none;
+      cursor: pointer;
       align-items: center;
       justify-content: center;
       border: 1px solid var(--glass-border);
@@ -400,9 +384,6 @@
       }
     }
 
-    /* ────────────────────────────────────
-       NOISE TEXTURE OVERLAY
-    ──────────────────────────────────── */
     .noise {
       position: fixed;
       inset: 0;
@@ -411,6 +392,58 @@
       opacity: 0.025;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
       background-size: 200px 200px;
+    }
+
+    /* ────────────────────────────────────
+       VIDEO WRAPPER — the key iOS fix
+       All videos wrapped in .vid-wrap get
+       these properties to ensure iOS compat
+    ──────────────────────────────────── */
+    .vid-wrap {
+      position: relative;
+      overflow: hidden;
+      /* iOS needs a background color behind video while loading */
+      background: var(--charcoal);
+    }
+
+    /* The poster image shows while video is loading / paused on iOS */
+    .vid-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      /* Critical iOS Safari flags */
+      -webkit-playsinline: true;
+      /* Prevent black flash on iOS */
+      background: transparent;
+    }
+
+    /* Loading shimmer shown before video plays */
+    .vid-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.04) 50%, transparent 100%);
+      background-size: 200% 100%;
+      animation: shimmer 2s infinite;
+      pointer-events: none;
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+
+    .vid-wrap.loaded::before {
+      opacity: 0;
+    }
+
+    @keyframes shimmer {
+      from {
+        background-position: -200% 0;
+      }
+
+      to {
+        background-position: 200% 0;
+      }
     }
 
     /* ────────────────────────────────────
@@ -432,11 +465,16 @@
       z-index: 0;
     }
 
-    .hero-bg video {
+    /* Hero video fills full background */
+    .hero-bg .vid-wrap {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-bg .vid-wrap video {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
 
     .hero-bg::before {
@@ -449,7 +487,6 @@
         linear-gradient(105deg, rgba(8, 12, 10, 0.35) 0%, transparent 60%);
     }
 
-    /* Ambient emerald glow */
     .hero-glow {
       position: absolute;
       z-index: 2;
@@ -624,7 +661,6 @@
       background: var(--glass-hover);
     }
 
-    /* Hero right — stats panel */
     .hero-stats {
       display: flex;
       flex-direction: column;
@@ -677,7 +713,6 @@
       color: var(--gold2);
     }
 
-    /* Scroll indicator */
     .hero-scroll {
       position: absolute;
       bottom: 40px;
@@ -741,7 +776,7 @@
     }
 
     /* ────────────────────────────────────
-       MARQUEE STRIP
+       MARQUEE
     ──────────────────────────────────── */
     .marquee-strip {
       border-top: 1px solid var(--glass-border);
@@ -864,10 +899,6 @@
       color: var(--gold2);
     }
 
-    .display .dim {
-      color: var(--text-muted);
-    }
-
     .body-text {
       font-family: var(--serif);
       font-size: 1.05rem;
@@ -877,7 +908,6 @@
       max-width: 500px;
     }
 
-    /* Reveal animations */
     .rv {
       opacity: 0;
       transform: translateY(30px);
@@ -912,7 +942,7 @@
     }
 
     /* ────────────────────────────────────
-       ABOUT / THE BOAT
+       ABOUT
     ──────────────────────────────────── */
     #about {
       background: var(--obsidian2);
@@ -929,6 +959,8 @@
       position: relative;
     }
 
+    /* About main media — video or image */
+    .about-media .vid-wrap,
     .about-img-main {
       width: 100%;
       aspect-ratio: 3/4;
@@ -936,6 +968,10 @@
       display: block;
       border-radius: 4px;
       border: 1px solid var(--glass-border);
+    }
+
+    .about-media .vid-wrap video {
+      aspect-ratio: 3/4;
     }
 
     .about-float {
@@ -980,7 +1016,6 @@
       margin-top: 5px;
     }
 
-    /* Green accent line on media */
     .about-media::before {
       content: '';
       position: absolute;
@@ -1066,7 +1101,7 @@
     }
 
     /* ────────────────────────────────────
-       FULL-WIDTH VIDEO INTERLUDE
+       VIDEO INTERLUDE (full-width strip)
     ──────────────────────────────────── */
     .vid-interlude {
       position: relative;
@@ -1075,8 +1110,22 @@
       overflow: hidden;
     }
 
-    .vid-interlude video,
-    .vid-interlude img {
+    .vid-interlude .vid-wrap {
+      width: 100%;
+      height: 100%;
+    }
+
+    .vid-interlude .vid-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Fallback image shown on iOS when video hasn't loaded yet */
+    .vid-interlude .vid-fallback {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -1086,6 +1135,7 @@
     .vid-interlude-overlay {
       position: absolute;
       inset: 0;
+      z-index: 2;
       background: linear-gradient(to right, rgba(8, 12, 10, 0.85) 0%, rgba(8, 12, 10, 0.2) 50%, rgba(8, 12, 10, 0.1) 100%),
         linear-gradient(to top, rgba(8, 12, 10, 0.6) 0%, transparent 40%);
       display: flex;
@@ -1094,11 +1144,11 @@
     }
 
     .interlude-text .display {
-      font-size: clamp(3rem, 8vw, 7.5rem);
+      font-size: clamp(3.5rem, 10vw, 8rem);
     }
 
     /* ────────────────────────────────────
-       RIDES / PACKAGES
+       RIDES
     ──────────────────────────────────── */
     #rides {
       background: var(--obsidian);
@@ -1130,7 +1180,6 @@
 
     .ride-card {
       background: var(--obsidian2);
-      padding: 0;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
       overflow: hidden;
@@ -1322,9 +1371,8 @@
     /* ────────────────────────────────────
        CINEMATIC / MEDIA GRID
     ──────────────────────────────────── */
-    #cinematic {
+    #videos {
       background: var(--obsidian);
-      padding-top: 0;
     }
 
     .cine-sec-pad {
@@ -1345,19 +1393,32 @@
       background: var(--charcoal);
     }
 
+    /* cine-cell can hold either img or vid-wrap */
     .cine-cell img,
-    .cine-cell video {
+    .cine-cell .vid-wrap {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      display: block;
       transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cine-cell img {
+      display: block;
+      object-fit: cover;
+      filter: brightness(0.65) saturate(0.8);
+    }
+
+    .cine-cell .vid-wrap video {
+      object-fit: cover;
       filter: brightness(0.65) saturate(0.8);
     }
 
     .cine-cell:hover img,
-    .cine-cell:hover video {
+    .cine-cell:hover .vid-wrap {
       transform: scale(1.04);
+    }
+
+    .cine-cell:hover img,
+    .cine-cell:hover .vid-wrap video {
       filter: brightness(0.75) saturate(1);
     }
 
@@ -1366,6 +1427,7 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(135deg, rgba(8, 12, 10, 0.3), transparent);
+      pointer-events: none;
     }
 
     .cine-label-over {
@@ -1385,29 +1447,20 @@
     }
 
     .cine-tall img,
-    .cine-tall video {
+    .cine-tall .vid-wrap,
+    .cine-tall .vid-wrap video {
       aspect-ratio: 2/3;
       height: 100%;
     }
 
     .cine-wide img,
-    .cine-wide video {
+    .cine-wide .vid-wrap video {
       aspect-ratio: 16/7;
     }
 
     .cine-sq img,
-    .cine-sq video {
+    .cine-sq .vid-wrap video {
       aspect-ratio: 16/9;
-    }
-
-    .cine-caption-cell {
-      grid-column: 1 / 3;
-      padding: 44px 0 0;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
     }
 
     @media(max-width:860px) {
@@ -1420,13 +1473,10 @@
       }
 
       .cine-tall img,
-      .cine-tall video {
+      .cine-tall .vid-wrap,
+      .cine-tall .vid-wrap video {
         aspect-ratio: 4/3;
         height: auto;
-      }
-
-      .cine-caption-cell {
-        grid-column: 1;
       }
     }
 
@@ -1472,7 +1522,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
-      margin-top: 0;
     }
 
     .why-card {
@@ -1548,9 +1597,9 @@
     }
 
     /* ────────────────────────────────────
-       GALLERY / MASONRY
+       GALLERY
     ──────────────────────────────────── */
-    #gallery {
+    #images {
       background: var(--obsidian);
     }
 
@@ -1646,10 +1695,6 @@
     .reviews-header {
       text-align: center;
       margin-bottom: 70px;
-    }
-
-    .reviews-header .display {
-      margin: 0 auto;
     }
 
     .rev-rating-badge {
@@ -1945,7 +1990,7 @@
     }
 
     /* ────────────────────────────────────
-       BIG CALLOUT
+       CALLOUT
     ──────────────────────────────────── */
     .callout {
       background: var(--obsidian);
@@ -2000,7 +2045,7 @@
     }
 
     /* ────────────────────────────────────
-       BOOKING SECTION
+       BOOKING
     ──────────────────────────────────── */
     #book {
       background: var(--obsidian2);
@@ -2066,7 +2111,6 @@
       color: var(--text-muted);
     }
 
-    /* Form */
     .book-form {
       background: var(--obsidian3);
       border: 1px solid var(--glass-border);
@@ -2163,7 +2207,7 @@
       font-weight: 500;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      cursor: none;
+      cursor: pointer;
       transition: all 0.3s;
       margin-top: 8px;
       border-radius: 3px;
@@ -2321,7 +2365,7 @@
     }
 
     /* ────────────────────────────────────
-       FLOATING BUTTONS
+       FIXED BUTTONS
     ──────────────────────────────────── */
     #btt {
       position: fixed;
@@ -2393,9 +2437,6 @@
       }
     }
 
-    /* ────────────────────────────────────
-       DIVIDERS
-    ──────────────────────────────────── */
     .rule {
       border: none;
       height: 1px;
@@ -2404,18 +2445,51 @@
     }
   </style>
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const videos = document.querySelectorAll(".lazy-video");
+
+    const loadVideo = (video) => {
+      const source = video.querySelector("source");
+      if (!source.src) {
+        source.src = source.dataset.src;
+        video.load();
+      }
+    };
+
+    const playVideo = (video) => {
+      video.muted = true;
+      video.play().catch(() => {
+        document.addEventListener("touchstart", () => {
+          video.play();
+        }, { once: true });
+      });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+
+        if (entry.isIntersecting) {
+          loadVideo(video);
+          playVideo(video);
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    videos.forEach(video => observer.observe(video));
+
+  });
+</script>
 
 <body>
-
-  <!-- Custom cursor -->
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-ring" id="cursorRing"></div>
-  <!-- Noise overlay -->
   <div class="noise"></div>
 
-  <!-- ══════════════════════════════════
-       NAVIGATION
-  ══════════════════════════════════ -->
   <nav id="mainNav">
     <a href="#hero" class="nav-logo">
       <span class="logo-mark">N <em>FLY</em></span>
@@ -2452,11 +2526,13 @@
   ══════════════════════════════════ -->
   <section id="hero">
     <div class="hero-bg">
-      <video autoplay muted loop playsinline
-        poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
-        <source src="https://res.cloudinary.com/starkcab/video/upload/v1777700908/Nfly/IMG_3592_1_o2lloj.mp4"
-          type="video/mp4">
-      </video>
+      <div class="vid-wrap" id="heroVid">
+        <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+          poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+          <source data-src="https://res.cloudinary.com/starkcab/video/upload/v1777700908/Nfly/IMG_3592_1_o2lloj.mp4"
+            type="video/mp4">
+        </video>
+      </div>
     </div>
     <div class="hero-glow hero-glow-1"></div>
     <div class="hero-glow hero-glow-2"></div>
@@ -2473,14 +2549,13 @@
         </h1>
         <p class="hero-descriptor">
           One boat. One legend. Unlimited thrills on <strong>Kerala's most iconic lake.</strong>
-          Operated personally by its proud owner — since 2016.
+          Operated personally by its proud owner — since 2024.
         </p>
         <div class="hero-actions">
           <a href="#book" class="btn-primary"><span>Reserve Your Ride</span></a>
           <a href="#rides" class="btn-secondary">View Experiences ↓</a>
         </div>
       </div>
-
       <div class="hero-stats">
         <div class="hstat">
           <div class="hstat-n"><span class="hstat-accent">4.9</span>★</div>
@@ -2500,16 +2575,13 @@
         </div>
       </div>
     </div>
-
     <div class="hero-scroll">
       <div class="scroll-line"></div>
       <span class="scroll-text">Scroll</span>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════
-       MARQUEE
-  ══════════════════════════════════ -->
+  <!-- MARQUEE -->
   <div class="marquee-strip">
     <div class="marquee-track">
       <span class="marquee-item">N FLY Speedboat</span><span class="marquee-item marquee-dot">◆</span>
@@ -2539,79 +2611,49 @@
   <section id="about" class="sec">
     <div class="sec-pad">
       <div class="about-wrap">
-
         <div class="about-media rv-l">
-
-          <!-- ✅ MAIN VIDEO -->
-          <video class="about-img-main" autoplay muted loop playsinline>
-            <source src="https://res.cloudinary.com/starkcab/video/upload/v1777697243/Nfly/20241222_121907_rwwpkw.mp4"
-              type="video/mp4">
-          </video>
-
-          <!-- ✅ FLOATING IMAGE -->
+          <!-- About video — lazy loaded, plays only when visible -->
+          <div class="vid-wrap">
+            <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+              <source
+                data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697243/Nfly/20241222_121907_rwwpkw.mp4"
+                type="video/mp4">
+            </video>
+          </div>
           <img class="about-float"
             src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg"
-            alt="Punnamada Lake">
-
-          <!-- BADGE -->
+            alt="Punnamada Lake" loading="lazy">
           <div class="about-badge">
             <div class="badge-title">N FLY</div>
             <div class="badge-sub">Est. 2024 · Punnamada</div>
           </div>
-
         </div>
 
         <div class="rv-r">
           <div class="label">Meet the Boat</div>
-          <h2 class="display">
-            The One &amp;<br>
-            Only <em>N FLY</em>
-          </h2>
-          <div class="body-text" style="margin-top:24px; margin-bottom:36px;">
-            <p style="margin-bottom:16px;">
-              N FLY is not just a speedboat — it is Punnamada Lake's most recognisable vessel,
-              dressed in its signature green livery, personally owned and operated by its proud captain.
-            </p>
-            <p>
-              When you book N FLY, you speak directly with the owner. No agents, no commissions,
-              no hidden fees. Pure Kerala hospitality on the water.
-            </p>
+          <h2 class="display">The One &amp;<br>Only <em>N FLY</em></h2>
+          <div class="body-text" style="margin-top:24px;margin-bottom:36px;">
+            <p style="margin-bottom:16px;">N FLY is not just a speedboat — it is Punnamada Lake's most recognisable
+              vessel, dressed in its signature green livery, personally owned and operated by its proud captain.</p>
+            <p>When you book N FLY, you speak directly with the owner. No agents, no commissions, no hidden fees. Pure
+              Kerala hospitality on the water.</p>
           </div>
-
           <div class="about-feats">
-            <div class="af">
-              <span class="af-icon">🚤</span>
-              <strong>Signature Green Boat</strong>
-              <span>Instantly recognisable</span>
-            </div>
-            <div class="af">
-              <span class="af-icon">👤</span>
-              <strong>Owner Operated</strong>
-              <span>Book direct, pay less</span>
-            </div>
-            <div class="af">
-              <span class="af-icon">🏆</span>
-              <strong>Nehru Trophy Waters</strong>
-              <span>Legendary Punnamada Lake</span>
-            </div>
-            <div class="af">
-              <span class="af-icon">📸</span>
-              <strong>GoPro 4K Footage</strong>
-              <span>Your ride, captured</span>
-            </div>
-            <div class="af">
-              <span class="af-icon">🛡️</span>
-              <strong>Safety Certified</strong>
-              <span>Kerala Maritime Board</span>
-            </div>
-            <div class="af">
-              <span class="af-icon">⏰</span>
-              <strong>7 Days a Week</strong>
-              <span>7 AM to 6:30 PM</span>
+            <div class="af"><span class="af-icon">🚤</span><strong>Signature Green Boat</strong><span>Instantly
+                recognisable</span></div>
+            <div class="af"><span class="af-icon">👤</span><strong>Owner Operated</strong><span>Book direct, pay
+                less</span></div>
+            <div class="af"><span class="af-icon">🏆</span><strong>Nehru Trophy Waters</strong><span>Legendary Punnamada
+                Lake</span></div>
+            <div class="af"><span class="af-icon">📸</span><strong>GoPro 4K Footage</strong><span>Your ride,
+                captured</span></div>
+            <div class="af"><span class="af-icon">🛡️</span><strong>Safety Certified</strong><span>Kerala Maritime
+                Board</span></div>
+            <div class="af"><span class="af-icon">⏰</span><strong>7 Days a Week</strong><span>7 AM to 6:30 PM</span>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -2622,26 +2664,30 @@
        VIDEO INTERLUDE
   ══════════════════════════════════ -->
   <div class="vid-interlude">
-    <video autoplay muted loop playsinline
-      poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
-      <source src="https://res.cloudinary.com/starkcab/video/upload/v1777697240/Nfly/20250831_165006_ttpxxr.mp4"
-        type="video/mp4">
-    </video>
+    <!-- Poster image as fallback (always visible until video loads) -->
+    <img class="vid-fallback"
+      src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg"
+      alt="N FLY on Punnamada Lake">
+    <div class="vid-wrap">
+      <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+        poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+        <source data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697240/Nfly/20250831_165006_ttpxxr.mp4"
+          type="video/mp4">
+      </video>
+    </div>
     <div class="vid-interlude-overlay">
       <div class="interlude-text rv">
         <div class="label" style="color:rgba(255,255,255,0.35);">
           <span style="background:rgba(255,255,255,0.2);width:28px;height:1px;display:block;"></span>
           Experience
         </div>
-        <div class="display" style="font-size:clamp(3.5rem,10vw,8rem);">
-          Feel the<br><em>Rush</em>
-        </div>
+        <div class="display" style="font-size:clamp(3.5rem,10vw,8rem);">Feel the<br><em>Rush</em></div>
       </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════
-       RIDES / PACKAGES
+       RIDES
   ══════════════════════════════════ -->
   <section id="rides" class="sec">
     <div class="sec-pad">
@@ -2650,163 +2696,111 @@
           <div class="label rv">Experiences</div>
           <h2 class="display rv">Choose Your<br><em>Adventure</em></h2>
         </div>
-        <p class="body-text rv" style="max-width:340px;text-align:right;">
-          All rides include life jackets, safety briefing &amp; an experienced guide.
-          Book directly for the lowest rate — no booking fees, ever.
-        </p>
+        <p class="body-text rv" style="max-width:340px;text-align:right;">All rides include life jackets, safety
+          briefing &amp; an experienced guide. Book directly for the lowest rate — no booking fees, ever.</p>
       </div>
-
       <div class="rides-grid rv">
-
         <div class="ride-card">
-          <div class="ride-img">
-            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700&q=80" alt="Speed Blast">
-            <span class="ride-badge-type">Thrill Ride</span>
-            <span class="ride-popular">Most Booked</span>
-          </div>
+          <div class="ride-img"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700&q=80"
+              alt="Speed Blast" loading="lazy"><span class="ride-badge-type">Thrill Ride</span><span
+              class="ride-popular">Most Booked</span></div>
           <div class="ride-body">
             <div class="ride-name">N FLY Speed Blast</div>
             <p class="ride-desc">Strap in and hold tight as N FLY tears across Punnamada Lake at full speed. Feel the
               roar of the engine, the spray, the wind.</p>
-            <div class="ride-meta-row">
-              <span class="rmeta">⏱ 30 min</span>
-              <span class="rmeta">👥 Up to 6</span>
-              <span class="rmeta">🎯 All levels</span>
-            </div>
+            <div class="ride-meta-row"><span class="rmeta">⏱ 30 min</span><span class="rmeta">👥 Up to 6</span><span
+                class="rmeta">🎯 All levels</span></div>
             <div class="ride-footer">
               <div>
-                <div class="ride-price">₹1,200</div>
-                <span class="ride-price-note">per person</span>
-              </div>
-              <a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
+                <div class="ride-price">₹1,200</div><span class="ride-price-note">per person</span>
+              </div><a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
             </div>
           </div>
         </div>
-
         <div class="ride-card">
-          <div class="ride-img">
-            <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=700&q=80" alt="Sunset Cruise">
-            <span class="ride-badge-type">Scenic Tour</span>
-            <span class="ride-popular">Most Romantic</span>
-          </div>
+          <div class="ride-img"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=700&q=80"
+              alt="Sunset Cruise" loading="lazy"><span class="ride-badge-type">Scenic Tour</span><span
+              class="ride-popular">Most Romantic</span></div>
           <div class="ride-body">
             <div class="ride-name">Sunset Speed Cruise</div>
             <p class="ride-desc">The golden hour on Punnamada Lake is something you will never forget. We time your ride
               perfectly with the Kerala sunset.</p>
-            <div class="ride-meta-row">
-              <span class="rmeta">⏱ 1 hour</span>
-              <span class="rmeta">👥 Up to 8</span>
-              <span class="rmeta">📸 Photo stops</span>
-            </div>
+            <div class="ride-meta-row"><span class="rmeta">⏱ 1 hour</span><span class="rmeta">👥 Up to 8</span><span
+                class="rmeta">📸 Photo stops</span></div>
             <div class="ride-footer">
               <div>
-                <div class="ride-price">₹2,800</div>
-                <span class="ride-price-note">per ride</span>
-              </div>
-              <a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
+                <div class="ride-price">₹2,800</div><span class="ride-price-note">per ride</span>
+              </div><a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
             </div>
           </div>
         </div>
-
         <div class="ride-card">
-          <div class="ride-img">
-            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=700&q=80" alt="Backwater Explorer">
-            <span class="ride-badge-type">Canal Discovery</span>
-          </div>
+          <div class="ride-img"><img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=700&q=80"
+              alt="Backwater Explorer" loading="lazy"><span class="ride-badge-type">Canal Discovery</span></div>
           <div class="ride-body">
             <div class="ride-name">Backwater Explorer</div>
             <p class="ride-desc">Venture beyond the open lake into the secret canals and village waterways of Alappuzha.
               Discover the real Kerala.</p>
-            <div class="ride-meta-row">
-              <span class="rmeta">⏱ 2 hours</span>
-              <span class="rmeta">👥 Up to 8</span>
-              <span class="rmeta">🗺 Guided</span>
-            </div>
+            <div class="ride-meta-row"><span class="rmeta">⏱ 2 hours</span><span class="rmeta">👥 Up to 8</span><span
+                class="rmeta">🗺 Guided</span></div>
             <div class="ride-footer">
               <div>
-                <div class="ride-price">₹3,500</div>
-                <span class="ride-price-note">per ride</span>
-              </div>
-              <a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
+                <div class="ride-price">₹3,500</div><span class="ride-price-note">per ride</span>
+              </div><a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
             </div>
           </div>
         </div>
-
         <div class="ride-card">
-          <div class="ride-img">
-            <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=700&q=80" alt="Family Ride">
-            <span class="ride-badge-type">Family</span>
-            <span class="ride-popular">Family Fave</span>
-          </div>
+          <div class="ride-img"><img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=700&q=80"
+              alt="Family Ride" loading="lazy"><span class="ride-badge-type">Family</span><span
+              class="ride-popular">Family Fave</span></div>
           <div class="ride-body">
             <div class="ride-name">Family Lake Ride</div>
             <p class="ride-desc">Designed for families with children. Calmer speeds, guaranteed smiles, and memories the
               whole family will cherish forever.</p>
-            <div class="ride-meta-row">
-              <span class="rmeta">⏱ 45 min</span>
-              <span class="rmeta">👥 Up to 8</span>
-              <span class="rmeta">👶 Kids welcome</span>
-            </div>
+            <div class="ride-meta-row"><span class="rmeta">⏱ 45 min</span><span class="rmeta">👥 Up to 8</span><span
+                class="rmeta">👶 Kids welcome</span></div>
             <div class="ride-footer">
               <div>
-                <div class="ride-price">₹800</div>
-                <span class="ride-price-note">per person</span>
-              </div>
-              <a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
+                <div class="ride-price">₹800</div><span class="ride-price-note">per person</span>
+              </div><a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
             </div>
           </div>
         </div>
-
         <div class="ride-card">
-          <div class="ride-img">
-            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" alt="Private Charter">
-            <span class="ride-badge-type">Private Charter</span>
-            <span class="ride-popular">Premium</span>
-          </div>
+          <div class="ride-img"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80"
+              alt="Private Charter" loading="lazy"><span class="ride-badge-type">Private Charter</span><span
+              class="ride-popular">Premium</span></div>
           <div class="ride-body">
             <div class="ride-name">N FLY Private Charter</div>
             <p class="ride-desc">The whole boat, entirely yours. Perfect for anniversaries, proposals, photoshoots, or
               corporate events on Punnamada.</p>
-            <div class="ride-meta-row">
-              <span class="rmeta">⏱ 3 hours</span>
-              <span class="rmeta">👥 Your group</span>
-              <span class="rmeta">🥂 Exclusive</span>
-            </div>
+            <div class="ride-meta-row"><span class="rmeta">⏱ 3 hours</span><span class="rmeta">👥 Your group</span><span
+                class="rmeta">🥂 Exclusive</span></div>
             <div class="ride-footer">
               <div>
-                <div class="ride-price">₹6,000</div>
-                <span class="ride-price-note">full charter</span>
-              </div>
-              <a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
+                <div class="ride-price">₹6,000</div><span class="ride-price-note">full charter</span>
+              </div><a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
             </div>
           </div>
         </div>
-
         <div class="ride-card">
-          <div class="ride-img">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80" alt="Full Day">
-            <span class="ride-badge-type">All Inclusive</span>
-            <span class="ride-popular">Best Value</span>
-          </div>
+          <div class="ride-img"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80"
+              alt="Full Day" loading="lazy"><span class="ride-badge-type">All Inclusive</span><span
+              class="ride-popular">Best Value</span></div>
           <div class="ride-body">
             <div class="ride-name">Full Day on N FLY</div>
             <p class="ride-desc">The complete experience — speed blast, backwater explorer, sunset cruise, and a Kerala
               lunch break. The full story of N FLY.</p>
-            <div class="ride-meta-row">
-              <span class="rmeta">⏱ Full day</span>
-              <span class="rmeta">🍛 Lunch incl.</span>
-              <span class="rmeta">📸 GoPro video</span>
-            </div>
+            <div class="ride-meta-row"><span class="rmeta">⏱ Full day</span><span class="rmeta">🍛 Lunch
+                incl.</span><span class="rmeta">📸 GoPro video</span></div>
             <div class="ride-footer">
               <div>
-                <div class="ride-price">₹4,999</div>
-                <span class="ride-price-note">per person</span>
-              </div>
-              <a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
+                <div class="ride-price">₹4,999</div><span class="ride-price-note">per person</span>
+              </div><a href="#book" class="ride-cta">Reserve <span class="ride-cta-arrow">→</span></a>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -2816,51 +2810,87 @@
   ══════════════════════════════════ -->
   <section id="videos" class="sec">
     <div class="cine-sec-pad">
-
       <div style="padding:80px 0 50px;" class="rv">
         <div class="label gold-label">In the Frame</div>
         <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;">
           <h2 class="display">Real Rides,<br><em>Real Moments</em></h2>
-          <p class="body-text" style="font-size:0.88rem;max-width:340px;text-align:right;">
-            Every ride on N FLY is different — the light, the wind, the water.
-            Unfiltered moments from real guests on Punnamada Lake.
-          </p>
+          <p class="body-text" style="font-size:0.88rem;max-width:340px;text-align:right;">Every ride on N FLY is
+            different — the light, the wind, the water. Unfiltered moments from real guests on Punnamada Lake.</p>
         </div>
       </div>
 
       <div class="cine-grid rv">
+        <!-- Tall portrait video — lazy loaded -->
         <div class="cine-cell cine-tall">
-          <video autoplay muted loop playsinline>
-            <source src="https://res.cloudinary.com/starkcab/video/upload/v1777700908/Nfly/IMG_3592_1_o2lloj.mp4"
-              type="video/mp4">
-          </video>
+          <div class="vid-wrap">
+            <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+              <source
+                data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697240/Nfly/20250831_165006_ttpxxr.mp4"
+                type="video/mp4">
+            </video>
+          </div>
           <span class="cine-label-over">N FLY · In Motion</span>
         </div>
         <div class="cine-cell cine-sq">
-          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80" alt="Full throttle">
+          <div class="vid-wrap">
+            <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+              <source
+                data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697240/Nfly/20250831_165006_ttpxxr.mp4"
+                type="video/mp4">
+            </video>
+          </div>
           <span class="cine-label-over">Full Throttle</span>
         </div>
         <div class="cine-cell cine-wide">
-          <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=1000&q=80" alt="Golden hour">
+          <div class="vid-wrap">
+            <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+              <source
+                data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697240/Nfly/20250831_165006_ttpxxr.mp4"
+                type="video/mp4">
+            </video>
+          </div>
           <span class="cine-label-over">Golden Hour</span>
         </div>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:10px;" class="rv">
         <div class="cine-cell">
-          <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=600&q=80" alt="Canal">
+          <div class="vid-wrap">
+            <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+              <source
+                data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697240/Nfly/20250831_165006_ttpxxr.mp4"
+                type="video/mp4">
+            </video>
+          </div>
           <span class="cine-label-over">Canal Run</span>
         </div>
         <div class="cine-cell">
-          <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&q=80" alt="Group">
+          <div class="vid-wrap">
+            <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+              <source
+                data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697240/Nfly/20250831_165006_ttpxxr.mp4"
+                type="video/mp4">
+            </video>
+          </div>
           <span class="cine-label-over">Group Smiles</span>
         </div>
         <div class="cine-cell">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Speed">
+          <div class="vid-wrap">
+            <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+              <source
+                data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697240/Nfly/20250831_165006_ttpxxr.mp4"
+                type="video/mp4">
+            </video>
+          </div>
           <span class="cine-label-over">Top Speed</span>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -2873,67 +2903,54 @@
         <div class="why-sticky rv-l">
           <div class="label">Why N FLY?</div>
           <h2 class="display">One Boat.<br><em>All the</em><br>Difference.</h2>
-          <p class="body-text" style="margin-top:24px;">
-            N FLY is not a fleet. It is a single boat, one passionate owner, and an experience you won't find anywhere
-            else on Punnamada Lake.
-          </p>
-          <div style="margin-top:40px; padding-top:32px; border-top:1px solid var(--glass-border);">
+          <p class="body-text" style="margin-top:24px;">N FLY is not a fleet. It is a single boat, one passionate owner,
+            and an experience you won't find anywhere else on Punnamada Lake.</p>
+          <div style="margin-top:40px;padding-top:32px;border-top:1px solid var(--glass-border);">
             <div class="label" style="margin-bottom:14px;">Our Promise</div>
             <p
               style="font-family:var(--serif);font-size:1.1rem;font-weight:300;color:var(--text-muted);line-height:1.7;font-style:italic;">
-              "When you ride N FLY, you're not a customer number. You're our guest. That's the difference."
-            </p>
+              "When you ride N FLY, you're not a customer number. You're our guest. That's the difference."</p>
             <p
               style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--emerald3);margin-top:12px;">
-              — The Owner, N FLY
-            </p>
+              — The Owner, N FLY</p>
           </div>
         </div>
-
         <div class="why-grid rv-r">
-          <div class="why-card">
-            <span class="why-ico">👤</span>
+          <div class="why-card"><span class="why-ico">👤</span>
             <h4>Direct Owner Booking</h4>
             <p>No agents, no commissions. You talk directly to the captain who drives the boat. The best rates,
               guaranteed.</p>
           </div>
-          <div class="why-card">
-            <span class="why-ico">🚤</span>
+          <div class="why-card"><span class="why-ico">🚤</span>
             <h4>The Iconic Green Boat</h4>
             <p>One look at that signature green livery and you know it's N FLY. Punnamada's most photographed speedboat.
             </p>
           </div>
-          <div class="why-card">
-            <span class="why-ico">❤️</span>
+          <div class="why-card"><span class="why-ico">❤️</span>
             <h4>Personal Hospitality</h4>
             <p>Owner-operated means every rider gets personal attention. We go the extra mile — this boat is our pride.
             </p>
           </div>
-          <div class="why-card">
-            <span class="why-ico">🏆</span>
+          <div class="why-card"><span class="why-ico">🏆</span>
             <h4>Nehru Trophy Location</h4>
             <p>We operate on the very water that hosts India's most famous boat race. The lake itself is the experience.
             </p>
           </div>
-          <div class="why-card">
-            <span class="why-ico">📸</span>
+          <div class="why-card"><span class="why-ico">📸</span>
             <h4>GoPro 4K Footage</h4>
             <p>We mount a GoPro on board and capture your entire ride in 4K. Take home the memory, at no extra cost.</p>
           </div>
-          <div class="why-card">
-            <span class="why-ico">🛡️</span>
+          <div class="why-card"><span class="why-ico">🛡️</span>
             <h4>Licensed &amp; Safe</h4>
             <p>Kerala Maritime Board licensed. Life jackets for all. Safety briefing before every ride. No compromise.
             </p>
           </div>
-          <div class="why-card">
-            <span class="why-ico">🌅</span>
+          <div class="why-card"><span class="why-ico">🌅</span>
             <h4>Best Sunset in Alappuzha</h4>
             <p>Punnamada sunsets are legendary. We time our evening rides for front-row seats to Kerala's most
               spectacular light show.</p>
           </div>
-          <div class="why-card">
-            <span class="why-ico">💬</span>
+          <div class="why-card"><span class="why-ico">💬</span>
             <h4>WhatsApp Instant Booking</h4>
             <p>The fastest booking experience. WhatsApp the owner, get an instant response, confirmed in minutes.</p>
           </div>
@@ -2952,39 +2969,35 @@
           <div class="label rv">Gallery</div>
           <h2 class="display rv">Life on the<br><em>Lake</em></h2>
         </div>
-        <p class="body-text rv" style="font-size:0.88rem;max-width:280px;text-align:right;">
-          Replace all images below with your real N FLY photos and videos.
-        </p>
       </div>
-
       <div class="masonry rv">
         <div class="masonry-item"><img
             src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg"
-            alt="N FLY at Speed"><span class="masonry-cap">N FLY at Speed</span></div>
+            alt="N FLY at Speed" loading="lazy"><span class="masonry-cap">N FLY at Speed</span></div>
         <div class="masonry-item"><img
             src="https://res.cloudinary.com/starkcab/image/upload/v1777697231/Nfly/20250102_155723.jpg_gapxgt.jpg"
-            alt="Punnamada"><span class="masonry-cap">Punnamada Lake</span></div>
+            alt="Punnamada" loading="lazy"><span class="masonry-cap">Punnamada Lake</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80"
-            alt="Spray"><span class="masonry-cap">Water Spray</span></div>
+            alt="Spray" loading="lazy"><span class="masonry-cap">Water Spray</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=600&q=80"
-            alt="Sunset"><span class="masonry-cap">Sunset Ride</span></div>
+            alt="Sunset" loading="lazy"><span class="masonry-cap">Sunset Ride</span></div>
         <div class="masonry-item"><img
             src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20241222_100528.jpg_pzlfox.jpg"
-            alt="Canal"><span class="masonry-cap">Backwater Canals</span></div>
+            alt="Canal" loading="lazy"><span class="masonry-cap">Backwater Canals</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&q=80"
-            alt="Family"><span class="masonry-cap">Happy Riders</span></div>
+            alt="Family" loading="lazy"><span class="masonry-cap">Happy Riders</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
-            alt="Morning"><span class="masonry-cap">Morning Light</span></div>
+            alt="Morning" loading="lazy"><span class="masonry-cap">Morning Light</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80"
-            alt="Wake"><span class="masonry-cap">The Wake</span></div>
+            alt="Wake" loading="lazy"><span class="masonry-cap">The Wake</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80"
-            alt="Ride"><span class="masonry-cap">Group Smiles</span></div>
+            alt="Ride" loading="lazy"><span class="masonry-cap">Group Smiles</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1547481887-a26e2cacb5b2?w=600&q=80"
-            alt="Kerala"><span class="masonry-cap">Kerala Backwaters</span></div>
+            alt="Kerala" loading="lazy"><span class="masonry-cap">Kerala Backwaters</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80"
-            alt="Leisure"><span class="masonry-cap">After the Ride</span></div>
+            alt="Leisure" loading="lazy"><span class="masonry-cap">After the Ride</span></div>
         <div class="masonry-item"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80"
-            alt="Dusk"><span class="masonry-cap">Dusk on the Lake</span></div>
+            alt="Dusk" loading="lazy"><span class="masonry-cap">Dusk on the Lake</span></div>
       </div>
     </div>
   </section>
@@ -2998,13 +3011,11 @@
         <div class="label" style="justify-content:center;">What Riders Say</div>
         <h2 class="display" style="margin-bottom:18px;">1,000+ Riders.<br><em>One Verdict.</em></h2>
         <div class="rev-rating-badge">
-          <div class="stars">★★★★★</div>
-          <span>4.9 · 1,000+ reviews · Punnamada Lake</span>
+          <div class="stars">★★★★★</div><span>4.9 · 1,000+ reviews · Punnamada Lake</span>
         </div>
         <p class="body-text" style="margin:0 auto;text-align:center;font-size:0.9rem;">They came for the speed. They
           left with the memories.</p>
       </div>
-
       <div class="rev-grid">
         <div class="rev-card rv">
           <div class="rev-stars">★★★★★</div>
@@ -3079,50 +3090,39 @@
         <div class="rv-l">
           <div class="label">Your Safety</div>
           <h2 class="display">Speed &amp; Safety<br><em>Together</em></h2>
-          <p class="body-text" style="margin-top:20px;margin-bottom:0;">
-            Thrilling rides and absolute safety are not opposites — they are the N FLY promise. Every precaution is
-            taken so you can enjoy every moment.
-          </p>
+          <p class="body-text" style="margin-top:20px;margin-bottom:0;">Thrilling rides and absolute safety are not
+            opposites — they are the N FLY promise. Every precaution is taken so you can enjoy every moment.</p>
           <div class="safety-list">
-            <div class="sitem">
-              <span class="sitem-ico">🦺</span>
+            <div class="sitem"><span class="sitem-ico">🦺</span>
               <div><strong>Life Jackets for Everyone</strong><span>CE-certified life jackets for every rider before
                   boarding — no exceptions.</span></div>
             </div>
-            <div class="sitem">
-              <span class="sitem-ico">👨‍✈️</span>
+            <div class="sitem"><span class="sitem-ico">👨‍✈️</span>
               <div><strong>Experienced Owner-Captain</strong><span>The owner himself captains every ride. 8+ years on
                   Punnamada Lake.</span></div>
             </div>
-            <div class="sitem">
-              <span class="sitem-ico">📋</span>
+            <div class="sitem"><span class="sitem-ico">📋</span>
               <div><strong>Pre-Ride Safety Briefing</strong><span>Clear, simple safety instructions before every single
                   ride.</span></div>
             </div>
-            <div class="sitem">
-              <span class="sitem-ico">🔧</span>
+            <div class="sitem"><span class="sitem-ico">🔧</span>
               <div><strong>Daily Boat Maintenance</strong><span>N FLY is inspected and maintained daily by a certified
                   marine technician.</span></div>
             </div>
-            <div class="sitem">
-              <span class="sitem-ico">📜</span>
+            <div class="sitem"><span class="sitem-ico">📜</span>
               <div><strong>Kerala Maritime Board Licensed</strong><span>Fully licensed, insured, and compliant with all
                   maritime regulations.</span></div>
             </div>
           </div>
         </div>
-        <img class="safety-img rv-r" src="assets/img/logo-transparent.png" alt="N FLY safety">
+        <img class="safety-img rv-r" src="assets/img/logo.png" alt="N FLY safety" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════
-       BIG CALLOUT
-  ══════════════════════════════════ -->
+  <!-- CALLOUT -->
   <div class="callout">
-    <div class="callout-big rv">
-      Ready to<br><em>Ride N FLY?</em>
-    </div>
+    <div class="callout-big rv">Ready to<br><em>Ride N FLY?</em></div>
     <p class="callout-sub rv">Book directly with the owner. No apps, no agents — just you, the green boat, and Punnamada
       Lake.</p>
     <div class="callout-btns rv">
@@ -3140,17 +3140,15 @@
         <div class="loc-map rv-l">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.869496809054!2d76.35353917450351!3d9.520066181109968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0885ec413d8749%3A0x2cb681db84280fd2!2sN%20FLY%20SPEEDBOAT%20ADVENTURES!5e0!3m2!1sen!2sin!4v1777631915153!5m2!1sen!2sin"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade            allowfullscreen loading=" lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="N FLY — Punnamada Lake, Alappuzha">
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="N FLY — Punnamada Lake, Alappuzha">
           </iframe>
         </div>
         <div class="rv-r">
           <div class="label">Find N FLY</div>
           <h2 class="display">We're Parked on<br><em>Punnamada Lake</em></h2>
-          <p class="body-text" style="margin-top:20px;margin-bottom:0;">
-            We operate from the Punnamada Lake jetty in Alappuzha — the same iconic location that hosts the Nehru Trophy
-            Boat Race. You can't miss the green boat.
+          <p class="body-text" style="margin-top:20px;margin-bottom:0;">We operate from the Punnamada Lake jetty in
+            Alappuzha — the same iconic location that hosts the Nehru Trophy Boat Race. You can't miss the green boat.
           </p>
           <div class="loc-list">
             <div class="litem">
@@ -3188,10 +3186,8 @@
         <div class="rv-l">
           <div class="label">Reserve a Ride</div>
           <h2 class="display">Book Your<br><em>Spot on N FLY</em></h2>
-          <p class="body-text" style="margin-top:20px;margin-bottom:0;">
-            Book directly with the owner for the lowest price. No booking fees, no hidden charges. We confirm your slot
-            personally within a few hours.
-          </p>
+          <p class="body-text" style="margin-top:20px;margin-bottom:0;">Book directly with the owner for the lowest
+            price. No booking fees, no hidden charges. We confirm your slot personally within a few hours.</p>
           <div class="contact-links">
             <a href="https://wa.me/919876543210" class="clink" target="_blank">
               <div class="clink-ico">📱</div>
@@ -3211,11 +3207,9 @@
             </div>
           </div>
         </div>
-
         <div class="book-form rv-r">
           <div class="form-heading">Book N FLY</div>
           <p class="form-note">/ Fill in your details — we'll confirm shortly</p>
-
           <div class="frow">
             <div class="fg"><label>First Name</label><input type="text" placeholder="Arjun"></div>
             <div class="fg"><label>Last Name</label><input type="text" placeholder="Kumar"></div>
@@ -3224,21 +3218,16 @@
           <div class="fg"><label>Email</label><input type="email" placeholder="you@email.com"></div>
           <div class="frow">
             <div class="fg"><label>Date of Ride</label><input type="date"></div>
-            <div class="fg">
-              <label>Preferred Time</label>
-              <select>
+            <div class="fg"><label>Preferred Time</label><select>
                 <option>7:00 AM – 9:00 AM</option>
                 <option>9:00 AM – 11:00 AM</option>
                 <option>11:00 AM – 1:00 PM</option>
                 <option>2:00 PM – 4:00 PM</option>
                 <option>4:00 PM – 6:30 PM (Sunset)</option>
-              </select>
-            </div>
+              </select></div>
           </div>
           <div class="frow">
-            <div class="fg">
-              <label>Ride Package</label>
-              <select>
+            <div class="fg"><label>Ride Package</label><select>
                 <option value="">Choose a package...</option>
                 <option>N FLY Speed Blast — ₹1,200/person</option>
                 <option>Sunset Speed Cruise — ₹2,800/ride</option>
@@ -3246,30 +3235,22 @@
                 <option>Family Lake Ride — ₹800/person</option>
                 <option>N FLY Private Charter — ₹6,000</option>
                 <option>Full Day on N FLY — ₹4,999/person</option>
-              </select>
-            </div>
-            <div class="fg">
-              <label>Number of Riders</label>
-              <select>
+              </select></div>
+            <div class="fg"><label>Number of Riders</label><select>
                 <option>1–2 riders</option>
                 <option>3–4 riders</option>
                 <option>5–6 riders</option>
                 <option>7–8 riders</option>
                 <option>Large group (9+)</option>
-              </select>
-            </div>
+              </select></div>
           </div>
-          <div class="fg">
-            <label>Special Requests</label>
-            <textarea
+          <div class="fg"><label>Special Requests</label><textarea
               placeholder="Anniversary setup, GoPro footage, airport pickup, photoshoot, corporate event..."></textarea>
           </div>
           <button class="form-submit"
-            onclick="this.querySelector('span').textContent='✓ Request Sent — We\'ll WhatsApp You Shortly!'; this.style.background='var(--emerald2)'; this.style.color='white';">
-            <span>Send Booking Request →</span>
-          </button>
+            onclick="this.querySelector('span').textContent='✓ Request Sent — We\'ll WhatsApp You Shortly!'; this.style.background='var(--emerald2)'; this.style.color='white';"><span>Send
+              Booking Request →</span></button>
         </div>
-
       </div>
     </div>
   </section>
@@ -3286,31 +3267,19 @@
           in the heart of Alappuzha's backwaters.</p>
       </div>
       <div class="footer-col">
-        <h5>Navigate</h5>
-        <a href="#about">The Boat</a>
-        <a href="#rides">Rides</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#why">Why N FLY</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#safety">Safety</a>
-        <a href="#location">Location</a>
+        <h5>Navigate</h5><a href="#about">The Boat</a><a href="#rides">Rides</a><a href="#videos">Videos</a><a
+          href="#images">Images</a><a href="#why">Why N FLY</a><a href="#reviews">Reviews</a><a
+          href="#safety">Safety</a><a href="#location">Location</a>
       </div>
       <div class="footer-col">
-        <h5>Packages</h5>
-        <a href="#rides">Speed Blast</a>
-        <a href="#rides">Sunset Cruise</a>
-        <a href="#rides">Backwater Explorer</a>
-        <a href="#rides">Family Ride</a>
-        <a href="#rides">Private Charter</a>
-        <a href="#rides">Full Day Package</a>
+        <h5>Packages</h5><a href="#rides">Speed Blast</a><a href="#rides">Sunset Cruise</a><a href="#rides">Backwater
+          Explorer</a><a href="#rides">Family Ride</a><a href="#rides">Private Charter</a><a href="#rides">Full Day
+          Package</a>
       </div>
       <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="tel:+919876543210">📞 +91 98765 43210</a>
-        <a href="https://wa.me/919876543210">💬 WhatsApp</a>
-        <a href="mailto:nfly@punnamada.in">✉️ nfly@punnamada.in</a>
-        <a href="#location">📍 Punnamada, Alappuzha</a>
-        <a href="#book">⏰ 7 AM – 6:30 PM Daily</a>
+        <h5>Contact</h5><a href="tel:+919876543210">📞 +91 98765 43210</a><a href="https://wa.me/919876543210">💬
+          WhatsApp</a><a href="mailto:nfly@punnamada.in">✉️ nfly@punnamada.in</a><a href="#location">📍 Punnamada,
+          Alappuzha</a><a href="#book">⏰ 7 AM – 6:30 PM Daily</a>
       </div>
     </div>
     <div class="footer-divider"></div>
@@ -3324,31 +3293,182 @@
   <a href="https://wa.me/919876543210" class="wa-float" target="_blank" title="WhatsApp N FLY">💬</a>
 
   <script>
-    // ── Custom cursor
+    /* ═══════════════════════════════════════════════════
+       VIDEO MANAGER
+       Handles:
+       1. Lazy loading — videos only load when near viewport
+       2. iOS autoplay fix — explicit .play() call with catch
+       3. Pause when out of viewport — saves memory & battery
+       4. Loading shimmer removal when video is ready
+    ═══════════════════════════════════════════════════ */
+    (function () {
+      'use strict';
+
+      // ── Is iOS / Safari?
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+      // ── All lazy vid-wraps (those with data-src, not hero)
+      const lazyWraps = document.querySelectorAll('.vid-wrap[data-src]');
+
+      // ── Intersection observer for lazy loading
+      const lazyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const wrap = entry.target;
+          const video = wrap.querySelector('video');
+          if (!video) return;
+
+          if (entry.isIntersecting) {
+            // Inject src if not yet loaded
+            if (!video.src && wrap.dataset.src) {
+              video.src = wrap.dataset.src;
+              video.load();
+            }
+            // Try to play
+            tryPlay(video, wrap);
+          } else {
+            // Pause when off screen to save resources
+            if (!video.paused) {
+              video.pause();
+            }
+          }
+        });
+      }, {
+        rootMargin: '200px 0px', // Start loading 200px before visible
+        threshold: 0.1
+      });
+
+      lazyWraps.forEach(wrap => lazyObserver.observe(wrap));
+
+      // ── Play function with iOS-specific handling
+      function tryPlay(video, wrap) {
+        if (!video.src) return;
+
+        // Mark as loaded when enough data available
+        video.addEventListener('canplay', () => {
+          if (wrap) wrap.classList.add('loaded');
+        }, { once: true });
+
+        // iOS Safari sometimes needs a user gesture first.
+        // We use a promise-based approach and fall back gracefully.
+        const playPromise = video.play();
+
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              // Playing — shimmer off
+              if (wrap) wrap.classList.add('loaded');
+            })
+            .catch(err => {
+              // Autoplay blocked (common on iOS without interaction)
+              // Show poster image, add a tap-to-play overlay
+              if (isIOS || isSafari) {
+                addTapToPlay(video, wrap);
+              }
+              console.log('Autoplay prevented:', err.message);
+            });
+        }
+      }
+
+      // ── Tap-to-play overlay for iOS when autoplay fails
+      // function addTapToPlay(video, wrap) {
+      //   if (wrap.querySelector('.tap-play')) return; // Already added
+
+      //   const overlay = document.createElement('div');
+      //   overlay.className = 'tap-play';
+      //   overlay.innerHTML = '<span>▶</span>';
+      //   overlay.style.cssText = `
+      //   position:absolute;inset:0;z-index:5;
+      //   display:flex;align-items:center;justify-content:center;
+      //   background:rgba(8,12,10,0.4);cursor:pointer;
+      // `;
+      //   overlay.querySelector('span').style.cssText = `
+      //   width:60px;height:60px;border-radius:50%;
+      //   background:rgba(43,197,110,0.8);
+      //   display:flex;align-items:center;justify-content:center;
+      //   font-size:1.4rem;color:white;
+      //   box-shadow:0 4px 24px rgba(0,0,0,0.4);
+      // `;
+      //   overlay.addEventListener('click', () => {
+      //     video.play().then(() => {
+      //       overlay.remove();
+      //       if (wrap) wrap.classList.add('loaded');
+      //     }).catch(() => { });
+      //   }, { once: true });
+      //   wrap.appendChild(overlay);
+      //   if (wrap) wrap.classList.add('loaded'); // Remove shimmer, show poster
+      // }
+
+      // ── Hero video (autoplay=true in HTML, no data-src)
+      // Extra iOS nudge for the hero video
+      const heroVideo = document.querySelector('#heroVid video');
+      const heroWrap = document.querySelector('#heroVid');
+      if (heroVideo) {
+        heroVideo.addEventListener('canplay', () => {
+          if (heroWrap) heroWrap.classList.add('loaded');
+        }, { once: true });
+
+        const heroPromise = heroVideo.play();
+        if (heroPromise !== undefined) {
+          heroPromise.catch(() => {
+            if (isIOS || isSafari) {
+              addTapToPlay(heroVideo, heroWrap);
+            }
+          });
+        }
+      }
+
+      // ── Page visibility — pause all videos when tab hidden
+      document.addEventListener('visibilitychange', () => {
+        const allVideos = document.querySelectorAll('video');
+        if (document.hidden) {
+          allVideos.forEach(v => { if (!v.paused) v.pause(); });
+        } else {
+          // Resume videos that are in viewport
+          allVideos.forEach(v => {
+            const rect = v.getBoundingClientRect();
+            const inView = rect.top < window.innerHeight && rect.bottom > 0;
+            if (inView && v.paused) {
+              v.play().catch(() => { });
+            }
+          });
+        }
+      });
+    })();
+
+    /* ═══════════════════════════════════════════════════
+       CUSTOM CURSOR (desktop only)
+    ═══════════════════════════════════════════════════ */
     const dot = document.getElementById('cursorDot');
     const ring = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-    document.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      dot.style.left = mx + 'px'; dot.style.top = my + 'px';
-    });
-    function animateCursor() {
-      rx += (mx - rx) * 0.12;
-      ry += (my - ry) * 0.12;
-      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-      requestAnimationFrame(animateCursor);
+    if (dot && ring && window.matchMedia('(hover: hover)').matches) {
+      let mx = 0, my = 0, rx = 0, ry = 0;
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+      });
+      function animateCursor() {
+        rx += (mx - rx) * 0.12;
+        ry += (my - ry) * 0.12;
+        ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+      document.addEventListener('mouseleave', () => { dot.style.opacity = '0'; ring.style.opacity = '0'; });
+      document.addEventListener('mouseenter', () => { dot.style.opacity = '1'; ring.style.opacity = '1'; });
     }
-    animateCursor();
-    document.addEventListener('mouseleave', () => { dot.style.opacity = '0'; ring.style.opacity = '0'; });
-    document.addEventListener('mouseenter', () => { dot.style.opacity = '1'; ring.style.opacity = '1'; });
 
-    // ── Nav scroll
+    /* ═══════════════════════════════════════════════════
+       NAV SCROLL
+    ═══════════════════════════════════════════════════ */
     const nav = document.getElementById('mainNav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', scrollY > 60);
     }, { passive: true });
 
-    // ── Hamburger
+    /* ═══════════════════════════════════════════════════
+       HAMBURGER
+    ═══════════════════════════════════════════════════ */
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     let menuOpen = false;
@@ -3358,26 +3478,36 @@
     document.addEventListener('click', e => { if (menuOpen && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) closeMenu(); });
     window.addEventListener('scroll', () => { if (menuOpen) closeMenu(); }, { passive: true });
 
-    // ── Reveal on scroll
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); observer.unobserve(e.target); } });
+    /* ═══════════════════════════════════════════════════
+       REVEAL ON SCROLL
+    ═══════════════════════════════════════════════════ */
+    const revObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('on'); revObserver.unobserve(e.target); }
+      });
     }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.rv, .rv-l, .rv-r').forEach((el, i) => {
       el.style.transitionDelay = (Math.floor(i * 0.5) % 4) * 0.07 + 's';
-      observer.observe(el);
+      revObserver.observe(el);
     });
 
-    // ── Back to top
+    /* ═══════════════════════════════════════════════════
+       BACK TO TOP
+    ═══════════════════════════════════════════════════ */
     const btt = document.getElementById('btt');
     window.addEventListener('scroll', () => btt.classList.toggle('show', scrollY > 500), { passive: true });
 
-    // ── Subtle parallax on hero
+    /* ═══════════════════════════════════════════════════
+       SUBTLE HERO PARALLAX
+    ═══════════════════════════════════════════════════ */
     const heroContent = document.querySelector('.hero-content');
-    window.addEventListener('scroll', () => {
-      if (scrollY < window.innerHeight) {
-        heroContent.style.transform = `translateY(${scrollY * 0.08}px)`;
-      }
-    }, { passive: true });
+    if (heroContent && !isIOS) { // Skip on iOS for perf
+      window.addEventListener('scroll', () => {
+        if (scrollY < window.innerHeight) {
+          heroContent.style.transform = `translateY(${scrollY * 0.08}px)`;
+        }
+      }, { passive: true });
+    }
   </script>
 </body>
 
