@@ -649,8 +649,37 @@
       }
 
       .hero-stats {
-        display: none
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        flex-direction: unset;
+        gap: 1px;
+        margin-top: 28px;
+        width: 100%
       }
+
+      .hstat {
+        border-radius: 0 !important;
+        padding: 12px 8px;
+        min-width: unset
+      }
+
+      .hstat:first-child {
+        border-radius: 8px 0 0 8px !important
+      }
+
+      .hstat:last-child {
+        border-radius: 0 8px 8px 0 !important
+      }
+
+      .hstat-n {
+        font-size: 1.35rem
+      }
+
+      .hstat-l {
+        font-size: .44rem;
+        letter-spacing: .14em
+      }
+
     }
 
     @keyframes slideUp {
@@ -2422,7 +2451,7 @@
             <div class="rn">1 Minute Demo Ride</div>
             <p class="rd">A short and exciting introduction to the speedboat experience. Perfect to feel the power,
               splash and thrill before going for longer rides.</p>
-            <div class="rmeta-row"><span class="rm">&#x23F1; 1 min</span><span class="rm">&#x1F465; Max 7</span><span
+            <div class="rmeta-row"><span class="rm">&#x23F1; 1 min</span><span class="rm">&#x1F465; Max 1</span><span
                 class="rm">&#x26A1; Quick Taste</span></div>
             <div class="rf"><a href="#book" class="ride-cta">Book Now <span class="ride-arr">&rarr;</span></a></div>
           </div>
@@ -2842,9 +2871,9 @@
               <div class="cl-ico">&#x1F4DE;</div>
               <div><strong>Call the Owner</strong><span>+91 7399 86 8888 &middot; 7 AM &ndash; 7 PM</span></div>
             </a>
-            <a href="mailto:nfly@punnamada.in" class="cl">
+            <a href="mailto:nflyalpy@gmail.com" class="cl">
               <div class="cl-ico">&#x2709;&#xFE0F;</div>
-              <div><strong>Email</strong><span>nfly@punnamada.in</span></div>
+              <div><strong>Email</strong><span>nflyalpy@gmail.com</span></div>
             </a>
             <div class="cl" style="cursor:default">
               <div class="cl-ico">&#x23F0;</div>
@@ -2853,27 +2882,53 @@
             </div>
           </div>
         </div>
-        <div class="bform rv-r">
+        <form class="bform rv-r" onsubmit="handleSubmit(event)">
           <div class="fh">Book N FLY</div>
           <p class="fn">/ Fill in your details &mdash; we'll confirm shortly</p>
+
           <div class="frow">
-            <div class="fg"><label>First Name</label><input type="text" placeholder="Arjun"></div>
-            <div class="fg"><label>Last Name</label><input type="text" placeholder="Kumar"></div>
+            <div class="fg">
+              <label>First Name</label>
+              <input type="text" name="firstName" placeholder="Arjun" required>
+            </div>
+            <div class="fg">
+              <label>Last Name</label>
+              <input type="text" name="lastName" placeholder="Kumar" required>
+            </div>
           </div>
-          <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="+91 7399 86 8888"></div>
-          <div class="fg"><label>Email</label><input type="email" placeholder="you@email.com"></div>
-          <div class="frow">
-            <div class="fg"><label>Date of Ride</label><input type="date"></div>
-            <div class="fg"><label>Preferred Time</label><select>
-                <option>7:00 AM &ndash; 9:00 AM</option>
-                <option>9:00 AM &ndash; 11:00 AM</option>
-                <option>11:00 AM &ndash; 1:00 PM</option>
-                <option>2:00 PM &ndash; 4:00 PM</option>
-                <option>4:00 PM &ndash; 6:30 PM (Sunset)</option>
-              </select></div>
+
+          <div class="fg">
+            <label>Phone / WhatsApp</label>
+            <input type="tel" name="phone" placeholder="+91 7399 86 8888" required>
           </div>
+
+          <div class="fg">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@email.com" required>
+          </div>
+
           <div class="frow">
-            <div class="fg"><label>Ride Package</label><select>
+            <div class="fg">
+              <label>Date of Ride</label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="fg">
+              <label>Preferred Time</label>
+              <select name="time" required>
+                <option value="">Select time</option>
+                <option>7:00 AM – 9:00 AM</option>
+                <option>9:00 AM – 11:00 AM</option>
+                <option>11:00 AM – 1:00 PM</option>
+                <option>2:00 PM – 4:00 PM</option>
+                <option>4:00 PM – 6:30 PM (Sunset)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="frow">
+            <div class="fg">
+              <label>Ride Package</label>
+              <select name="package" required>
                 <option value="">Choose a package...</option>
                 <option>1 Minute Demo Ride</option>
                 <option>10 Minute Speed Thrill</option>
@@ -2881,21 +2936,30 @@
                 <option>1 Hour Village Explorer</option>
                 <option>Sunset Premium Ride</option>
                 <option>Custom Ride Package</option>
-              </select></div>
-            <div class="fg"><label>Number of Riders</label><select>
-                <option>1&ndash;2 riders</option>
-                <option>3&ndash;4 riders</option>
-                <option>5&ndash;6 riders</option>
+              </select>
+            </div>
+
+            <div class="fg">
+              <label>Number of Riders</label>
+              <select name="riders" required>
+                <option value="">Select riders</option>
+                <option>1–2 riders</option>
+                <option>3–4 riders</option>
+                <option>5–6 riders</option>
                 <option>7 riders (max)</option>
-              </select></div>
+              </select>
+            </div>
           </div>
-          <div class="fg"><label>Special Requests</label><textarea
-              placeholder="Anniversary setup, GoPro footage, airport pickup, photoshoot, corporate event..."></textarea>
+
+          <div class="fg">
+            <label>Special Requests</label>
+            <textarea name="message" placeholder="Anniversary setup, GoPro footage, photoshoot, etc..."></textarea>
           </div>
-          <button class="fsub"
-            onclick="var s=this.querySelector('span');s.textContent='&#x2713; Sent &mdash; We\'ll WhatsApp You Shortly!';this.style.background='var(--em2)';this.style.color='#fff'"><span>Send
-              Booking Request &rarr;</span></button>
-        </div>
+
+          <button type="submit" class="fsub">
+            <span>Send Booking Request →</span>
+          </button>
+        </form>
       </div>
     </div>
   </section>
@@ -2924,7 +2988,7 @@
         <h5>Contact</h5>
         <a href="tel:+917399868888">&#x1F4DE; +91 7399 86 8888</a>
         <a href="https://wa.me/917399868888">&#x1F4AC; WhatsApp</a>
-        <a href="mailto:nfly@punnamada.in">&#x2709;&#xFE0F; nfly@punnamada.in</a>
+        <a href="mailto:nflyalpy@gmail.com">&#x2709;&#xFE0F; nflyalpy@gmail.com</a>
         <a href="#location">&#x1F4CD; Punnamada, Alappuzha</a>
         <a href="#book">&#x23F0; 7 AM &ndash; 6:30 PM Daily</a>
       </div>
