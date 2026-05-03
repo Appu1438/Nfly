@@ -17,196 +17,232 @@
   <meta name="theme-color" content="#00ff9c">
   <meta property="og:title" content="N FLY Speedboat | Punnamada Lake, Alappuzha">
   <meta property="og:description"
-    content="Ride Kerala's most iconic speedboat. Book thrilling rides, sunset cruises and private tours on Punnamada Lake.">
+    content="Ride Kerala's most iconic speedboat. Book thrilling rides, sunset cruises & private tours on Punnamada Lake.">
   <meta property="og:image" content="https://nfly.starkcabs.in/assets/img/logo.png">
   <meta property="og:url" content="https://nfly.starkcabs.in/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"TouristAttraction","name":"N FLY Speedboat","description":"Premium speedboat rides on Punnamada Lake, Alappuzha, Kerala.","address":{"@type":"PostalAddress","addressLocality":"Alappuzha","addressRegion":"Kerala","addressCountry":"India"},"url":"https://nfly.starkcabs.in"}</script>
+  <meta name="twitter:title" content="N FLY Speedboat Alappuzha">
+  <meta name="twitter:description" content="High-speed boat rides & sunset cruises in Kerala backwaters.">
+  <meta name="twitter:image" content="https://nfly.starkcabs.in/assets/img/logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "N FLY Speedboat",
+    "description": "Premium speedboat rides on Punnamada Lake, Alappuzha, Kerala.",
+    "address": {"@type": "PostalAddress","addressLocality": "Alappuzha","addressRegion": "Kerala","addressCountry": "India"},
+    "areaServed": "Kerala",
+    "url": "https://nfly.starkcabs.in",
+    "image": "https://nfly.starkcabs.in/assets/img/logo.png"
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
     rel="stylesheet">
-  <link rel="preload" as="image"
-    href="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+
   <style>
     *,
     *::before,
     *::after {
       box-sizing: border-box;
       margin: 0;
-      padding: 0
+      padding: 0;
     }
 
     :root {
-      --bg0: #080c0a;
-      --bg1: #0d1410;
-      --bg2: #111a14;
-      --ch: #1a2420;
-      --em: #1a7a45;
-      --em2: #22a05a;
-      --em3: #2bc56e;
-      --em-dim: rgba(34, 160, 90, .15);
-      --gd: #c9a84c;
-      --gd2: #e4c06e;
-      --gd3: #f2d689;
-      --gd-dim: rgba(201, 168, 76, .15);
-      --w: rgba(255, 255, 255, .95);
-      --ws: rgba(255, 255, 255, .5);
-      --wm: rgba(255, 255, 255, .28);
-      --gl: rgba(255, 255, 255, .04);
-      --glb: rgba(255, 255, 255, .08);
-      --glh: rgba(255, 255, 255, .07);
+      --obsidian: #080c0a;
+      --obsidian2: #0d1410;
+      --obsidian3: #111a14;
+      --charcoal: #1a2420;
+      --charcoal2: #243028;
+      --emerald: #1a7a45;
+      --emerald2: #22a05a;
+      --emerald3: #2bc56e;
+      --emerald-dim: rgba(34, 160, 90, 0.15);
+      --emerald-glow: rgba(43, 197, 110, 0.08);
+      --gold: #c9a84c;
+      --gold2: #e4c06e;
+      --gold3: #f2d689;
+      --gold-dim: rgba(201, 168, 76, 0.15);
+      --white: #ffffff;
+      --cream: #f5f0e8;
+      --text-primary: rgba(255, 255, 255, 0.95);
+      --text-secondary: rgba(255, 255, 255, 0.5);
+      --text-muted: rgba(255, 255, 255, 0.28);
+      --glass: rgba(255, 255, 255, 0.04);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-hover: rgba(255, 255, 255, 0.07);
       --serif: 'Cormorant Garamond', Georgia, serif;
       --sans: 'Syne', sans-serif;
       --mono: 'JetBrains Mono', monospace;
+      --r: 14px;
+      --r-lg: 22px;
+      --r-xl: 32px;
     }
 
     html {
-      scroll-behavior: smooth
+      scroll-behavior: smooth;
     }
 
     body {
-      background: var(--bg0);
-      color: var(--w);
+      background: var(--obsidian);
+      color: var(--text-primary);
       font-family: var(--sans);
       font-weight: 400;
       line-height: 1.7;
       overflow-x: hidden;
-      cursor: none
+      cursor: none;
     }
 
+    /* ── iOS: make sure videos never block layout ── */
     video {
+      -webkit-playsinline: true;
       display: block;
-      -webkit-appearance: none
+      /* Prevent iOS from showing default video controls overlay */
+      -webkit-appearance: none;
     }
 
-    ::-webkit-scrollbar {
-      width: 2px
-    }
-
-    ::-webkit-scrollbar-track {
-      background: var(--bg0)
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: var(--em2)
-    }
-
-    /* CURSOR */
-    .cur-dot,
-    .cur-ring {
+    /* ────────────────────────────────────
+       CUSTOM CURSOR (desktop only)
+    ──────────────────────────────────── */
+    .cursor-dot {
       position: fixed;
       z-index: 9999;
       pointer-events: none;
-      border-radius: 50%;
-      transform: translate(-50%, -50%)
-    }
-
-    .cur-dot {
       width: 8px;
       height: 8px;
-      background: var(--em3);
+      border-radius: 50%;
+      background: var(--emerald3);
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease, opacity 0.2s;
       mix-blend-mode: screen;
-      transition: opacity .2s
     }
 
-    .cur-ring {
+    .cursor-ring {
+      position: fixed;
+      z-index: 9998;
+      pointer-events: none;
       width: 36px;
       height: 36px;
-      z-index: 9998;
-      border: 1px solid rgba(43, 197, 110, .4);
-      transition: all .15s ease
+      border-radius: 50%;
+      border: 1px solid rgba(43, 197, 110, 0.4);
+      transform: translate(-50%, -50%);
+      transition: all 0.15s ease;
     }
 
-    body:has(a:hover) .cur-ring,
-    body:has(button:hover) .cur-ring {
+    body:has(a:hover) .cursor-ring,
+    body:has(button:hover) .cursor-ring {
       transform: translate(-50%, -50%) scale(1.8);
-      border-color: var(--gd)
+      border-color: var(--gold);
     }
 
-    @media(hover:none) {
+    @media (hover: none) {
 
-      .cur-dot,
-      .cur-ring {
-        display: none
+      .cursor-dot,
+      .cursor-ring {
+        display: none;
       }
 
       body {
-        cursor: auto
+        cursor: auto;
       }
     }
 
-    /* NAV */
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--obsidian);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--emerald2);
+    }
+
+    /* ────────────────────────────────────
+       NAVIGATION
+    ──────────────────────────────────── */
     nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 800;
-      height: 72px;
+      height: 80px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 clamp(18px, 5vw, 72px);
-      transition: background .4s, box-shadow .4s
+      padding: 0 clamp(24px, 5vw, 80px);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    nav.scrolled {
-      background: rgba(8, 12, 10, .93);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(43, 197, 110, .1);
-      box-shadow: 0 6px 40px rgba(0, 0, 0, .5)
+    nav::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: transparent;
+      transition: all 0.5s;
+    }
+
+    nav.scrolled::after {
+      background: rgba(8, 12, 10, 0.92);
+      backdrop-filter: blur(24px) saturate(1.5);
+      border-bottom: 1px solid rgba(43, 197, 110, 0.12);
+      box-shadow: 0 8px 60px rgba(0, 0, 0, 0.5);
     }
 
     .nav-logo {
       text-decoration: none;
       display: flex;
       flex-direction: column;
-      line-height: 1
+      line-height: 1;
     }
 
     .logo-mark {
       font-family: var(--serif);
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: 300;
-      letter-spacing: .14em;
-      color: #fff;
-      line-height: 1
+      letter-spacing: 0.14em;
+      color: var(--white);
+      line-height: 1;
     }
 
     .logo-mark em {
       font-style: italic;
-      color: var(--em3)
+      color: var(--emerald3);
     }
 
     .logo-sub {
       font-family: var(--mono);
-      font-size: .5rem;
-      letter-spacing: .3em;
+      font-size: 0.52rem;
+      letter-spacing: 0.32em;
       text-transform: uppercase;
-      color: var(--wm);
-      margin-top: 3px
+      color: var(--text-muted);
+      margin-top: 3px;
     }
 
     .nav-links {
       display: flex;
-      gap: 30px;
+      gap: 36px;
       list-style: none;
-      align-items: center
+      align-items: center;
     }
 
     .nav-links a {
       font-family: var(--mono);
-      font-size: .65rem;
-      letter-spacing: .16em;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--ws);
+      color: var(--text-secondary);
       text-decoration: none;
-      transition: color .2s;
-      position: relative
+      transition: color 0.25s;
+      position: relative;
     }
 
     .nav-links a::after {
@@ -216,205 +252,275 @@
       left: 0;
       right: 0;
       height: 1px;
-      background: var(--em3);
+      background: var(--emerald3);
       transform: scaleX(0);
       transform-origin: left;
-      transition: transform .25s
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .nav-links a:hover {
-      color: #fff
+      color: var(--white);
     }
 
     .nav-links a:hover::after {
-      transform: scaleX(1)
+      transform: scaleX(1);
     }
 
     .nav-book {
-      color: var(--bg0) !important;
-      background: var(--gd2);
-      padding: 9px 22px;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--obsidian) !important;
+      background: var(--gold2);
+      padding: 10px 26px;
       border-radius: 2px;
-      transition: background .2s, transform .2s !important
+      text-decoration: none;
+      transition: all 0.25s !important;
     }
 
     .nav-book::after {
-      display: none !important
+      display: none !important;
     }
 
     .nav-book:hover {
-      background: var(--gd3) !important;
+      background: var(--gold3) !important;
       transform: translateY(-1px);
-      box-shadow: 0 6px 24px rgba(201, 168, 76, .3)
+      box-shadow: 0 8px 30px rgba(201, 168, 76, 0.3);
     }
 
     .hamburger {
       display: none;
       flex-direction: column;
-      gap: 5px;
-      width: 42px;
-      height: 42px;
+      gap: 6px;
+      width: 44px;
+      height: 44px;
       cursor: pointer;
       align-items: center;
       justify-content: center;
-      border: 1px solid var(--glb);
+      border: 1px solid var(--glass-border);
       border-radius: 4px;
-      background: var(--gl)
+      background: var(--glass);
+      transition: all 0.3s;
     }
 
     .hamburger span {
       display: block;
       width: 20px;
       height: 1px;
-      background: var(--ws);
-      transition: all .25s
+      background: var(--text-secondary);
+      transition: all 0.3s;
     }
 
     .hamburger.active span:nth-child(1) {
-      transform: translateY(6px) rotate(45deg)
+      transform: translateY(7px) rotate(45deg);
     }
 
     .hamburger.active span:nth-child(2) {
-      opacity: 0
+      opacity: 0;
     }
 
     .hamburger.active span:nth-child(3) {
-      transform: translateY(-6px) rotate(-45deg)
+      transform: translateY(-7px) rotate(-45deg);
     }
 
-    .mob-menu {
+    .mobile-menu {
       position: fixed;
-      top: 72px;
+      top: 80px;
       left: 0;
       right: 0;
-      background: rgba(8, 12, 10, .97);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--glb);
-      padding: 20px clamp(18px, 5vw, 72px) 30px;
+      background: rgba(8, 12, 10, 0.97);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 24px clamp(24px, 5vw, 80px) 36px;
       z-index: 790;
       display: none;
-      flex-direction: column
+      flex-direction: column;
+      gap: 0;
     }
 
-    .mob-menu.open {
-      display: flex
+    .mobile-menu.open {
+      display: flex;
     }
 
-    .mob-menu a {
+    .mobile-menu a {
       display: block;
-      padding: 13px 0;
+      padding: 15px 0;
       font-family: var(--mono);
-      font-size: .78rem;
-      letter-spacing: .14em;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--ws);
+      color: var(--text-secondary);
       text-decoration: none;
-      border-bottom: 1px solid var(--glb);
-      transition: color .15s, padding-left .15s
+      border-bottom: 1px solid var(--glass-border);
+      transition: color 0.2s, padding-left 0.2s;
     }
 
-    .mob-menu a:hover {
-      color: var(--em3);
-      padding-left: 6px
+    .mobile-menu a:hover {
+      color: var(--emerald3);
+      padding-left: 8px;
     }
 
-    .mob-cta {
-      margin-top: 16px !important;
+    .mobile-menu .mob-cta {
+      margin-top: 18px;
       text-align: center;
-      background: var(--gd2);
-      color: var(--bg0) !important;
+      background: var(--gold2);
+      color: var(--obsidian) !important;
       border: none !important;
       border-radius: 2px;
-      padding: 13px !important;
-      font-weight: 600 !important
+      padding: 14px !important;
+      font-weight: 500 !important;
     }
 
     @media(max-width:900px) {
       .nav-links {
-        display: none
+        display: none;
       }
 
       .hamburger {
-        display: flex
+        display: flex;
       }
     }
 
-    /* VIDEO WRAPPER */
-    .vw {
+    .noise {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+    }
+
+    /* ────────────────────────────────────
+       VIDEO WRAPPER — the key iOS fix
+       All videos wrapped in .vid-wrap get
+       these properties to ensure iOS compat
+    ──────────────────────────────────── */
+    .vid-wrap {
       position: relative;
       overflow: hidden;
-      background: var(--ch)
+      /* iOS needs a background color behind video while loading */
+      background: var(--charcoal);
     }
 
-    .vw video {
+    /* The poster image shows while video is loading / paused on iOS */
+    .vid-wrap video {
       width: 100%;
       height: 100%;
-      object-fit: cover
+      object-fit: cover;
+      display: block;
+      /* Critical iOS Safari flags */
+      -webkit-playsinline: true;
+      /* Prevent black flash on iOS */
+      background: transparent;
     }
 
-    .vw::after {
+    /* Loading shimmer shown before video plays */
+    .vid-wrap::before {
       content: '';
       position: absolute;
       inset: 0;
       z-index: 1;
-      pointer-events: none;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .04), transparent);
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.04) 50%, transparent 100%);
       background-size: 200% 100%;
-      animation: shimmer 2s linear infinite;
-      transition: opacity .5s
+      animation: shimmer 2s infinite;
+      pointer-events: none;
+      opacity: 1;
+      transition: opacity 0.5s;
     }
 
-    .vw.playing::after {
+    .vid-wrap.loaded::before {
       opacity: 0;
-      animation: none
     }
 
     @keyframes shimmer {
       from {
-        background-position: -200% 0
+        background-position: -200% 0;
       }
 
       to {
-        background-position: 200% 0
+        background-position: 200% 0;
       }
     }
 
-    /* HERO */
+    /* ────────────────────────────────────
+       HERO
+    ──────────────────────────────────── */
     #hero {
       position: relative;
-      min-height: 100svh;
+      min-height: 100vh;
       display: grid;
+      grid-template-columns: 1fr;
       align-items: end;
-      padding: 0 clamp(18px, 6vw, 80px) 80px;
-      overflow: hidden
+      overflow: hidden;
+      padding: 0 clamp(24px, 6vw, 90px) 90px;
     }
 
     .hero-bg {
       position: absolute;
       inset: 0;
-      z-index: 0
+      z-index: 0;
     }
 
-    .hero-bg .vw {
+    /* Hero video fills full background */
+    .hero-bg .vid-wrap {
       width: 100%;
-      height: 100%
+      height: 100%;
     }
 
-    .hero-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      background: linear-gradient(to top, rgba(8, 12, 10, .8) 0%, rgba(8, 12, 10, .35) 45%, transparent 100%), linear-gradient(105deg, rgba(8, 12, 10, .3) 0%, transparent 55%)
+    .hero-bg .vid-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .hero-bg::before {
       content: '';
       position: absolute;
       inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(to top, rgba(8, 12, 10, 0.75) 0%, rgba(8, 12, 10, 0.4) 40%, rgba(8, 12, 10, 0.05) 75%, transparent 100%),
+        linear-gradient(105deg, rgba(8, 12, 10, 0.35) 0%, transparent 60%);
+    }
+
+    .hero-glow {
+      position: absolute;
       z-index: 2;
       pointer-events: none;
-      background: radial-gradient(ellipse 600px 500px at -5% 110%, rgba(34, 160, 90, .14), transparent 70%), radial-gradient(ellipse 350px 300px at 100% 10%, rgba(201, 168, 76, .08), transparent 70%)
+      border-radius: 50%;
+      filter: blur(120px);
+      animation: glowDrift 8s ease-in-out infinite alternate;
+    }
+
+    .hero-glow-1 {
+      width: 600px;
+      height: 600px;
+      bottom: -100px;
+      left: -100px;
+      background: radial-gradient(circle, rgba(34, 160, 90, 0.18) 0%, transparent 70%);
+    }
+
+    .hero-glow-2 {
+      width: 400px;
+      height: 400px;
+      top: 10%;
+      right: 5%;
+      background: radial-gradient(circle, rgba(201, 168, 76, 0.1) 0%, transparent 70%);
+      animation-delay: -4s;
+    }
+
+    @keyframes glowDrift {
+      from {
+        transform: translate(0, 0) scale(1);
+      }
+
+      to {
+        transform: translate(30px, -30px) scale(1.1);
+      }
     }
 
     .hero-content {
@@ -423,229 +529,233 @@
       display: grid;
       grid-template-columns: 1fr auto;
       align-items: end;
-      gap: 36px
+      gap: 40px;
     }
 
     .hero-eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 14px;
+      gap: 16px;
       font-family: var(--mono);
-      font-size: .6rem;
-      letter-spacing: .3em;
+      font-size: 0.64rem;
+      font-weight: 400;
+      letter-spacing: 0.32em;
       text-transform: uppercase;
-      color: var(--gd2);
-      margin-bottom: 24px;
-      margin-top: 90px;
-      animation: slideUp .8s cubic-bezier(.16, 1, .3, 1) .15s both
+      color: var(--gold2);
+      margin-bottom: 28px;
+      animation: slideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+      margin-top: 100px;
     }
 
-    .eyebrow-line {
+    .hero-eyebrow-line {
       display: block;
-      width: 40px;
+      width: 48px;
       height: 1px;
-      background: linear-gradient(to right, var(--gd), transparent)
+      background: linear-gradient(to right, var(--gold), transparent);
     }
 
     .hero-h1 {
       font-family: var(--serif);
-      font-size: clamp(5.5rem, 13vw, 12rem);
+      font-size: clamp(6rem, 14vw, 13rem);
       font-weight: 300;
-      line-height: .85;
-      letter-spacing: -.01em;
-      color: #fff;
-      animation: slideUp .8s cubic-bezier(.16, 1, .3, 1) .3s both
+      line-height: 0.85;
+      letter-spacing: -0.01em;
+      color: var(--white);
+      animation: slideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
     }
 
     .hero-h1 .accent {
-      color: var(--em3);
-      font-style: italic
+      color: var(--emerald3);
+      font-style: italic;
     }
 
     .hero-h1 .outline {
-      -webkit-text-stroke: 1px rgba(255, 255, 255, .3);
-      color: transparent
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+      color: transparent;
     }
 
-    .hero-desc {
+    .hero-descriptor {
       font-family: var(--serif);
-      font-size: clamp(1rem, 1.6vw, 1.3rem);
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
       font-weight: 300;
       font-style: italic;
-      color: var(--ws);
-      margin-top: 16px;
-      margin-bottom: 36px;
-      max-width: 460px;
+      color: var(--text-secondary);
+      margin-top: 18px;
+      margin-bottom: 40px;
+      max-width: 480px;
+      letter-spacing: 0.02em;
       line-height: 1.6;
-      animation: slideUp .8s cubic-bezier(.16, 1, .3, 1) .42s both
+      animation: slideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both;
     }
 
-    .hero-desc strong {
-      color: var(--gd2);
+    .hero-descriptor strong {
+      color: var(--gold2);
       font-style: normal;
-      font-weight: 500
+      font-weight: 500;
     }
 
     .hero-actions {
       display: flex;
-      gap: 12px;
+      gap: 14px;
       flex-wrap: wrap;
-      animation: slideUp .8s cubic-bezier(.16, 1, .3, 1) .54s both
+      animation: slideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
     }
 
-    .btn-p {
-      background: var(--gd2);
-      color: var(--bg0);
-      padding: 15px 36px;
+    .btn-primary {
+      background: var(--gold2);
+      color: var(--obsidian);
+      padding: 16px 40px;
       border-radius: 2px;
       font-family: var(--mono);
-      font-size: .68rem;
+      font-size: 0.7rem;
       font-weight: 500;
-      letter-spacing: .18em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       text-decoration: none;
-      transition: box-shadow .25s;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
-      overflow: hidden
+      overflow: hidden;
     }
 
-    .btn-p::before {
+    .btn-primary::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: var(--gd3);
+      background: var(--gold3);
       transform: translateX(-101%);
-      transition: transform .28s cubic-bezier(.4, 0, .2, 1)
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .btn-p:hover::before {
-      transform: translateX(0)
+    .btn-primary:hover::before {
+      transform: translateX(0);
     }
 
-    .btn-p span {
+    .btn-primary span {
       position: relative;
-      z-index: 1
+      z-index: 1;
     }
 
-    .btn-p:hover {
-      box-shadow: 0 10px 32px rgba(201, 168, 76, .3)
+    .btn-primary:hover {
+      box-shadow: 0 12px 40px rgba(201, 168, 76, 0.3);
     }
 
-    .btn-s {
-      border: 1px solid var(--glb);
-      color: var(--ws);
-      padding: 15px 36px;
+    .btn-secondary {
+      border: 1px solid var(--glass-border);
+      color: var(--text-secondary);
+      padding: 16px 40px;
       border-radius: 2px;
       font-family: var(--mono);
-      font-size: .68rem;
-      letter-spacing: .18em;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       text-decoration: none;
-      background: var(--gl);
       backdrop-filter: blur(8px);
-      transition: all .25s
+      background: var(--glass);
+      transition: all 0.3s;
     }
 
-    .btn-s:hover {
-      border-color: rgba(255, 255, 255, .22);
-      color: #fff;
-      background: var(--glh)
+    .btn-secondary:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+      color: var(--white);
+      background: var(--glass-hover);
     }
 
     .hero-stats {
       display: flex;
       flex-direction: column;
       gap: 1px;
-      animation: slideUp .8s cubic-bezier(.16, 1, .3, 1) .64s both
+      animation: slideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
     }
 
     .hstat {
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      backdrop-filter: blur(16px);
-      padding: 18px 22px;
-      min-width: 120px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(20px);
+      padding: 20px 24px;
+      min-width: 130px;
       text-align: center;
-      transition: background .25s, border-color .25s
+      transition: all 0.3s;
     }
 
     .hstat:first-child {
-      border-radius: 8px 8px 0 0
+      border-radius: 8px 8px 0 0;
     }
 
     .hstat:last-child {
-      border-radius: 0 0 8px 8px
+      border-radius: 0 0 8px 8px;
     }
 
     .hstat:hover {
-      background: var(--glh);
-      border-color: rgba(43, 197, 110, .3)
+      background: var(--glass-hover);
+      border-color: rgba(43, 197, 110, 0.3);
     }
 
     .hstat-n {
       font-family: var(--serif);
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 300;
-      color: #fff;
+      color: var(--white);
       line-height: 1;
-      letter-spacing: -.02em
+      letter-spacing: -0.02em;
     }
 
     .hstat-l {
       font-family: var(--mono);
-      font-size: .52rem;
-      letter-spacing: .2em;
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--wm);
-      margin-top: 4px
+      color: var(--text-muted);
+      margin-top: 4px;
     }
 
-    .ha {
-      color: var(--gd2)
+    .hstat-accent {
+      color: var(--gold2);
     }
 
     .hero-scroll {
       position: absolute;
-      bottom: 36px;
-      right: clamp(18px, 5vw, 72px);
+      bottom: 40px;
+      right: clamp(24px, 5vw, 80px);
       z-index: 3;
       display: flex;
       align-items: center;
-      gap: 12px;
-      animation: slideUp .9s cubic-bezier(.16, 1, .3, 1) .8s both
+      gap: 14px;
+      animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both;
     }
 
     .scroll-line {
       width: 1px;
-      height: 52px;
-      background: linear-gradient(to bottom, transparent, var(--em2), transparent);
-      animation: pulse 2.5s ease-in-out infinite
+      height: 60px;
+      background: linear-gradient(to bottom, transparent, var(--emerald2), transparent);
+      animation: scrollPulse 2.5s ease-in-out infinite;
     }
 
-    @keyframes pulse {
+    @keyframes scrollPulse {
 
       0%,
       100% {
-        opacity: .3
+        opacity: 0.3;
       }
 
       50% {
-        opacity: 1
+        opacity: 1;
       }
     }
 
-    .scroll-txt {
+    .scroll-text {
       writing-mode: vertical-lr;
+      text-orientation: mixed;
       font-family: var(--mono);
-      font-size: .55rem;
-      letter-spacing: .2em;
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--wm)
+      color: var(--text-muted);
     }
 
-    @media(max-width:680px) {
+    @media(max-width:700px) {
       .hero-content {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
       }
 
       .hero-stats {
@@ -679,7 +789,6 @@
         font-size: .44rem;
         letter-spacing: .14em
       }
-
     }
 
     @keyframes slideUp {
@@ -692,232 +801,260 @@
         opacity: 1;
         transform: translateY(0)
       }
+
     }
 
-    /* MARQUEE */
-    .mq-strip {
-      border-top: 1px solid var(--glb);
-      border-bottom: 1px solid var(--glb);
-      background: var(--bg1);
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ────────────────────────────────────
+       MARQUEE
+    ──────────────────────────────────── */
+    .marquee-strip {
+      border-top: 1px solid var(--glass-border);
+      border-bottom: 1px solid var(--glass-border);
+      background: var(--obsidian2);
       overflow: hidden;
-      position: relative
+      position: relative;
+      padding: 0;
     }
 
-    .mq-strip::before,
-    .mq-strip::after {
+    .marquee-strip::before,
+    .marquee-strip::after {
       content: '';
       position: absolute;
       top: 0;
       bottom: 0;
-      width: 60px;
+      width: 80px;
       z-index: 1;
-      pointer-events: none
     }
 
-    .mq-strip::before {
+    .marquee-strip::before {
       left: 0;
-      background: linear-gradient(to right, var(--bg1), transparent)
+      background: linear-gradient(to right, var(--obsidian2), transparent);
     }
 
-    .mq-strip::after {
+    .marquee-strip::after {
       right: 0;
-      background: linear-gradient(to left, var(--bg1), transparent)
+      background: linear-gradient(to left, var(--obsidian2), transparent);
     }
 
-    .mq-track {
+    .marquee-track {
       display: inline-flex;
       align-items: center;
-      animation: mq 30s linear infinite;
+      animation: marquee 28s linear infinite;
       white-space: nowrap;
-      padding: 16px 0
+      padding: 18px 0;
     }
 
-    .mq-item {
+    .marquee-item {
       font-family: var(--mono);
-      font-size: .65rem;
-      letter-spacing: .22em;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
-      color: var(--wm);
-      padding: 0 28px
+      color: var(--text-muted);
+      padding: 0 32px;
     }
 
-    .mq-dot {
-      color: var(--gd2);
-      font-size: .38rem
+    .marquee-dot {
+      color: var(--gold2);
+      font-size: 0.4rem;
     }
 
-    @keyframes mq {
+    @keyframes marquee {
       from {
-        transform: translateX(0)
+        transform: translateX(0);
       }
 
       to {
-        transform: translateX(-50%)
+        transform: translateX(-50%);
       }
     }
 
-    /* SECTION UTILS */
+    /* ────────────────────────────────────
+       SECTION UTILITIES
+    ──────────────────────────────────── */
     .sec {
       position: relative;
-      content-visibility: auto;
-      contain-intrinsic-size: 0 800px
     }
 
-    .sp {
-      padding: 110px clamp(18px, 5vw, 80px)
+    .sec-pad {
+      padding: 130px clamp(24px, 5vw, 90px);
     }
 
-    .lbl {
+    .label {
       font-family: var(--mono);
-      font-size: .6rem;
-      letter-spacing: .28em;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
       text-transform: uppercase;
-      color: var(--em3);
+      color: var(--emerald3);
       display: flex;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 18px
+      gap: 16px;
+      margin-bottom: 20px;
     }
 
-    .lbl::before {
+    .label::before {
       content: '';
       display: block;
-      width: 24px;
+      width: 28px;
       height: 1px;
-      background: var(--em2)
+      background: var(--emerald2);
     }
 
-    .lbl.g {
-      color: var(--gd2)
+    .label.gold-label {
+      color: var(--gold2);
     }
 
-    .lbl.g::before {
-      background: var(--gd)
+    .label.gold-label::before {
+      background: var(--gold);
     }
 
-    .disp {
+    .display {
       font-family: var(--serif);
-      font-size: clamp(2.6rem, 5vw, 5rem);
+      font-size: clamp(2.8rem, 5.5vw, 5.5rem);
       font-weight: 300;
-      line-height: .95;
-      letter-spacing: -.01em;
-      color: #fff
+      line-height: 0.95;
+      letter-spacing: -0.01em;
+      color: var(--white);
     }
 
-    .disp em {
+    .display em {
       font-style: italic;
-      color: var(--em3)
+      color: var(--emerald3);
     }
 
-    .body-t {
+    .display .gold-em {
+      font-style: italic;
+      color: var(--gold2);
+    }
+
+    .body-text {
       font-family: var(--serif);
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: 300;
       line-height: 1.8;
-      color: var(--ws);
-      max-width: 480px
-    }
-
-    .rule {
-      border: none;
-      height: 1px;
-      background: var(--glb);
-      margin: 0
-    }
-
-    .rv,
-    .rv-l,
-    .rv-r {
-      opacity: 0;
-      transition: opacity .7s cubic-bezier(.16, 1, .3, 1), transform .7s cubic-bezier(.16, 1, .3, 1)
+      color: var(--text-secondary);
+      max-width: 500px;
     }
 
     .rv {
-      transform: translateY(28px)
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .rv.on {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .rv-l {
-      transform: translateX(-28px)
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .rv-l.on {
+      opacity: 1;
+      transform: translateX(0);
     }
 
     .rv-r {
-      transform: translateX(28px)
+      opacity: 0;
+      transform: translateX(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .rv.on,
-    .rv-l.on,
     .rv-r.on {
       opacity: 1;
-      transform: translate(0)
+      transform: translateX(0);
     }
 
-    /* ABOUT */
+    /* ────────────────────────────────────
+       ABOUT
+    ──────────────────────────────────── */
     #about {
-      background: var(--bg1)
+      background: var(--obsidian2);
     }
 
     .about-wrap {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center
+      gap: 100px;
+      align-items: center;
     }
 
     .about-media {
-      position: relative
+      position: relative;
     }
 
-    .about-media .vw {
+    /* About main media — video or image */
+    .about-media .vid-wrap,
+    .about-img-main {
       width: 100%;
       aspect-ratio: 3/4;
+      object-fit: cover;
+      display: block;
       border-radius: 4px;
-      border: 1px solid var(--glb)
+      border: 1px solid var(--glass-border);
     }
 
-    .about-media .vw video {
-      aspect-ratio: 3/4
+    .about-media .vid-wrap video {
+      aspect-ratio: 3/4;
     }
 
     .about-float {
       position: absolute;
-      bottom: -36px;
-      right: -36px;
-      width: 52%;
+      bottom: -40px;
+      right: -40px;
+      width: 55%;
       aspect-ratio: 4/3;
       object-fit: cover;
       border-radius: 4px;
-      border: 4px solid var(--bg1);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, .6)
+      border: 4px solid var(--obsidian2);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
     }
 
     .about-badge {
       position: absolute;
-      top: 36px;
-      left: -24px;
-      background: var(--bg0);
-      border: 1px solid var(--glb);
-      backdrop-filter: blur(16px);
-      padding: 18px 22px;
+      top: 40px;
+      left: -28px;
+      background: var(--obsidian);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(20px);
+      padding: 20px 24px;
       border-radius: 4px;
-      box-shadow: 0 16px 48px rgba(0, 0, 0, .5)
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     }
 
-    .badge-t {
+    .badge-title {
       font-family: var(--serif);
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 300;
-      color: var(--em3);
+      color: var(--emerald3);
       line-height: 1;
-      letter-spacing: .1em
+      letter-spacing: 0.1em;
     }
 
-    .badge-s {
+    .badge-sub {
       font-family: var(--mono);
-      font-size: .5rem;
-      letter-spacing: .22em;
+      font-size: 0.52rem;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
-      color: var(--wm);
-      margin-top: 4px
+      color: var(--text-muted);
+      margin-top: 5px;
     }
 
     .about-media::before {
@@ -927,27 +1064,27 @@
       left: -2px;
       width: 3px;
       height: 40%;
-      background: linear-gradient(to bottom, transparent, var(--em2), transparent);
+      background: linear-gradient(to bottom, transparent, var(--emerald2), transparent);
       border-radius: 2px;
-      z-index: 1
+      z-index: 1;
     }
 
-    .af-grid {
+    .about-feats {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-top: 36px
+      gap: 10px;
+      margin-top: 40px;
     }
 
     .af {
-      padding: 16px 18px;
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      border-radius: 12px;
-      transition: background .25s, border-color .25s, transform .25s;
+      padding: 18px 20px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r);
+      transition: all 0.3s;
       cursor: default;
       position: relative;
-      overflow: hidden
+      overflow: hidden;
     }
 
     .af::before {
@@ -957,711 +1094,786 @@
       left: 0;
       right: 0;
       height: 1px;
-      background: linear-gradient(to right, var(--em2), transparent);
+      background: linear-gradient(to right, var(--emerald2), transparent);
       opacity: 0;
-      transition: opacity .25s
+      transition: opacity 0.3s;
     }
 
     .af:hover {
-      background: var(--glh);
-      border-color: rgba(43, 197, 110, .22);
-      transform: translateY(-2px)
+      background: var(--glass-hover);
+      border-color: rgba(43, 197, 110, 0.25);
+      transform: translateY(-2px);
     }
 
     .af:hover::before {
-      opacity: 1
+      opacity: 1;
     }
 
-    .af-ico {
-      font-size: 1.1rem;
-      margin-bottom: 6px
+    .af-icon {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
     }
 
     .af strong {
       display: block;
       font-family: var(--sans);
-      font-size: .78rem;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: var(--w);
-      margin-bottom: 2px
+      color: var(--text-primary);
+      margin-bottom: 3px;
     }
 
     .af span {
-      font-size: .68rem;
-      color: var(--wm);
-      font-family: var(--mono)
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-family: var(--mono);
     }
 
-    @media(max-width:820px) {
+    @media(max-width:860px) {
       .about-wrap {
         grid-template-columns: 1fr;
-        gap: 50px
+        gap: 60px;
       }
 
       .about-float,
       .about-badge {
-        display: none
+        display: none;
       }
     }
 
-    /* INTERLUDE */
-    .interlude {
+    /* ────────────────────────────────────
+       VIDEO INTERLUDE (full-width strip)
+    ──────────────────────────────────── */
+    .vid-interlude {
       position: relative;
-      height: 68vh;
-      min-height: 420px;
-      overflow: hidden
+      height: 70vh;
+      min-height: 450px;
+      overflow: hidden;
     }
 
-    .interlude .vw {
-      position: absolute;
-      inset: 0;
+    .vid-interlude .vid-wrap {
       width: 100%;
-      height: 100%
+      height: 100%;
     }
 
-    .interlude-fallback {
-      position: absolute;
-      inset: 0;
+    .vid-interlude .vid-wrap video {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: 0
     }
 
-    .interlude-ov {
+    /* Fallback image shown on iOS when video hasn't loaded yet */
+    .vid-interlude .vid-fallback {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .vid-interlude-overlay {
       position: absolute;
       inset: 0;
       z-index: 2;
-      background: linear-gradient(to right, rgba(8, 12, 10, .82) 0%, rgba(8, 12, 10, .18) 55%, transparent 100%), linear-gradient(to top, rgba(8, 12, 10, .55) 0%, transparent 40%);
+      background: linear-gradient(to right, rgba(8, 12, 10, 0.85) 0%, rgba(8, 12, 10, 0.2) 50%, rgba(8, 12, 10, 0.1) 100%),
+        linear-gradient(to top, rgba(8, 12, 10, 0.6) 0%, transparent 40%);
       display: flex;
       align-items: center;
-      padding: 0 clamp(18px, 6vw, 80px)
+      padding: 0 clamp(24px, 6vw, 90px);
     }
 
-    .interlude-txt .disp {
-      font-size: clamp(3rem, 9vw, 7.5rem)
+    .interlude-text .display {
+      font-size: clamp(3.5rem, 10vw, 8rem);
     }
 
-    /* RIDES */
+    /* ────────────────────────────────────
+       RIDES
+    ──────────────────────────────────── */
     #rides {
-      background: var(--bg0)
+      background: var(--obsidian);
     }
 
-    .rides-head {
+    .rides-header {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
       flex-wrap: wrap;
-      gap: 20px
+      gap: 24px;
     }
 
-    .rg {
+    .rides-header .body-text {
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    .rides-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
-      background: var(--glb);
-      border: 1px solid var(--glb);
-      border-radius: 20px;
-      overflow: hidden
+      background: var(--glass-border);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
     }
 
-    .rc {
-      background: var(--bg1);
+    .ride-card {
+      background: var(--obsidian2);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: background .35s;
-      position: relative
     }
 
-    .rc:hover {
-      background: var(--ch);
-      z-index: 2
+    .ride-card:hover {
+      background: var(--charcoal);
+      z-index: 2;
     }
 
-    .rc:hover .ri img {
+    .ride-card:hover .ride-img img {
       transform: scale(1.06);
-      filter: brightness(.82) saturate(1)
     }
 
-    .ri {
+    .ride-card:hover .ride-cta-arrow {
+      transform: translateX(4px);
+    }
+
+    .ride-img {
       position: relative;
-      overflow: hidden
+      overflow: hidden;
     }
 
-    .ri img {
+    .ride-img img {
       width: 100%;
       aspect-ratio: 16/10;
       object-fit: cover;
       display: block;
-      transition: transform .6s cubic-bezier(.4, 0, .2, 1), filter .4s;
-      filter: brightness(.72) saturate(.85)
+      transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: brightness(0.75) saturate(0.9);
     }
 
-    .ri::after {
+    .ride-img::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, var(--bg1) 0%, transparent 52%);
-      pointer-events: none
+      background: linear-gradient(to top, var(--obsidian2) 0%, transparent 50%);
+      transition: opacity 0.4s;
     }
 
-    .badge-ride {
+    .ride-card:hover .ride-img::after {
+      opacity: 0.7;
+    }
+
+    .ride-badge-type {
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: 14px;
+      left: 14px;
       z-index: 1;
       font-family: var(--mono);
-      font-size: .55rem;
-      letter-spacing: .16em;
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      background: rgba(8, 12, 10, .8);
-      backdrop-filter: blur(6px);
-      border: 1px solid var(--glb);
-      color: var(--wm);
-      padding: 4px 10px;
-      border-radius: 2px
+      background: rgba(8, 12, 10, 0.75);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--glass-border);
+      color: var(--text-muted);
+      padding: 5px 12px;
+      border-radius: 2px;
     }
 
-    .badge-hot {
+    .ride-popular {
       position: absolute;
-      top: 12px;
-      right: 12px;
+      top: 14px;
+      right: 14px;
       z-index: 1;
       font-family: var(--mono);
-      font-size: .55rem;
-      letter-spacing: .14em;
+      font-size: 0.58rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      background: var(--gd-dim);
-      border: 1px solid rgba(201, 168, 76, .3);
-      color: var(--gd2);
-      padding: 4px 10px;
-      border-radius: 2px
+      background: var(--gold-dim);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      color: var(--gold2);
+      padding: 5px 12px;
+      border-radius: 2px;
     }
 
-    .rb {
-      padding: 22px 24px 26px;
+    .ride-body {
+      padding: 24px 26px 28px;
       flex: 1;
       display: flex;
-      flex-direction: column
+      flex-direction: column;
     }
 
-    .rn {
+    .ride-name {
       font-family: var(--serif);
-      font-size: 1.45rem;
+      font-size: 1.55rem;
       font-weight: 400;
-      color: #fff;
+      color: var(--white);
       line-height: 1.2;
-      margin-bottom: 8px
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
     }
 
-    .rd {
+    .ride-desc {
       font-family: var(--serif);
-      font-size: .86rem;
+      font-size: 0.88rem;
       font-weight: 300;
-      color: var(--ws);
-      line-height: 1.65;
-      margin-bottom: 18px;
-      flex: 1
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      flex: 1;
     }
 
-    .rmeta-row {
+    .ride-meta-row {
       display: flex;
-      gap: 6px;
+      gap: 8px;
       flex-wrap: wrap;
-      margin-bottom: 18px
+      margin-bottom: 22px;
     }
 
-    .rm {
+    .rmeta {
       font-family: var(--mono);
-      font-size: .58rem;
-      letter-spacing: .1em;
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--wm);
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      padding: 3px 9px;
-      border-radius: 2px
+      color: var(--text-muted);
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      padding: 4px 10px;
+      border-radius: 2px;
     }
 
-    .rf {
-      padding-top: 16px;
-      border-top: 1px solid var(--glb)
+    .ride-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 1px solid var(--glass-border);
+    }
+
+    .ride-price {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: var(--gold2);
+      letter-spacing: -0.01em;
+    }
+
+    .ride-price-note {
+      font-family: var(--mono);
+      font-size: 0.52rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: block;
     }
 
     .ride-cta {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       font-family: var(--mono);
-      font-size: .6rem;
+      font-size: 0.62rem;
       font-weight: 500;
-      letter-spacing: .14em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--em3);
+      color: var(--emerald3);
       text-decoration: none;
-      border-bottom: 1px solid rgba(43, 197, 110, .28);
+      border-bottom: 1px solid rgba(43, 197, 110, 0.3);
       padding-bottom: 2px;
-      transition: color .2s, border-color .2s
+      transition: all 0.25s;
     }
 
     .ride-cta:hover {
-      color: #fff;
-      border-color: rgba(255, 255, 255, .35)
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.4);
     }
 
-    .ride-arr {
-      transition: transform .2s
+    .ride-cta-arrow {
+      transition: transform 0.25s;
     }
 
-    .rc:hover .ride-arr {
-      transform: translateX(4px)
-    }
-
-    @media(max-width:960px) {
-      .rg {
-        grid-template-columns: 1fr 1fr
+    @media(max-width:980px) {
+      .rides-grid {
+        grid-template-columns: 1fr 1fr;
       }
     }
 
-    @media(max-width:580px) {
-      .rg {
-        grid-template-columns: 1fr
+    @media(max-width:600px) {
+      .rides-grid {
+        grid-template-columns: 1fr;
       }
     }
 
-    /* CINEMATIC (images only) */
-    #gallery-media {
-      background: var(--bg0)
+    /* ────────────────────────────────────
+       CINEMATIC / MEDIA GRID
+    ──────────────────────────────────── */
+    #videos {
+      background: var(--obsidian);
+    }
+
+    .cine-sec-pad {
+      padding: 0 clamp(24px, 5vw, 90px) 130px;
     }
 
     .cine-grid {
       display: grid;
       grid-template-columns: 2fr 3fr;
       grid-template-rows: auto auto;
-      gap: 8px
+      gap: 10px;
     }
 
-    .cc {
+    .cine-cell {
       border-radius: 4px;
       overflow: hidden;
       position: relative;
-      background: var(--ch)
+      background: var(--charcoal);
     }
 
-    .cc img {
+    /* cine-cell can hold either img or vid-wrap */
+    .cine-cell img,
+    .cine-cell .vid-wrap {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cine-cell img {
       display: block;
-      filter: brightness(.65) saturate(.82);
-      transition: transform .55s cubic-bezier(.4, 0, .2, 1), filter .4s
+      object-fit: cover;
+      filter: brightness(0.65) saturate(0.8);
     }
 
-    .cc:hover img {
+    .cine-cell .vid-wrap video {
+      object-fit: cover;
+      filter: brightness(0.65) saturate(0.8);
+    }
+
+    .cine-cell:hover img,
+    .cine-cell:hover .vid-wrap {
       transform: scale(1.04);
-      filter: brightness(.76) saturate(1)
     }
 
-    .cc::after {
+    .cine-cell:hover img,
+    .cine-cell:hover .vid-wrap video {
+      filter: brightness(0.75) saturate(1);
+    }
+
+    .cine-cell::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(8, 12, 10, .28), transparent);
-      pointer-events: none
+      background: linear-gradient(135deg, rgba(8, 12, 10, 0.3), transparent);
+      pointer-events: none;
     }
 
-    .cc-lbl {
+    .cine-label-over {
       position: absolute;
-      bottom: 16px;
-      left: 16px;
+      bottom: 18px;
+      left: 18px;
       z-index: 1;
       font-family: var(--mono);
-      font-size: .6rem;
-      letter-spacing: .18em;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, .5)
+      color: rgba(255, 255, 255, 0.5);
     }
 
-    .cc-tall {
-      grid-row: 1/3
+    .cine-tall {
+      grid-row: 1 / 3;
     }
 
-    .cc-tall img {
+    .cine-tall img,
+    .cine-tall .vid-wrap,
+    .cine-tall .vid-wrap video {
       aspect-ratio: 2/3;
-      height: 100%
+      height: 100%;
     }
 
-    .cc-wide img {
-      aspect-ratio: 16/7
+    .cine-wide img,
+    .cine-wide .vid-wrap video {
+      aspect-ratio: 16/7;
     }
 
-    .cc-sq img {
-      aspect-ratio: 16/9
+    .cine-sq img,
+    .cine-sq .vid-wrap video {
+      aspect-ratio: 16/9;
     }
 
-    @media(max-width:820px) {
+    @media(max-width:860px) {
       .cine-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
       }
 
-      .cc-tall {
-        grid-row: auto
+      .cine-tall {
+        grid-row: auto;
       }
 
-      .cc-tall img {
+      .cine-tall img,
+      .cine-tall .vid-wrap,
+      .cine-tall .vid-wrap video {
         aspect-ratio: 4/3;
-        height: auto
+        height: auto;
       }
     }
 
-    .cine3 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 8px;
-      margin-top: 8px
-    }
-
-    .cine3 .cc img {
-      aspect-ratio: 16/9
-    }
-
-    @media(max-width:580px) {
-      .cine3 {
-        grid-template-columns: 1fr 1fr
-      }
-    }
-
-    /* WHY */
+    /* ────────────────────────────────────
+       WHY N FLY
+    ──────────────────────────────────── */
     #why {
-      background: var(--bg1);
+      background: var(--obsidian2);
       position: relative;
-      overflow: hidden
+      overflow: hidden;
     }
 
     #why::before {
       content: '';
       position: absolute;
-      top: -160px;
-      right: -160px;
-      width: 600px;
-      height: 600px;
+      top: -200px;
+      right: -200px;
+      width: 700px;
+      height: 700px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(34, 160, 90, .05), transparent 65%);
-      pointer-events: none
+      background: radial-gradient(circle, rgba(34, 160, 90, 0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .why-inner {
+      position: relative;
+      z-index: 1;
     }
 
     .why-layout {
       display: grid;
       grid-template-columns: 1fr 1.6fr;
-      gap: 80px;
-      align-items: start
+      gap: 100px;
+      align-items: start;
     }
 
     .why-sticky {
       position: sticky;
-      top: 110px
+      top: 120px;
     }
 
-    .wg {
+    .why-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 8px
+      gap: 10px;
     }
 
-    .wc {
-      padding: 24px 22px;
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      border-radius: 12px;
-      transition: background .3s, border-color .3s, transform .3s;
+    .why-card {
+      padding: 28px 24px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r);
+      transition: all 0.35s;
       position: relative;
-      overflow: hidden
+      overflow: hidden;
     }
 
-    .wc::before {
+    .why-card::before {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       height: 1px;
-      background: linear-gradient(to right, transparent, var(--em2), transparent);
+      background: linear-gradient(to right, transparent, var(--emerald2), transparent);
       opacity: 0;
-      transition: opacity .3s
+      transition: opacity 0.3s;
     }
 
-    .wc:hover {
-      background: var(--glh);
-      border-color: rgba(43, 197, 110, .18);
+    .why-card:hover {
+      background: var(--glass-hover);
+      border-color: rgba(43, 197, 110, 0.2);
       transform: translateY(-3px);
-      box-shadow: 0 16px 48px rgba(0, 0, 0, .28)
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     }
 
-    .wc:hover::before {
-      opacity: 1
+    .why-card:hover::before {
+      opacity: 1;
     }
 
-    .wc-ico {
-      font-size: 1.5rem;
-      margin-bottom: 12px;
-      display: block
+    .why-ico {
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+      display: block;
     }
 
-    .wc h4 {
+    .why-card h4 {
       font-family: var(--serif);
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 400;
-      color: #fff;
-      margin-bottom: 6px
+      color: var(--white);
+      margin-bottom: 8px;
+      letter-spacing: 0.01em;
     }
 
-    .wc p {
-      font-size: .76rem;
-      color: var(--wm);
-      line-height: 1.7;
-      font-family: var(--serif)
+    .why-card p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      font-family: var(--serif);
     }
 
-    @media(max-width:920px) {
+    @media(max-width:960px) {
       .why-layout {
         grid-template-columns: 1fr;
-        gap: 44px
+        gap: 50px;
       }
 
       .why-sticky {
-        position: static
-      }
-    }
-
-    @media(max-width:500px) {
-      .wg {
-        grid-template-columns: 1fr
-      }
-    }
-
-    /* GALLERY */
-    #images {
-      background: var(--bg0)
-    }
-
-    .masonry {
-      columns: 4;
-      column-gap: 6px
-    }
-
-    .mi {
-      break-inside: avoid;
-      margin-bottom: 6px;
-      border-radius: 4px;
-      overflow: hidden;
-      position: relative;
-      background: var(--ch);
-      display: block;
-      cursor: pointer
-    }
-
-    .mi img {
-      width: 100%;
-      display: block;
-      transition: transform .5s cubic-bezier(.4, 0, .2, 1), filter .4s;
-      filter: brightness(.72) saturate(.82)
-    }
-
-    .mi::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(8, 12, 10, .65) 0%, transparent 55%);
-      opacity: 0;
-      transition: opacity .3s
-    }
-
-    .mi:hover::after {
-      opacity: 1
-    }
-
-    .mi:hover img {
-      transform: scale(1.05);
-      filter: brightness(.84) saturate(1)
-    }
-
-    .mi-cap {
-      position: absolute;
-      bottom: 12px;
-      left: 12px;
-      z-index: 1;
-      font-family: var(--mono);
-      font-size: .58rem;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, .65);
-      opacity: 0;
-      transform: translateY(5px);
-      transition: all .25s
-    }
-
-    .mi:hover .mi-cap {
-      opacity: 1;
-      transform: translateY(0)
-    }
-
-    @media(max-width:820px) {
-      .masonry {
-        columns: 3
+        position: static;
       }
     }
 
     @media(max-width:540px) {
-      .masonry {
-        columns: 2
+      .why-grid {
+        grid-template-columns: 1fr;
       }
     }
 
-    /* REVIEWS */
+    /* ────────────────────────────────────
+       GALLERY
+    ──────────────────────────────────── */
+    #images {
+      background: var(--obsidian);
+    }
+
+    .gallery-intro {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .masonry {
+      columns: 4;
+      column-gap: 8px;
+    }
+
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      background: var(--charcoal);
+      display: block;
+      cursor: pointer;
+    }
+
+    .masonry-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: brightness(0.75) saturate(0.8);
+    }
+
+    .masonry-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(8, 12, 10, 0.7) 0%, transparent 55%);
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+
+    .masonry-item:hover::after {
+      opacity: 1;
+    }
+
+    .masonry-item:hover img {
+      transform: scale(1.05);
+      filter: brightness(0.85) saturate(1);
+    }
+
+    .masonry-cap {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      z-index: 1;
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      opacity: 0;
+      transform: translateY(6px);
+      transition: all 0.3s;
+    }
+
+    .masonry-item:hover .masonry-cap {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media(max-width:860px) {
+      .masonry {
+        columns: 3;
+      }
+    }
+
+    @media(max-width:560px) {
+      .masonry {
+        columns: 2;
+      }
+    }
+
+    /* ────────────────────────────────────
+       REVIEWS
+    ──────────────────────────────────── */
     #reviews {
-      background: var(--bg1)
+      background: var(--obsidian2);
     }
 
-    .rev-head {
+    .reviews-header {
       text-align: center;
-      margin-bottom: 60px
+      margin-bottom: 70px;
     }
 
-    .rev-badge {
+    .rev-rating-badge {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      padding: 9px 20px;
+      gap: 14px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      padding: 10px 22px;
       border-radius: 2px;
-      margin-bottom: 18px
+      margin-bottom: 22px;
     }
 
-    .stars {
-      color: var(--gd2);
+    .rev-rating-badge .stars {
+      color: var(--gold2);
       letter-spacing: 4px;
-      font-size: .88rem
+      font-size: 0.9rem;
     }
 
-    .rev-badge span {
+    .rev-rating-badge span {
       font-family: var(--mono);
-      font-size: .62rem;
-      letter-spacing: .16em;
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--wm)
+      color: var(--text-muted);
     }
 
     .rev-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 8px
+      gap: 10px;
     }
 
-    .revc {
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      border-radius: 12px;
-      padding: 28px;
-      transition: background .28s, border-color .28s, transform .28s;
+    .rev-card {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r);
+      padding: 30px;
+      transition: all 0.3s;
       position: relative;
-      overflow: hidden
+      overflow: hidden;
     }
 
-    .revc::after {
+    .rev-card::after {
       content: '\201C';
       position: absolute;
-      top: 6px;
-      right: 16px;
+      top: 8px;
+      right: 18px;
       font-family: var(--serif);
-      font-size: 6rem;
-      color: var(--em2);
-      opacity: .07;
-      line-height: 1
+      font-size: 7rem;
+      color: var(--emerald2);
+      opacity: 0.08;
+      line-height: 1;
     }
 
-    .revc:hover {
-      background: var(--glh);
-      border-color: rgba(43, 197, 110, .18);
-      transform: translateY(-3px)
+    .rev-card:hover {
+      background: var(--glass-hover);
+      border-color: rgba(43, 197, 110, 0.2);
+      transform: translateY(-3px);
     }
 
-    .rev-s {
-      color: var(--gd2);
-      font-size: .78rem;
+    .rev-stars {
+      color: var(--gold2);
+      font-size: 0.8rem;
       letter-spacing: 3px;
-      margin-bottom: 12px
+      margin-bottom: 14px;
     }
 
-    .rev-t {
+    .rev-text {
       font-family: var(--serif);
-      font-size: .92rem;
+      font-size: 0.95rem;
       font-weight: 300;
       font-style: italic;
-      color: var(--ws);
-      line-height: 1.75;
-      margin-bottom: 20px
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 22px;
     }
 
-    .rev-who {
+    .reviewer {
       display: flex;
       align-items: center;
-      gap: 10px
+      gap: 12px;
     }
 
     .rev-av {
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--em), var(--em2));
+      background: linear-gradient(135deg, var(--emerald), var(--emerald2));
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: var(--sans);
-      font-size: .76rem;
+      font-size: 0.8rem;
       font-weight: 700;
-      color: #fff;
+      color: var(--white);
       flex-shrink: 0;
-      border: 1px solid rgba(43, 197, 110, .28)
+      border: 1px solid rgba(43, 197, 110, 0.3);
     }
 
-    .rev-who strong {
+    .reviewer strong {
       display: block;
-      font-size: .8rem;
+      font-size: 0.82rem;
       font-weight: 600;
-      color: var(--w);
-      font-family: var(--sans)
+      color: var(--text-primary);
+      font-family: var(--sans);
     }
 
-    .rev-who span {
-      font-size: .68rem;
-      color: var(--wm);
-      font-family: var(--mono)
+    .reviewer span {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      font-family: var(--mono);
     }
 
-    @media(max-width:820px) {
+    @media(max-width:860px) {
       .rev-grid {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
       }
     }
 
-    @media(max-width:540px) {
+    @media(max-width:560px) {
       .rev-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
       }
     }
 
-    /* SAFETY */
+    /* ────────────────────────────────────
+       SAFETY
+    ──────────────────────────────────── */
     #safety {
-      background: var(--bg0)
+      background: var(--obsidian);
     }
 
     .safety-wrap {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center
+      gap: 100px;
+      align-items: center;
     }
 
     .safety-img {
@@ -1669,647 +1881,739 @@
       aspect-ratio: 4/3;
       object-fit: cover;
       border-radius: 4px;
-      border: 1px solid var(--glb);
-      filter: brightness(.68) saturate(.8)
+      border: 1px solid var(--glass-border);
+      display: block;
+      filter: brightness(0.7) saturate(0.8);
     }
 
-    .slist {
-      margin-top: 30px;
+    .safety-list {
+      margin-top: 36px;
       display: flex;
       flex-direction: column;
-      gap: 6px
+      gap: 8px;
     }
 
-    .si {
+    .sitem {
       display: flex;
       align-items: flex-start;
-      gap: 14px;
-      padding: 16px 18px;
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      border-radius: 12px;
-      transition: background .25s, border-color .25s, transform .25s
+      gap: 16px;
+      padding: 18px 20px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r);
+      transition: all 0.3s;
     }
 
-    .si:hover {
-      background: var(--glh);
-      border-color: rgba(43, 197, 110, .22);
-      transform: translateX(4px)
+    .sitem:hover {
+      background: var(--glass-hover);
+      border-color: rgba(43, 197, 110, 0.25);
+      transform: translateX(4px);
     }
 
-    .si-ico {
-      font-size: 1.1rem;
+    .sitem-ico {
+      font-size: 1.2rem;
       flex-shrink: 0;
-      margin-top: 2px
+      margin-top: 2px;
     }
 
-    .si strong {
+    .sitem strong {
       display: block;
       font-family: var(--sans);
-      font-size: .8rem;
+      font-size: 0.82rem;
       font-weight: 600;
-      color: var(--w);
-      margin-bottom: 2px
+      color: var(--text-primary);
+      margin-bottom: 3px;
     }
 
-    .si span {
+    .sitem span {
       font-family: var(--serif);
-      font-size: .82rem;
+      font-size: 0.85rem;
       font-weight: 300;
-      color: var(--wm)
+      color: var(--text-muted);
     }
 
-    @media(max-width:820px) {
+    @media(max-width:860px) {
       .safety-wrap {
         grid-template-columns: 1fr;
-        gap: 44px
+        gap: 50px;
       }
     }
 
-    /* CALLOUT */
-    .callout {
-      background: var(--bg0);
-      padding: 90px clamp(18px, 5vw, 80px);
-      text-align: center;
-      position: relative;
-      overflow: hidden
-    }
-
-    .callout::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at center, rgba(34, 160, 90, .11), transparent 62%);
-      pointer-events: none
-    }
-
-    .callout-big {
-      font-family: var(--serif);
-      font-size: clamp(3rem, 7.5vw, 7.5rem);
-      font-weight: 300;
-      line-height: .9;
-      color: #fff;
-      position: relative;
-      z-index: 1;
-      margin-bottom: 18px
-    }
-
-    .callout-big em {
-      color: var(--em3);
-      font-style: italic
-    }
-
-    .callout-sub {
-      font-family: var(--serif);
-      font-size: 1rem;
-      font-weight: 300;
-      color: var(--wm);
-      max-width: 380px;
-      margin: 0 auto 36px;
-      position: relative;
-      z-index: 1
-    }
-
-    .callout-btns {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1
-    }
-
-    /* LOCATION */
+    /* ────────────────────────────────────
+       LOCATION
+    ──────────────────────────────────── */
     #location {
-      background: var(--bg1)
+      background: var(--obsidian2);
     }
 
     .loc-wrap {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
-      gap: 80px;
-      align-items: center
+      gap: 90px;
+      align-items: center;
     }
 
     .loc-map {
       border-radius: 4px;
       overflow: hidden;
-      border: 1px solid var(--glb);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, .45);
-      aspect-ratio: 1
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+      aspect-ratio: 1;
     }
 
     .loc-map iframe {
       width: 100%;
       height: 100%;
       border: none;
-      filter: grayscale(.8) invert(.88) brightness(.82)
+      display: block;
+      filter: grayscale(0.8) invert(0.9) brightness(0.85);
     }
 
     .loc-list {
       display: flex;
       flex-direction: column;
-      gap: 6px;
-      margin-top: 28px
+      gap: 8px;
+      margin-top: 32px;
     }
 
-    .li {
+    .litem {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 14px 16px;
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      border-radius: 12px;
+      gap: 14px;
+      padding: 16px 18px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r);
       text-decoration: none;
-      transition: background .22s, border-color .22s, transform .22s
+      transition: all 0.25s;
     }
 
-    .li:hover {
-      background: var(--glh);
-      border-color: rgba(43, 197, 110, .22);
-      transform: translateX(4px)
+    .litem:hover {
+      background: var(--glass-hover);
+      border-color: rgba(43, 197, 110, 0.25);
+      transform: translateX(4px);
     }
 
-    .li-ico {
-      width: 38px;
-      height: 38px;
-      background: var(--em-dim);
-      border: 1px solid rgba(43, 197, 110, .18);
+    .litem-ico {
+      width: 40px;
+      height: 40px;
+      background: var(--emerald-dim);
+      border: 1px solid rgba(43, 197, 110, 0.2);
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1rem;
-      flex-shrink: 0
+      font-size: 1.1rem;
+      flex-shrink: 0;
     }
 
-    .li strong {
+    .litem strong {
       display: block;
       font-family: var(--sans);
-      font-size: .8rem;
+      font-size: 0.82rem;
       font-weight: 600;
-      color: var(--w);
-      margin-bottom: 1px
+      color: var(--text-primary);
+      margin-bottom: 2px;
     }
 
-    .li span {
+    .litem span {
       font-family: var(--serif);
-      font-size: .8rem;
+      font-size: 0.82rem;
       font-weight: 300;
-      color: var(--wm)
+      color: var(--text-muted);
     }
 
-    @media(max-width:820px) {
+    @media(max-width:860px) {
       .loc-wrap {
         grid-template-columns: 1fr;
-        gap: 44px
+        gap: 50px;
       }
     }
 
-    /* BOOKING */
+    /* ────────────────────────────────────
+       CALLOUT
+    ──────────────────────────────────── */
+    .callout {
+      background: var(--obsidian);
+      padding: 100px clamp(24px, 5vw, 90px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .callout::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(34, 160, 90, 0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .callout-big {
+      font-family: var(--serif);
+      font-size: clamp(3.5rem, 8vw, 8rem);
+      font-weight: 300;
+      line-height: 0.9;
+      color: var(--white);
+      position: relative;
+      z-index: 1;
+      margin-bottom: 20px;
+    }
+
+    .callout-big em {
+      color: var(--emerald3);
+      font-style: italic;
+    }
+
+    .callout-sub {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      max-width: 400px;
+      margin: 0 auto 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .callout-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ────────────────────────────────────
+       BOOKING
+    ──────────────────────────────────── */
     #book {
-      background: var(--bg1)
+      background: var(--obsidian2);
     }
 
     .book-wrap {
       display: grid;
       grid-template-columns: 1fr 1.1fr;
-      gap: 80px;
-      align-items: start
+      gap: 90px;
+      align-items: start;
     }
 
-    .clinks {
+    .contact-links {
       display: flex;
       flex-direction: column;
-      gap: 6px;
-      margin-top: 28px
+      gap: 8px;
+      margin-top: 32px;
     }
 
-    .cl {
+    .clink {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 14px 16px;
-      background: var(--gl);
-      border: 1px solid var(--glb);
-      border-radius: 12px;
+      gap: 14px;
+      padding: 16px 18px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r);
       text-decoration: none;
-      transition: background .22s, border-color .22s, transform .22s
+      transition: all 0.25s;
     }
 
-    .cl:hover {
-      background: var(--glh);
-      border-color: rgba(43, 197, 110, .28);
-      transform: translateX(4px)
+    .clink:hover {
+      background: var(--glass-hover);
+      border-color: rgba(43, 197, 110, 0.3);
+      transform: translateX(4px);
     }
 
-    .cl-ico {
-      width: 40px;
-      height: 40px;
-      background: var(--gl);
-      border: 1px solid var(--glb);
+    .clink-ico {
+      width: 42px;
+      height: 42px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1rem;
-      flex-shrink: 0
+      font-size: 1.1rem;
+      flex-shrink: 0;
     }
 
-    .cl strong {
+    .clink strong {
       display: block;
       font-family: var(--sans);
-      font-size: .8rem;
+      font-size: 0.82rem;
       font-weight: 600;
-      color: var(--w);
-      margin-bottom: 1px
+      color: var(--text-primary);
+      margin-bottom: 2px;
     }
 
-    .cl span {
+    .clink span {
       font-family: var(--mono);
-      font-size: .68rem;
-      color: var(--wm)
+      font-size: 0.7rem;
+      color: var(--text-muted);
     }
 
-    .bform {
-      background: var(--bg2);
-      border: 1px solid var(--glb);
-      border-radius: 20px;
-      padding: 40px
+    .book-form {
+      background: var(--obsidian3);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r-lg);
+      padding: 44px;
     }
 
-    .fh {
+    .form-heading {
       font-family: var(--serif);
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 300;
-      color: #fff;
-      margin-bottom: 4px
+      color: var(--white);
+      margin-bottom: 4px;
     }
 
-    .fn {
+    .form-note {
       font-family: var(--mono);
-      font-size: .58rem;
-      letter-spacing: .17em;
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--wm);
-      margin-bottom: 26px
+      color: var(--text-muted);
+      margin-bottom: 30px;
     }
 
     .frow {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px
+      gap: 12px;
     }
 
     .fg {
-      margin-bottom: 10px
+      margin-bottom: 12px;
     }
 
     .fg label {
       display: block;
       font-family: var(--mono);
-      font-size: .58rem;
-      letter-spacing: .18em;
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--wm);
-      margin-bottom: 6px
+      color: var(--text-muted);
+      margin-bottom: 7px;
     }
 
     .fg input,
     .fg select,
     .fg textarea {
       width: 100%;
-      background: var(--gl);
-      border: 1px solid var(--glb);
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
       border-radius: 6px;
-      padding: 11px 13px;
-      font-size: .84rem;
-      color: var(--w);
+      padding: 12px 14px;
+      font-size: 0.85rem;
+      color: var(--text-primary);
       font-family: var(--serif);
       outline: none;
-      transition: border-color .22s, box-shadow .22s
+      transition: border-color 0.25s, box-shadow 0.25s;
     }
 
     .fg input::placeholder {
-      color: var(--wm)
+      color: var(--text-muted);
     }
 
     .fg input:focus,
     .fg select:focus,
     .fg textarea:focus {
-      border-color: rgba(43, 197, 110, .38);
-      box-shadow: 0 0 0 3px rgba(43, 197, 110, .07)
+      border-color: rgba(43, 197, 110, 0.4);
+      box-shadow: 0 0 0 3px rgba(43, 197, 110, 0.08);
     }
 
     .fg select {
-      cursor: pointer
+      cursor: pointer;
     }
 
     .fg select option {
-      background: var(--bg0);
-      color: var(--w)
+      background: var(--obsidian);
+      color: var(--text-primary);
     }
 
     .fg textarea {
       resize: vertical;
-      min-height: 80px
+      min-height: 90px;
     }
 
-    .fsub {
+    .form-submit {
       width: 100%;
-      background: var(--gd2);
-      color: var(--bg0);
+      background: var(--gold2);
+      color: var(--obsidian);
       border: none;
-      padding: 14px;
+      padding: 15px;
       font-family: var(--mono);
-      font-size: .68rem;
+      font-size: 0.7rem;
       font-weight: 500;
-      letter-spacing: .18em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       cursor: pointer;
-      transition: background .25s, box-shadow .25s;
-      margin-top: 6px;
+      transition: all 0.3s;
+      margin-top: 8px;
       border-radius: 3px;
       position: relative;
-      overflow: hidden
+      overflow: hidden;
     }
 
-    .fsub::before {
+    .form-submit::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: var(--gd3);
+      background: var(--gold3);
       transform: translateX(-101%);
-      transition: transform .3s cubic-bezier(.4, 0, .2, 1)
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .fsub:hover::before {
-      transform: translateX(0)
+    .form-submit:hover::before {
+      transform: translateX(0);
     }
 
-    .fsub span {
+    .form-submit span {
       position: relative;
-      z-index: 1
+      z-index: 1;
     }
 
-    .fsub:hover {
-      box-shadow: 0 10px 32px rgba(201, 168, 76, .22)
+    .form-submit:hover {
+      box-shadow: 0 12px 40px rgba(201, 168, 76, 0.25);
     }
 
-    @media(max-width:820px) {
+    @media(max-width:860px) {
       .book-wrap {
         grid-template-columns: 1fr;
-        gap: 44px
+        gap: 50px;
       }
 
       .frow {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
       }
 
-      .bform {
-        padding: 24px
+      .book-form {
+        padding: 28px;
       }
     }
 
-    /* FOOTER */
+    /* ────────────────────────────────────
+       FOOTER
+    ──────────────────────────────────── */
     footer {
-      background: var(--bg0);
-      border-top: 1px solid var(--glb);
-      padding: 70px clamp(18px, 5vw, 80px) 32px
+      background: var(--obsidian);
+      border-top: 1px solid var(--glass-border);
+      padding: 80px clamp(24px, 5vw, 90px) 36px;
     }
 
-    .ft {
+    .footer-top {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 50px;
-      margin-bottom: 50px
+      gap: 60px;
+      margin-bottom: 60px;
     }
 
-    .fb-n {
+    .footer-brand-name {
       font-family: var(--serif);
-      font-size: 2.4rem;
+      font-size: 2.6rem;
       font-weight: 300;
-      letter-spacing: .1em;
-      color: #fff;
+      letter-spacing: 0.1em;
+      color: var(--white);
       display: block;
-      line-height: 1
+      line-height: 1;
     }
 
-    .fb-n em {
+    .footer-brand-name em {
       font-style: italic;
-      color: var(--em3)
+      color: var(--emerald3);
     }
 
-    .fb-s {
+    .footer-brand-sub {
       font-family: var(--mono);
-      font-size: .5rem;
-      letter-spacing: .24em;
+      font-size: 0.52rem;
+      letter-spacing: 0.26em;
       text-transform: uppercase;
-      color: var(--wm);
+      color: var(--text-muted);
       display: block;
+      margin-bottom: 16px;
       margin-top: 4px;
-      margin-bottom: 14px
     }
 
-    .fb p {
+    .footer-brand p {
       font-family: var(--serif);
-      font-size: .86rem;
+      font-size: 0.88rem;
       font-weight: 300;
-      color: var(--wm);
-      line-height: 1.7;
-      max-width: 220px
+      color: var(--text-muted);
+      line-height: 1.75;
+      max-width: 240px;
     }
 
-    .fc h5 {
+    .footer-col h5 {
       font-family: var(--mono);
-      font-size: .58rem;
+      font-size: 0.6rem;
       font-weight: 500;
-      letter-spacing: .24em;
+      letter-spacing: 0.26em;
       text-transform: uppercase;
-      color: var(--em3);
-      margin-bottom: 18px
+      color: var(--emerald3);
+      margin-bottom: 20px;
     }
 
-    .fc a {
+    .footer-col a {
       display: block;
       font-family: var(--serif);
-      font-size: .82rem;
+      font-size: 0.85rem;
       font-weight: 300;
-      color: var(--wm);
+      color: var(--text-muted);
       text-decoration: none;
-      margin-bottom: 9px;
-      transition: color .18s, padding-left .18s
+      margin-bottom: 10px;
+      transition: color 0.2s, padding-left 0.2s;
     }
 
-    .fc a:hover {
-      color: var(--ws);
-      padding-left: 4px
+    .footer-col a:hover {
+      color: var(--text-secondary);
+      padding-left: 4px;
     }
 
-    .fd {
+    .footer-divider {
       height: 1px;
-      background: var(--glb);
-      margin-bottom: 24px
+      background: var(--glass-border);
+      margin-bottom: 28px;
     }
 
-    .fb2 {
+    .footer-bottom {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
       font-family: var(--mono);
-      font-size: .58rem;
-      letter-spacing: .13em;
-      color: var(--wm)
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
     }
 
-    .heart {
-      color: var(--em3)
+    .footer-bottom .heart {
+      color: var(--emerald3);
     }
 
-    @media(max-width:820px) {
-      .ft {
+    @media(max-width:860px) {
+      .footer-top {
         grid-template-columns: 1fr 1fr;
-        gap: 36px
+        gap: 40px;
       }
     }
 
-    @media(max-width:460px) {
-      .ft {
-        grid-template-columns: 1fr
+    @media(max-width:480px) {
+      .footer-top {
+        grid-template-columns: 1fr;
       }
     }
 
-    /* FIXED WIDGETS */
+    /* ────────────────────────────────────
+       FIXED BUTTONS
+    ──────────────────────────────────── */
     #btt {
       position: fixed;
-      bottom: 28px;
-      right: 28px;
+      bottom: 30px;
+      right: 30px;
       z-index: 400;
-      width: 46px;
-      height: 46px;
-      background: var(--gl);
-      backdrop-filter: blur(14px);
-      border: 1px solid var(--glb);
+      width: 48px;
+      height: 48px;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
       border-radius: 4px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: var(--mono);
-      font-size: .72rem;
-      color: var(--wm);
+      font-size: 0.75rem;
+      color: var(--text-muted);
       text-decoration: none;
       opacity: 0;
       pointer-events: none;
-      transition: opacity .28s, border-color .22s, color .22s, transform .22s
+      transition: all 0.3s;
     }
 
     #btt.show {
       opacity: 1;
-      pointer-events: all
+      pointer-events: all;
     }
 
     #btt:hover {
-      border-color: rgba(43, 197, 110, .38);
-      color: var(--em3);
-      transform: translateY(-3px)
+      border-color: rgba(43, 197, 110, 0.4);
+      color: var(--emerald3);
+      transform: translateY(-3px);
     }
 
-    .wa {
+    .wa-float {
       position: fixed;
-      bottom: 28px;
-      left: 28px;
+      bottom: 30px;
+      left: 30px;
       z-index: 400;
-      width: 50px;
-      height: 50px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
       background: #25D366;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.35rem;
+      font-size: 1.4rem;
       text-decoration: none;
-      box-shadow: 0 6px 24px rgba(37, 211, 102, .4);
-      transition: transform .25s, box-shadow .25s;
-      animation: waPop 3.5s ease-in-out infinite
+      box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s;
+      animation: waPop 3.5s ease-in-out infinite;
     }
 
-    .wa:hover {
+    .wa-float:hover {
       transform: scale(1.1);
-      box-shadow: 0 10px 40px rgba(37, 211, 102, .55)
+      box-shadow: 0 12px 48px rgba(37, 211, 102, 0.55);
     }
 
     @keyframes waPop {
 
       0%,
       100% {
-        box-shadow: 0 6px 24px rgba(37, 211, 102, .4)
+        box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
       }
 
       50% {
-        box-shadow: 0 6px 24px rgba(37, 211, 102, .4), 0 0 0 10px rgba(37, 211, 102, .1)
+        box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4), 0 0 0 12px rgba(37, 211, 102, 0.1);
       }
+    }
+
+    .rule {
+      border: none;
+      height: 1px;
+      background: var(--glass-border);
+      margin: 0;
     }
   </style>
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const videos = document.querySelectorAll(".lazy-video");
+
+    const loadVideo = (video) => {
+      const source = video.querySelector("source");
+      if (!source.src) {
+        source.src = source.dataset.src;
+        video.load();
+      }
+    };
+
+    const playVideo = (video) => {
+      video.muted = true;
+      video.play().catch(() => {
+        document.addEventListener("touchstart", () => {
+          video.play();
+        }, { once: true });
+      });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+
+        if (entry.isIntersecting) {
+          loadVideo(video);
+          playVideo(video);
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    videos.forEach(video => observer.observe(video));
+
+  });
+</script>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const btn = form.querySelector('.form-submit span');
+
+    btn.textContent = "✓ Request Sent — We'll WhatsApp You Shortly!";
+    form.querySelector('.form-submit').style.background = "var(--emerald2)";
+    form.querySelector('.form-submit').style.color = "white";
+
+    form.reset();
+  }
+</script>
 
 <body>
-  <div class="cur-dot" id="cDot"></div>
-  <div class="cur-ring" id="cRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="noise"></div>
 
-  <nav id="nav">
+  <nav id="mainNav">
     <a href="#hero" class="nav-logo">
       <span class="logo-mark">N <em>FLY</em></span>
-      <span class="logo-sub">Speedboat &middot; Punnamada Lake &middot; Alappuzha</span>
+      <span class="logo-sub">Speedboat · Punnamada Lake · Alappuzha</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#about">The Boat</a></li>
       <li><a href="#rides">Rides</a></li>
-      <li><a href="#images">Gallery</a></li>
+      <!-- <li><a href="#videos">Videos</a></li> -->
+      <li><a href="#images">Images</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#safety">Safety</a></li>
       <li><a href="#location">Location</a></li>
       <li><a href="#book" class="nav-book">Reserve a Ride</a></li>
     </ul>
-    <button class="hamburger" id="hbg" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
-  <div class="mob-menu" id="mobMenu">
-    <a href="#about" onclick="cM()">The Boat</a>
-    <a href="#rides" onclick="cM()">Rides</a>
-    <a href="#images" onclick="cM()">Gallery</a>
-    <a href="#reviews" onclick="cM()">Reviews</a>
-    <a href="#safety" onclick="cM()">Safety</a>
-    <a href="#location" onclick="cM()">Location</a>
-    <a href="#book" onclick="cM()" class="mob-cta">Reserve a Ride &rarr;</a>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">The Boat</a>
+    <a href="#rides" onclick="closeMenu()">Rides</a>
+    <!-- <a href="#videos" onclick="closeMenu()">Videos</a> -->
+    <a href="#images" onclick="closeMenu()">Images</a>
+    <a href="#reviews" onclick="closeMenu()">Reviews</a>
+    <a href="#safety" onclick="closeMenu()">Safety</a>
+    <a href="#location" onclick="closeMenu()">Location</a>
+    <a href="#book" onclick="closeMenu()" class="mob-cta">Reserve a Ride →</a>
   </div>
 
-  <!-- HERO — VIDEO 1 of 3 -->
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
   <section id="hero">
     <div class="hero-bg">
-      <div class="vw" id="heroWrap">
-        <video id="heroVid" autoplay muted loop playsinline webkit-playsinline preload="metadata"
+      <div class="vid-wrap" id="heroVid">
+        <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
           poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
-          <source src="https://res.cloudinary.com/starkcab/video/upload/v1777811567/Nfly/IMG_3748_ikiqgs.mp4"
-            type="video/mp4">
+          <source data-src="/assets/vid/IMG_3748.mp4" type="video/mp4">
         </video>
       </div>
     </div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
     <div class="hero-content">
       <div>
-        <div class="hero-eyebrow"><span class="eyebrow-line"></span>Punnamada Lake &middot; Alappuzha, Kerala</div>
-        <h1 class="hero-h1">N&nbsp;<span class="accent">FLY</span><br><span class="outline">Speed</span>boat</h1>
-        <p class="hero-desc">One boat. One legend. Unlimited thrills on <strong>Kerala's most iconic lake.</strong>
-          Operated personally by its proud owner &mdash; since 2024.</p>
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          Punnamada Lake · Alappuzha, Kerala
+        </div>
+        <h1 class="hero-h1">
+          N&nbsp;<span class="accent">FLY</span><br>
+          <span class="outline">Speed</span>boat
+        </h1>
+        <p class="hero-descriptor">
+          One boat. One legend. Unlimited thrills on <strong>Kerala's most iconic lake.</strong>
+          Operated personally by its proud owner — since 2024.
+        </p>
         <div class="hero-actions">
-          <a href="#book" class="btn-p"><span>Reserve Your Ride</span></a>
-          <a href="#rides" class="btn-s">View Experiences &darr;</a>
+          <a href="#book" class="btn-primary"><span>Reserve Your Ride</span></a>
+          <a href="#rides" class="btn-secondary">View Experiences ↓</a>
         </div>
       </div>
       <div class="hero-stats">
         <div class="hstat">
-          <div class="hstat-n"><span class="ha">4.9</span>&starf;</div>
+          <div class="hstat-n"><span class="hstat-accent">4.9</span>★</div>
           <div class="hstat-l">Rating</div>
         </div>
         <div class="hstat">
@@ -2317,87 +2621,90 @@
           <div class="hstat-l">Happy Riders</div>
         </div>
         <div class="hstat">
-          <div class="hstat-n">7<span style="font-size:1.2rem;opacity:.6">AM</span></div>
+          <div class="hstat-n">7<span style="font-size:1.3rem;opacity:0.6">AM</span></div>
           <div class="hstat-l">Opens Daily</div>
         </div>
         <div class="hstat">
-          <div class="hstat-n">80<span style="font-size:1.3rem;opacity:.6">KM/H</span></div>
+          <div class="hstat-n">80<span style="font-size:1.4rem;opacity:0.6">KM/H</span></div>
           <div class="hstat-l">Max Speed</div>
         </div>
       </div>
     </div>
     <div class="hero-scroll">
-      <div class="scroll-line"></div><span class="scroll-txt">Scroll</span>
+      <div class="scroll-line"></div>
+      <span class="scroll-text">Scroll</span>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="mq-strip">
-    <div class="mq-track">
-      <span class="mq-item">N FLY Speedboat</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Punnamada Lake</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">High Speed Rides</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Sunset Cruises</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Family Adventures</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Alappuzha &middot; Kerala</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Book Direct &middot; No Fees</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Nehru Trophy Waters</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">GoPro 4K Footage</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">N FLY Speedboat</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Punnamada Lake</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">High Speed Rides</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Sunset Cruises</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Family Adventures</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Alappuzha &middot; Kerala</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Book Direct &middot; No Fees</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">Nehru Trophy Waters</span><span class="mq-item mq-dot">&#9670;</span>
-      <span class="mq-item">GoPro 4K Footage</span><span class="mq-item mq-dot">&#9670;</span>
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span class="marquee-item">N FLY Speedboat</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Punnamada Lake</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">High Speed Rides</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Sunset Cruises</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Family Adventures</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Alappuzha · Kerala</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Book Direct · No Fees</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Nehru Trophy Waters</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">GoPro 4K Footage</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">N FLY Speedboat</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Punnamada Lake</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">High Speed Rides</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Sunset Cruises</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Family Adventures</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Alappuzha · Kerala</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Book Direct · No Fees</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">Nehru Trophy Waters</span><span class="marquee-item marquee-dot">◆</span>
+      <span class="marquee-item">GoPro 4K Footage</span><span class="marquee-item marquee-dot">◆</span>
     </div>
   </div>
 
-  <!-- ABOUT — VIDEO 2 of 3 -->
+  <!-- ══════════════════════════════════
+       ABOUT
+  ══════════════════════════════════ -->
   <section id="about" class="sec">
-    <div class="sp">
+    <div class="sec-pad">
       <div class="about-wrap">
         <div class="about-media rv-l">
-          <div class="vw">
-            <video autoplay muted loop playsinline webkit-playsinline preload="none"
-              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20241222_100528.jpg_pzlfox.jpg">
-              <source
-                data-src="https://res.cloudinary.com/starkcab/video/upload/v1777697243/Nfly/20241222_121907_rwwpkw.mp4"
-                type="video/mp4">
+          <!-- About video — lazy loaded, plays only when visible -->
+          <div class="vid-wrap">
+            <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
+              poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
+              <source data-src="/assets/vid/Boat-Only.mp4" type="video/mp4">
             </video>
           </div>
           <img class="about-float"
             src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg"
             alt="Punnamada Lake" loading="lazy">
           <div class="about-badge">
-            <div class="badge-t">N FLY</div>
-            <div class="badge-s">Est. 2024 &middot; Punnamada</div>
+            <div class="badge-title">N FLY</div>
+            <div class="badge-sub">Est. 2024 · Punnamada</div>
           </div>
         </div>
+
         <div class="rv-r">
-          <div class="lbl">Meet the Boat</div>
-          <h2 class="disp">The One &amp;<br>Only <em>N FLY</em></h2>
-          <div class="body-t" style="margin-top:22px;margin-bottom:32px">
-            <p style="margin-bottom:14px">N FLY is not just a speedboat &mdash; it is Punnamada Lake's most recognisable
+          <div class="label">Meet the Boat</div>
+          <h2 class="display">The One &amp;<br>Only <em>N FLY</em></h2>
+          <div class="body-text" style="margin-top:24px;margin-bottom:36px;">
+            <p style="margin-bottom:16px;">N FLY is not just a speedboat — it is Punnamada Lake's most recognisable
               vessel, dressed in its signature green livery, personally owned and operated by its proud captain.</p>
             <p>When you book N FLY, you speak directly with the owner. No agents, no commissions, no hidden fees. Pure
               Kerala hospitality on the water.</p>
           </div>
-          <div class="af-grid">
-            <div class="af"><span class="af-ico">&#x1F6A4;</span><strong>Signature Green Boat</strong><span>Instantly
+          <div class="about-feats">
+            <div class="af"><span class="af-icon">🚤</span><strong>Signature Green Boat</strong><span>Instantly
                 recognisable</span></div>
-            <div class="af"><span class="af-ico">&#x1F464;</span><strong>Owner Operated</strong><span>Book direct, pay
+            <div class="af"><span class="af-icon">👤</span><strong>Owner Operated</strong><span>Book direct, pay
                 less</span></div>
-            <div class="af"><span class="af-ico">&#x1F3C6;</span><strong>Nehru Trophy Waters</strong><span>Legendary
-                Punnamada Lake</span></div>
-            <div class="af"><span class="af-ico">&#x1F4F8;</span><strong>GoPro 4K Footage</strong><span>Your ride,
+            <div class="af"><span class="af-icon">🏆</span><strong>Nehru Trophy Waters</strong><span>Legendary Punnamada
+                Lake</span></div>
+            <div class="af"><span class="af-icon">📸</span><strong>GoPro 4K Footage</strong><span>Your ride,
                 captured</span></div>
-            <div class="af"><span class="af-ico">&#x1F6E1;&#xFE0F;</span><strong>Safety Certified</strong><span>Kerala
-                Maritime Board</span></div>
-            <div class="af"><span class="af-ico">&#x23F0;</span><strong>7 Days a Week</strong><span>7 AM to 6:30
-                PM</span></div>
+            <div class="af"><span class="af-icon">🛡️</span><strong>Safety Certified</strong><span>Kerala Maritime
+                Board</span></div>
+            <div class="af"><span class="af-icon">⏰</span><strong>7 Days a Week</strong><span>7 AM to 6:30 PM</span>
+            </div>
           </div>
         </div>
       </div>
@@ -2406,139 +2713,188 @@
 
   <hr class="rule">
 
-  <!-- INTERLUDE — VIDEO 3 of 3 -->
-  <div class="interlude">
-    <img class="interlude-fallback"
+  <!-- ══════════════════════════════════
+       VIDEO INTERLUDE
+  ══════════════════════════════════ -->
+  <div class="vid-interlude">
+    <!-- Poster image as fallback (always visible until video loads) -->
+    <img class="vid-fallback"
       src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg"
       alt="N FLY on Punnamada Lake">
-    <div class="vw">
-      <video autoplay muted loop playsinline webkit-playsinline preload="none"
+    <div class="vid-wrap">
+      <video class="lazy-video" muted loop playsinline webkit-playsinline preload="none"
         poster="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg">
-        <source data-src="https://res.cloudinary.com/starkcab/video/upload/v1777700908/Nfly/IMG_3592_1_o2lloj.mp4"
-          type="video/mp4">
+        <source data-src="/assets/vid/IMG_3592.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="interlude-ov">
-      <div class="interlude-txt rv">
-        <div class="lbl" style="color:rgba(255,255,255,.32)"><span
-            style="background:rgba(255,255,255,.2);width:24px;height:1px;display:block"></span>Experience</div>
-        <div class="disp" style="font-size:clamp(3rem,9vw,7.5rem)">Feel the<br><em>Rush</em></div>
+    <div class="vid-interlude-overlay">
+      <div class="interlude-text rv">
+        <div class="label" style="color:rgba(255,255,255,0.35);">
+          <span style="background:rgba(255,255,255,0.2);width:28px;height:1px;display:block;"></span>
+          Experience
+        </div>
+        <div class="display" style="font-size:clamp(3.5rem,10vw,8rem);">Feel the<br><em>Rush</em></div>
       </div>
     </div>
   </div>
 
-  <!-- RIDES — matching images per package -->
+  <!-- ══════════════════════════════════
+       RIDES
+  ══════════════════════════════════ -->
   <section id="rides" class="sec">
-    <div class="sp">
-      <div class="rides-head">
+    <div class="sec-pad">
+      <div class="rides-header">
         <div>
-          <div class="lbl rv">Packages</div>
-          <h2 class="disp rv">Choose Your<br><em>Ride Package</em></h2>
+          <div class="label rv">Packages</div>
+          <h2 class="display rv">Choose Your<br><em>Ride Package</em></h2>
         </div>
-        <p class="body-t rv" style="max-width:320px;text-align:right;font-size:.9rem">All rides include life jackets,
-          safety briefing &amp; an experienced driver. Perfect for friends, couples &amp; families.</p>
+        <p class="body-text rv" style="max-width:340px;text-align:right;">
+          All rides include life jackets, safety briefing & an experienced driver.
+          Perfect for friends, couples & families.
+        </p>
       </div>
-      <div class="rg rv">
 
-        <!-- 1 MIN DEMO — speedboat close-up action -->
-        <div class="rc">
-          <div class="ri">
-            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700&q=75&auto=format" alt="Demo Ride"
-              loading="lazy">
-            <span class="badge-ride">Quick Demo</span>
+      <div class="rides-grid rv">
+
+        <!-- 1 MIN DEMO -->
+        <div class="ride-card">
+          <div class="ride-img">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700&q=80" loading="lazy">
+            <span class="ride-badge-type">Quick Demo</span>
           </div>
-          <div class="rb">
-            <div class="rn">1 Minute Demo Ride</div>
-            <p class="rd">A short and exciting introduction to the speedboat experience. Perfect to feel the power,
-              splash and thrill before going for longer rides.</p>
-            <div class="rmeta-row"><span class="rm">&#x23F1; 1 min</span><span class="rm">&#x1F465; Max 1</span><span
-                class="rm">&#x26A1; Quick Taste</span></div>
-            <div class="rf"><a href="#book" class="ride-cta">Book Now <span class="ride-arr">&rarr;</span></a></div>
+          <div class="ride-body">
+            <div class="ride-name">1 Minute Demo Ride</div>
+            <p class="ride-desc">
+              A short and exciting introduction to the speedboat experience. Perfect to feel the power, splash and
+              thrill before going for longer rides.
+            </p>
+            <div class="ride-meta-row">
+              <span class="rmeta">⏱ 1 min</span>
+              <span class="rmeta">👥 Max 1</span>
+              <span class="rmeta">⚡ Quick Taste</span>
+            </div>
+            <div class="ride-footer">
+              <a href="#book" class="ride-cta">Book Now →</a>
+            </div>
           </div>
         </div>
 
-        <!-- 10 MIN SPEED THRILL — high speed boat wake spray -->
-        <div class="rc">
-          <div class="ri">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=75&auto=format"
-              alt="Speed Thrill" loading="lazy">
-            <span class="badge-ride">Thrill Ride</span><span class="badge-hot">Most Booked</span>
+        <!-- 10 MIN THRILL -->
+        <div class="ride-card">
+          <div class="ride-img">
+            <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=700&q=80" loading="lazy">
+            <span class="ride-badge-type">Thrill Ride</span>
+            <span class="ride-popular">Most Booked</span>
           </div>
-          <div class="rb">
-            <div class="rn">10 Minute Speed Thrill</div>
-            <p class="rd">High-speed action across the lake with sharp turns, splashes, and adrenaline-packed moments.
-              Pure excitement from start to finish.</p>
-            <div class="rmeta-row"><span class="rm">&#x23F1; 10 min</span><span class="rm">&#x1F465; Max 7</span><span
-                class="rm">&#x1F525; High Speed</span></div>
-            <div class="rf"><a href="#book" class="ride-cta">Book Now <span class="ride-arr">&rarr;</span></a></div>
-          </div>
-        </div>
-
-        <!-- 30 MIN EXPLORER — scenic wide lake aerial -->
-        <div class="rc">
-          <div class="ri">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=75&auto=format"
-              alt="Lake Explorer" loading="lazy">
-            <span class="badge-ride">Explorer</span>
-          </div>
-          <div class="rb">
-            <div class="rn">30 Minute Lake Explorer</div>
-            <p class="rd">A perfect mix of speed and scenic beauty. Explore the wide lake, enjoy cool breeze, and
-              capture amazing moments on water.</p>
-            <div class="rmeta-row"><span class="rm">&#x23F1; 30 min</span><span class="rm">&#x1F465; Max 7</span><span
-                class="rm">&#x1F30A; Scenic</span></div>
-            <div class="rf"><a href="#book" class="ride-cta">Book Now <span class="ride-arr">&rarr;</span></a></div>
+          <div class="ride-body">
+            <div class="ride-name">10 Minute Speed Thrill</div>
+            <p class="ride-desc">
+              High-speed action across the lake with sharp turns, splashes, and adrenaline-packed moments. Pure
+              excitement from start to finish.
+            </p>
+            <div class="ride-meta-row">
+              <span class="rmeta">⏱ 10 min</span>
+              <span class="rmeta">👥 Max 7</span>
+              <span class="rmeta">🔥 High Speed</span>
+            </div>
+            <div class="ride-footer">
+              <a href="#book" class="ride-cta">Book Now →</a>
+            </div>
           </div>
         </div>
 
-        <!-- 1 HR VILLAGE — narrow Kerala backwater canal -->
-        <div class="rc">
-          <div class="ri">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=75&auto=format"
-              alt="Village Explorer" loading="lazy">
-            <span class="badge-ride">Village Tour</span><span class="badge-hot">Recommended</span>
+        <!-- 30 MIN EXPLORER -->
+        <div class="ride-card">
+          <div class="ride-img">
+            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=700&q=80" loading="lazy">
+            <span class="ride-badge-type">Explorer</span>
           </div>
-          <div class="rb">
-            <div class="rn">1 Hour Village Explorer</div>
-            <p class="rd">Discover hidden canals, local village life, and peaceful backwaters. A complete Kerala
-              experience beyond just speed.</p>
-            <div class="rmeta-row"><span class="rm">&#x23F1; 1 hour</span><span class="rm">&#x1F465; Max 7</span><span
-                class="rm">&#x1F334; Local Life</span></div>
-            <div class="rf"><a href="#book" class="ride-cta">Book Now <span class="ride-arr">&rarr;</span></a></div>
-          </div>
-        </div>
-
-        <!-- SUNSET PREMIUM — golden sunset lake reflection -->
-        <div class="rc">
-          <div class="ri">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=75&auto=format"
-              alt="Sunset Ride" loading="lazy">
-            <span class="badge-ride">Premium</span><span class="badge-hot">Sunset Special</span>
-          </div>
-          <div class="rb">
-            <div class="rn">Sunset Premium Ride</div>
-            <p class="rd">Experience magical sunset views on the water with a smooth and relaxing ride. Perfect for
-              couples and unforgettable memories.</p>
-            <div class="rmeta-row"><span class="rm">&#x23F1; 45 min</span><span class="rm">&#x1F465; Max 7</span><span
-                class="rm">&#x1F305; Romantic</span></div>
-            <div class="rf"><a href="#book" class="ride-cta">Book Now <span class="ride-arr">&rarr;</span></a></div>
+          <div class="ride-body">
+            <div class="ride-name">30 Minute Lake Explorer</div>
+            <p class="ride-desc">
+              A perfect mix of speed and scenic beauty. Explore the wide lake, enjoy cool breeze, and capture amazing
+              moments on water.
+            </p>
+            <div class="ride-meta-row">
+              <span class="rmeta">⏱ 30 min</span>
+              <span class="rmeta">👥 Max 7</span>
+              <span class="rmeta">🌊 Scenic</span>
+            </div>
+            <div class="ride-footer">
+              <a href="#book" class="ride-cta">Book Now →</a>
+            </div>
           </div>
         </div>
 
-        <!-- CUSTOM — group of happy people on boat -->
-        <div class="rc">
-          <div class="ri">
-            <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=700&q=75&auto=format"
-              alt="Custom Ride" loading="lazy">
-            <span class="badge-ride">Custom</span><span class="badge-hot">Flexible</span>
+        <!-- 1 HOUR VILLAGE -->
+        <div class="ride-card">
+          <div class="ride-img">
+            <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=700&q=80" loading="lazy">
+            <span class="ride-badge-type">Village Tour</span>
+            <span class="ride-popular">Recommended</span>
           </div>
-          <div class="rb">
-            <div class="rn">Custom Ride Package</div>
-            <p class="rd">Create your own ride experience. Choose duration, route, speed, and special requests &mdash;
-              fully tailored just for you.</p>
-            <div class="rmeta-row"><span class="rm">&#x23F1; Flexible</span><span class="rm">&#x1F465; Max 7</span><span
-                class="rm">&#x1F3AF; Your Choice</span></div>
-            <div class="rf"><a href="#book" class="ride-cta">Customize <span class="ride-arr">&rarr;</span></a></div>
+          <div class="ride-body">
+            <div class="ride-name">1 Hour Village Explorer</div>
+            <p class="ride-desc">
+              Discover hidden canals, local village life, and peaceful backwaters. A complete Kerala experience beyond
+              just speed.
+            </p>
+            <div class="ride-meta-row">
+              <span class="rmeta">⏱ 1 hour</span>
+              <span class="rmeta">👥 Max 7</span>
+              <span class="rmeta">🌴 Local Life</span>
+            </div>
+            <div class="ride-footer">
+              <a href="#book" class="ride-cta">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUNSET PREMIUM (ADDED) -->
+        <div class="ride-card">
+          <div class="ride-img">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80" loading="lazy">
+            <span class="ride-badge-type">Premium</span>
+            <span class="ride-popular">Sunset Special</span>
+          </div>
+          <div class="ride-body">
+            <div class="ride-name">Sunset Premium Ride</div>
+            <p class="ride-desc">
+              Experience magical sunset views on the water with a smooth and relaxing ride. Perfect for couples and
+              unforgettable memories.
+            </p>
+            <div class="ride-meta-row">
+              <span class="rmeta">⏱ 45 min</span>
+              <span class="rmeta">👥 Max 7</span>
+              <span class="rmeta">🌅 Romantic</span>
+            </div>
+            <div class="ride-footer">
+              <a href="#book" class="ride-cta">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CUSTOM TRIP -->
+        <div class="ride-card">
+          <div class="ride-img">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" loading="lazy">
+            <span class="ride-badge-type">Custom</span>
+            <span class="ride-popular">Flexible</span>
+          </div>
+          <div class="ride-body">
+            <div class="ride-name">Custom Ride Package</div>
+            <p class="ride-desc">
+              Create your own ride experience. Choose duration, route, speed, and special requests — fully tailored just
+              for you.
+            </p>
+            <div class="ride-meta-row">
+              <span class="rmeta">⏱ Flexible</span>
+              <span class="rmeta">👥 Max 7</span>
+              <span class="rmeta">🎯 Your Choice</span>
+            </div>
+            <div class="ride-footer">
+              <a href="#book" class="ride-cta">Customize →</a>
+            </div>
           </div>
         </div>
 
@@ -2546,94 +2902,128 @@
     </div>
   </section>
 
-  <!-- CINEMATIC — images only, zero video weight -->
-  <section id="gallery-media" class="sec">
-    <div class="sp" style="padding-top:0">
-      <div style="padding:70px 0 44px" class="rv">
-        <div class="lbl g">In the Frame</div>
-        <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:18px">
-          <h2 class="disp">Real Rides,<br><em>Real Moments</em></h2>
-          <p class="body-t" style="font-size:.86rem;max-width:300px;text-align:right">Unfiltered moments from real
-            guests on Punnamada Lake.</p>
+  <!-- ══════════════════════════════════
+       CINEMATIC MEDIA GRID
+  ══════════════════════════════════ -->
+  <section id="videos" class="sec">
+    <div class="cine-sec-pad">
+      <div style="padding:80px 0 50px;" class="rv">
+        <div class="label gold-label">In the Frame</div>
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+          <h2 class="display">Real Rides,<br><em>Real Moments</em></h2>
+          <p class="body-text" style="font-size:0.88rem;max-width:340px;text-align:right;">Every ride on N FLY is
+            different — the light, the wind, the water. Unfiltered moments from real guests on Punnamada Lake.</p>
         </div>
       </div>
+
       <div class="cine-grid rv">
-        <div class="cc cc-tall"><img
-            src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20241222_100528.jpg_pzlfox.jpg"
-            alt="N FLY in Motion" loading="lazy"><span class="cc-lbl">N FLY &middot; In Motion</span></div>
-        <div class="cc cc-sq"><img
-            src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg"
-            alt="Full Throttle" loading="lazy"><span class="cc-lbl">Full Throttle</span></div>
-        <div class="cc cc-wide"><img
-            src="https://res.cloudinary.com/starkcab/image/upload/v1777697231/Nfly/20250102_155723.jpg_gapxgt.jpg"
-            alt="Golden Hour" loading="lazy"><span class="cc-lbl">Golden Hour</span></div>
+        <!-- Tall portrait video — lazy loaded -->
+        <div class="cine-cell cine-tall">
+          <div class="vid-wrap">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" loading="lazy">
+
+          </div>
+          <span class="cine-label-over">N FLY · In Motion</span>
+        </div>
+        <div class="cine-cell cine-sq">
+          <div class="vid-wrap">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" loading="lazy">
+
+          </div>
+          <span class="cine-label-over">Full Throttle</span>
+        </div>
+        <div class="cine-cell cine-wide">
+          <div class="vid-wrap">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" loading="lazy">
+
+          </div>
+          <span class="cine-label-over">Golden Hour</span>
+        </div>
       </div>
-      <div class="cine3 rv">
-        <div class="cc"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=600&q=75&auto=format"
-            alt="Canal Run" loading="lazy"><span class="cc-lbl">Canal Run</span></div>
-        <div class="cc"><img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=75&auto=format"
-            alt="Group Smiles" loading="lazy"><span class="cc-lbl">Group Smiles</span></div>
-        <div class="cc"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=75&auto=format"
-            alt="Top Speed" loading="lazy"><span class="cc-lbl">Top Speed</span></div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:10px;" class="rv">
+        <div class="cine-cell">
+          <div class="vid-wrap">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" loading="lazy">
+
+          </div>
+          <span class="cine-label-over">Canal Run</span>
+        </div>
+        <div class="cine-cell">
+          <div class="vid-wrap">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" loading="lazy">
+
+          </div>
+          <span class="cine-label-over">Group Smiles</span>
+        </div>
+        <div class="cine-cell">
+          <div class="vid-wrap">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80" loading="lazy">
+
+          </div>
+          <span class="cine-label-over">Top Speed</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY -->
+  <!-- ══════════════════════════════════
+       WHY N FLY
+  ══════════════════════════════════ -->
   <section id="why" class="sec">
-    <div class="sp" style="position:relative;z-index:1">
+    <div class="sec-pad why-inner">
       <div class="why-layout">
         <div class="why-sticky rv-l">
-          <div class="lbl">Why N FLY?</div>
-          <h2 class="disp">One Boat.<br><em>All the</em><br>Difference.</h2>
-          <p class="body-t" style="margin-top:22px">N FLY is not a fleet. It is a single boat, one passionate owner, and
-            an experience you won't find anywhere else on Punnamada Lake.</p>
-          <div style="margin-top:36px;padding-top:28px;border-top:1px solid var(--glb)">
-            <div class="lbl" style="margin-bottom:12px">Our Promise</div>
+          <div class="label">Why N FLY?</div>
+          <h2 class="display">One Boat.<br><em>All the</em><br>Difference.</h2>
+          <p class="body-text" style="margin-top:24px;">N FLY is not a fleet. It is a single boat, one passionate owner,
+            and an experience you won't find anywhere else on Punnamada Lake.</p>
+          <div style="margin-top:40px;padding-top:32px;border-top:1px solid var(--glass-border);">
+            <div class="label" style="margin-bottom:14px;">Our Promise</div>
             <p
-              style="font-family:var(--serif);font-size:1.05rem;font-weight:300;color:var(--wm);line-height:1.7;font-style:italic">
+              style="font-family:var(--serif);font-size:1.1rem;font-weight:300;color:var(--text-muted);line-height:1.7;font-style:italic;">
               "When you ride N FLY, you're not a customer number. You're our guest. That's the difference."</p>
             <p
-              style="font-family:var(--mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--em3);margin-top:10px">
-              &mdash; The Owner, N FLY</p>
+              style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--emerald3);margin-top:12px;">
+              — The Owner, N FLY</p>
           </div>
         </div>
-        <div class="wg rv-r">
-          <div class="wc"><span class="wc-ico">&#x1F464;</span>
+        <div class="why-grid rv-r">
+          <div class="why-card"><span class="why-ico">👤</span>
             <h4>Direct Owner Booking</h4>
             <p>No agents, no commissions. You talk directly to the captain who drives the boat. The best rates,
               guaranteed.</p>
           </div>
-          <div class="wc"><span class="wc-ico">&#x1F6A4;</span>
+          <div class="why-card"><span class="why-ico">🚤</span>
             <h4>The Iconic Green Boat</h4>
             <p>One look at that signature green livery and you know it's N FLY. Punnamada's most photographed speedboat.
             </p>
           </div>
-          <div class="wc"><span class="wc-ico">&#x2764;&#xFE0F;</span>
+          <div class="why-card"><span class="why-ico">❤️</span>
             <h4>Personal Hospitality</h4>
-            <p>Owner-operated means every rider gets personal attention. We go the extra mile &mdash; this boat is our
-              pride.</p>
+            <p>Owner-operated means every rider gets personal attention. We go the extra mile — this boat is our pride.
+            </p>
           </div>
-          <div class="wc"><span class="wc-ico">&#x1F3C6;</span>
+          <div class="why-card"><span class="why-ico">🏆</span>
             <h4>Nehru Trophy Location</h4>
             <p>We operate on the very water that hosts India's most famous boat race. The lake itself is the experience.
             </p>
           </div>
-          <div class="wc"><span class="wc-ico">&#x1F4F8;</span>
+          <div class="why-card"><span class="why-ico">📸</span>
             <h4>GoPro 4K Footage</h4>
             <p>We mount a GoPro on board and capture your entire ride in 4K. Take home the memory, at no extra cost.</p>
           </div>
-          <div class="wc"><span class="wc-ico">&#x1F6E1;&#xFE0F;</span>
+          <div class="why-card"><span class="why-ico">🛡️</span>
             <h4>Licensed &amp; Safe</h4>
             <p>Kerala Maritime Board licensed. Life jackets for all. Safety briefing before every ride. No compromise.
             </p>
           </div>
-          <div class="wc"><span class="wc-ico">&#x1F305;</span>
+          <div class="why-card"><span class="why-ico">🌅</span>
             <h4>Best Sunset in Alappuzha</h4>
             <p>Punnamada sunsets are legendary. We time our evening rides for front-row seats to Kerala's most
               spectacular light show.</p>
           </div>
-          <div class="wc"><span class="wc-ico">&#x1F4AC;</span>
+          <div class="why-card"><span class="why-ico">💬</span>
             <h4>WhatsApp Instant Booking</h4>
             <p>The fastest booking experience. WhatsApp the owner, get an instant response, confirmed in minutes.</p>
           </div>
@@ -2642,118 +3032,120 @@
     </div>
   </section>
 
-  <!-- GALLERY -->
+  <!-- ══════════════════════════════════
+       GALLERY
+  ══════════════════════════════════ -->
   <section id="images" class="sec">
-    <div class="sp">
-      <div
-        style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:44px;flex-wrap:wrap;gap:16px">
+    <div class="sec-pad">
+      <div class="gallery-intro">
         <div>
-          <div class="lbl rv">Gallery</div>
-          <h2 class="disp rv">Life on the<br><em>Lake</em></h2>
+          <div class="label rv">Gallery</div>
+          <h2 class="display rv">Life on the<br><em>Lake</em></h2>
         </div>
       </div>
       <div class="masonry rv">
-        <div class="mi"><img
+        <div class="masonry-item"><img
             src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20250830_120406.jpg_wc5yub.jpg"
-            alt="N FLY at Speed" loading="lazy"><span class="mi-cap">N FLY at Speed</span></div>
-        <div class="mi"><img
+            alt="N FLY at Speed" loading="lazy"><span class="masonry-cap">N FLY at Speed</span></div>
+        <div class="masonry-item"><img
             src="https://res.cloudinary.com/starkcab/image/upload/v1777697231/Nfly/20250102_155723.jpg_gapxgt.jpg"
-            alt="Punnamada" loading="lazy"><span class="mi-cap">Punnamada Lake</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=75&auto=format"
-            alt="Spray" loading="lazy"><span class="mi-cap">Water Spray</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=600&q=75&auto=format"
-            alt="Sunset" loading="lazy"><span class="mi-cap">Sunset Ride</span></div>
-        <div class="mi"><img
+            alt="Punnamada" loading="lazy"><span class="masonry-cap">Punnamada Lake</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80"
+            alt="Spray" loading="lazy"><span class="masonry-cap">Water Spray</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=600&q=80"
+            alt="Sunset" loading="lazy"><span class="masonry-cap">Sunset Ride</span></div>
+        <div class="masonry-item"><img
             src="https://res.cloudinary.com/starkcab/image/upload/v1777697229/Nfly/20241222_100528.jpg_pzlfox.jpg"
-            alt="Canal" loading="lazy"><span class="mi-cap">Backwater Canals</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&q=75&auto=format"
-            alt="Family" loading="lazy"><span class="mi-cap">Happy Riders</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=75&auto=format"
-            alt="Morning" loading="lazy"><span class="mi-cap">Morning Light</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=75&auto=format"
-            alt="Wake" loading="lazy"><span class="mi-cap">The Wake</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=75&auto=format"
-            alt="Ride" loading="lazy"><span class="mi-cap">Group Smiles</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1547481887-a26e2cacb5b2?w=600&q=75&auto=format"
-            alt="Kerala" loading="lazy"><span class="mi-cap">Kerala Backwaters</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=75&auto=format"
-            alt="Leisure" loading="lazy"><span class="mi-cap">After the Ride</span></div>
-        <div class="mi"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=75&auto=format"
-            alt="Dusk" loading="lazy"><span class="mi-cap">Dusk on the Lake</span></div>
+            alt="Canal" loading="lazy"><span class="masonry-cap">Backwater Canals</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&q=80"
+            alt="Family" loading="lazy"><span class="masonry-cap">Happy Riders</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+            alt="Morning" loading="lazy"><span class="masonry-cap">Morning Light</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80"
+            alt="Wake" loading="lazy"><span class="masonry-cap">The Wake</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80"
+            alt="Ride" loading="lazy"><span class="masonry-cap">Group Smiles</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1547481887-a26e2cacb5b2?w=600&q=80"
+            alt="Kerala" loading="lazy"><span class="masonry-cap">Kerala Backwaters</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80"
+            alt="Leisure" loading="lazy"><span class="masonry-cap">After the Ride</span></div>
+        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80"
+            alt="Dusk" loading="lazy"><span class="masonry-cap">Dusk on the Lake</span></div>
       </div>
     </div>
   </section>
 
-  <!-- REVIEWS -->
+  <!-- ══════════════════════════════════
+       REVIEWS
+  ══════════════════════════════════ -->
   <section id="reviews" class="sec">
-    <div class="sp">
-      <div class="rev-head rv">
-        <div class="lbl" style="justify-content:center">What Riders Say</div>
-        <h2 class="disp" style="margin-bottom:16px">1,000+ Riders.<br><em>One Verdict.</em></h2>
-        <div class="rev-badge">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span>4.9 &middot; 1,000+ reviews &middot;
-            Punnamada Lake</span>
+    <div class="sec-pad">
+      <div class="reviews-header rv">
+        <div class="label" style="justify-content:center;">What Riders Say</div>
+        <h2 class="display" style="margin-bottom:18px;">1,000+ Riders.<br><em>One Verdict.</em></h2>
+        <div class="rev-rating-badge">
+          <div class="stars">★★★★★</div><span>4.9 · 1,000+ reviews · Punnamada Lake</span>
         </div>
-        <p class="body-t" style="margin:0 auto;text-align:center;font-size:.88rem">They came for the speed. They left
-          with the memories.</p>
+        <p class="body-text" style="margin:0 auto;text-align:center;font-size:0.9rem;">They came for the speed. They
+          left with the memories.</p>
       </div>
       <div class="rev-grid">
-        <div class="revc rv">
-          <div class="rev-s">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-t">N FLY is THE boat to ride in Alappuzha. The green boat is unmissable on the lake. The owner
-            is incredibly warm and the ride was absolutely wild &mdash; I screamed the whole time. Booked again the next
+        <div class="rev-card rv">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">N FLY is THE boat to ride in Alappuzha. The green boat is unmissable on the lake. The
+            owner is incredibly warm and the ride was absolutely wild — I screamed the whole time. Booked again the next
             day!</p>
-          <div class="rev-who">
+          <div class="reviewer">
             <div class="rev-av">AK</div>
             <div><strong>Arjun Kumar</strong><span>Bangalore</span></div>
           </div>
         </div>
-        <div class="revc rv">
-          <div class="rev-s">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-t">My husband surprised me with the sunset cruise on N FLY for our anniversary. Watching the sun
-            melt into Punnamada Lake from a speeding boat &mdash; I genuinely had tears in my eyes. Absolutely magical.
+        <div class="rev-card rv">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">My husband surprised me with the sunset cruise on N FLY for our anniversary. Watching the
+            sun melt into Punnamada Lake from a speeding boat — I genuinely had tears in my eyes. Absolutely magical.
           </p>
-          <div class="rev-who">
+          <div class="reviewer">
             <div class="rev-av">NR</div>
             <div><strong>Nisha &amp; Rajan</strong><span>Chennai</span></div>
           </div>
         </div>
-        <div class="revc rv">
-          <div class="rev-s">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-t">Came with 5 friends for the full day package. Best Rs 5000 I've ever spent. The backwater
-            canal exploration was especially stunning &mdash; canals so narrow the coconut palms almost touched both
-            sides.</p>
-          <div class="rev-who">
+        <div class="rev-card rv">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">Came with 5 friends for the full day package. Best ₹5000 I've ever spent. The backwater
+            canal exploration was especially stunning — canals so narrow the coconut palms almost touched both sides.
+          </p>
+          <div class="reviewer">
             <div class="rev-av">VS</div>
             <div><strong>Vikram S.</strong><span>Mumbai</span></div>
           </div>
         </div>
-        <div class="revc rv">
-          <div class="rev-s">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-t">Booked N FLY for our corporate team outing. The owner organised everything perfectly &mdash;
-            20 people, multiple ride slots, GoPro footage, and even arranged a Kerala lunch. Seamless, professional, so
+        <div class="rev-card rv">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">Booked N FLY for our corporate team outing. The owner organised everything perfectly — 20
+            people, multiple ride slots, GoPro footage, and even arranged a Kerala lunch. Seamless, professional, so
             much fun!</p>
-          <div class="rev-who">
+          <div class="reviewer">
             <div class="rev-av">PR</div>
-            <div><strong>Priya Ramesh</strong><span>Hyderabad</span></div>
+            <div><strong>Priya Ramesh</strong><span>Hyderabad </span></div>
           </div>
         </div>
-        <div class="revc rv">
-          <div class="rev-s">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-t">Took my parents and kids on the family ride. Everyone from age 7 to 68 had the time of their
-            lives. The captain was so patient and made all of us feel completely safe while still making it exciting.
-          </p>
-          <div class="rev-who">
+        <div class="rev-card rv">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">Took my parents and kids on the family ride. Everyone from age 7 to 68 had the time of
+            their lives. The captain was so patient and made all of us feel completely safe while still making it
+            exciting.</p>
+          <div class="reviewer">
             <div class="rev-av">SM</div>
             <div><strong>Suresh M.</strong><span>Kochi</span></div>
           </div>
         </div>
-        <div class="revc rv">
-          <div class="rev-s">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-t">I'm from the UK and have done water sports all over the world. N FLY on Punnamada Lake is in
-            my top 3 experiences ever. The combination of the green boat, owner's passion, and backwater setting is
+        <div class="rev-card rv">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">I'm from the UK and have done water sports all over the world. N FLY on Punnamada Lake is
+            in my top 3 experiences ever. The combination of the green boat, owner's passion, and backwater setting is
             unbeatable.</p>
-          <div class="rev-who">
+          <div class="reviewer">
             <div class="rev-av">JW</div>
             <div><strong>James W.</strong><span>UK</span></div>
           </div>
@@ -2762,33 +3154,35 @@
     </div>
   </section>
 
-  <!-- SAFETY -->
+  <!-- ══════════════════════════════════
+       SAFETY
+  ══════════════════════════════════ -->
   <section id="safety" class="sec">
-    <div class="sp">
+    <div class="sec-pad">
       <div class="safety-wrap">
         <div class="rv-l">
-          <div class="lbl">Your Safety</div>
-          <h2 class="disp">Speed &amp; Safety<br><em>Together</em></h2>
-          <p class="body-t" style="margin-top:18px;margin-bottom:0">Thrilling rides and absolute safety are not
-            opposites &mdash; they are the N FLY promise.</p>
-          <div class="slist">
-            <div class="si"><span class="si-ico">&#x1F9BA;</span>
+          <div class="label">Your Safety</div>
+          <h2 class="display">Speed &amp; Safety<br><em>Together</em></h2>
+          <p class="body-text" style="margin-top:20px;margin-bottom:0;">Thrilling rides and absolute safety are not
+            opposites — they are the N FLY promise. Every precaution is taken so you can enjoy every moment.</p>
+          <div class="safety-list">
+            <div class="sitem"><span class="sitem-ico">🦺</span>
               <div><strong>Life Jackets for Everyone</strong><span>CE-certified life jackets for every rider before
-                  boarding &mdash; no exceptions.</span></div>
+                  boarding — no exceptions.</span></div>
             </div>
-            <div class="si"><span class="si-ico">&#x1F468;&#x200D;&#x2708;&#xFE0F;</span>
+            <div class="sitem"><span class="sitem-ico">👨‍✈️</span>
               <div><strong>Experienced Owner-Captain</strong><span>The owner himself captains every ride. 8+ years on
                   Punnamada Lake.</span></div>
             </div>
-            <div class="si"><span class="si-ico">&#x1F4CB;</span>
+            <div class="sitem"><span class="sitem-ico">📋</span>
               <div><strong>Pre-Ride Safety Briefing</strong><span>Clear, simple safety instructions before every single
                   ride.</span></div>
             </div>
-            <div class="si"><span class="si-ico">&#x1F527;</span>
+            <div class="sitem"><span class="sitem-ico">🔧</span>
               <div><strong>Daily Boat Maintenance</strong><span>N FLY is inspected and maintained daily by a certified
                   marine technician.</span></div>
             </div>
-            <div class="si"><span class="si-ico">&#x1F4DC;</span>
+            <div class="sitem"><span class="sitem-ico">📜</span>
               <div><strong>Kerala Maritime Board Licensed</strong><span>Fully licensed, insured, and compliant with all
                   maritime regulations.</span></div>
             </div>
@@ -2802,49 +3196,53 @@
   <!-- CALLOUT -->
   <div class="callout">
     <div class="callout-big rv">Ready to<br><em>Ride N FLY?</em></div>
-    <p class="callout-sub rv">Book directly with the owner. No apps, no agents &mdash; just you, the green boat, and
-      Punnamada Lake.</p>
+    <p class="callout-sub rv">Book directly with the owner. No apps, no agents — just you, the green boat, and Punnamada
+      Lake.</p>
     <div class="callout-btns rv">
-      <a href="#book" class="btn-p"><span>Reserve a Ride</span></a>
-      <a href="https://wa.me/917399868888" class="btn-s" target="_blank" rel="noopener">&#x1F4AC; WhatsApp Now</a>
+      <a href="#book" class="btn-primary"><span>Reserve a Ride</span></a>
+      <a href="https://wa.me/917399868888" class="btn-secondary" target="_blank">💬 WhatsApp Now</a>
     </div>
   </div>
 
-  <!-- LOCATION -->
+  <!-- ══════════════════════════════════
+       LOCATION
+  ══════════════════════════════════ -->
   <section id="location" class="sec">
-    <div class="sp">
+    <div class="sec-pad">
       <div class="loc-wrap">
         <div class="loc-map rv-l">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.869496809054!2d76.35353917450351!3d9.520066181109968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0885ec413d8749%3A0x2cb681db84280fd2!2sN%20FLY%20SPEEDBOAT%20ADVENTURES!5e0!3m2!1sen!2sin!4v1777631915153!5m2!1sen!2sin"
-            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="N FLY location"></iframe>
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="N FLY — Punnamada Lake, Alappuzha">
+          </iframe>
         </div>
         <div class="rv-r">
-          <div class="lbl">Find N FLY</div>
-          <h2 class="disp">We're Parked on<br><em>Punnamada Lake</em></h2>
-          <p class="body-t" style="margin-top:18px;margin-bottom:0">We operate from the Punnamada Lake jetty in
-            Alappuzha &mdash; the same iconic location that hosts the Nehru Trophy Boat Race.</p>
+          <div class="label">Find N FLY</div>
+          <h2 class="display">We're Parked on<br><em>Punnamada Lake</em></h2>
+          <p class="body-text" style="margin-top:20px;margin-bottom:0;">We operate from the Punnamada Lake jetty in
+            Alappuzha — the same iconic location that hosts the Nehru Trophy Boat Race. You can't miss the green boat.
+          </p>
           <div class="loc-list">
-            <div class="li">
-              <div class="li-ico">&#x1F4CD;</div>
-              <div><strong>Our Jetty</strong><span>Punnamada, Alappuzha, Kerala &ndash; 688013</span></div>
+            <div class="litem">
+              <div class="litem-ico">📍</div>
+              <div><strong>Our Jetty</strong><span>Punnamada, Alappuzha, Kerala – 688013</span></div>
             </div>
-            <div class="li">
-              <div class="li-ico">&#x2708;&#xFE0F;</div>
-              <div><strong>From Cochin Airport</strong><span>~85 km &middot; 1.5 hrs by taxi or AC bus</span></div>
+            <div class="litem">
+              <div class="litem-ico">✈️</div>
+              <div><strong>From Cochin Airport</strong><span>~85 km · 1.5 hrs by taxi or AC bus</span></div>
             </div>
-            <div class="li">
-              <div class="li-ico">&#x1F689;</div>
-              <div><strong>From Alappuzha Station</strong><span>~4 km &middot; 10 minutes by auto or taxi</span></div>
+            <div class="litem">
+              <div class="litem-ico">🚉</div>
+              <div><strong>From Alappuzha Station</strong><span>~4 km · 10 minutes by auto or taxi</span></div>
             </div>
-            <div class="li">
-              <div class="li-ico">&#x23F0;</div>
-              <div><strong>Operating Hours</strong><span>Every day &middot; 7:00 AM &ndash; 6:30 PM</span></div>
+            <div class="litem">
+              <div class="litem-ico">⏰</div>
+              <div><strong>Operating Hours</strong><span>Every day · 7:00 AM – 6:30 PM</span></div>
             </div>
-            <a href="https://wa.me/917399868888" class="li" target="_blank" rel="noopener">
-              <div class="li-ico">&#x1F4DE;</div>
-              <div><strong>Need a Pickup?</strong><span>WhatsApp the owner &mdash; we'll arrange your transfer!</span>
-              </div>
+            <a href="https://wa.me/917399868888" class="litem" target="_blank">
+              <div class="litem-ico">📞</div>
+              <div><strong>Need a Pickup?</strong><span>WhatsApp the owner — we'll arrange your transfer!</span></div>
             </a>
           </div>
         </div>
@@ -2852,39 +3250,39 @@
     </div>
   </section>
 
-  <!-- BOOKING -->
+  <!-- ══════════════════════════════════
+       BOOKING
+  ══════════════════════════════════ -->
   <section id="book" class="sec">
-    <div class="sp">
+    <div class="sec-pad">
       <div class="book-wrap">
         <div class="rv-l">
-          <div class="lbl">Reserve a Ride</div>
-          <h2 class="disp">Book Your<br><em>Spot on N FLY</em></h2>
-          <p class="body-t" style="margin-top:18px;margin-bottom:0">Book directly with the owner for the lowest price.
-            No booking fees, no hidden charges.</p>
-          <div class="clinks">
-            <a href="https://wa.me/917399868888" class="cl" target="_blank" rel="noopener">
-              <div class="cl-ico">&#x1F4F1;</div>
-              <div><strong>WhatsApp &mdash; Fastest!</strong><span>+91 7399 86 8888 &middot; Usually replies in
-                  minutes</span></div>
+          <div class="label">Reserve a Ride</div>
+          <h2 class="display">Book Your<br><em>Spot on N FLY</em></h2>
+          <p class="body-text" style="margin-top:20px;margin-bottom:0;">Book directly with the owner for the lowest
+            price. No booking fees, no hidden charges. We confirm your slot personally within a few hours.</p>
+          <div class="contact-links">
+            <a href="https://wa.me/917399868888" class="clink" target="_blank">
+              <div class="clink-ico">📱</div>
+              <div><strong>WhatsApp — Fastest!</strong><span>+91 7399 86 8888 · Usually replies in minutes</span></div>
             </a>
-            <a href="tel:+917399868888" class="cl">
-              <div class="cl-ico">&#x1F4DE;</div>
-              <div><strong>Call the Owner</strong><span>+91 7399 86 8888 &middot; 7 AM &ndash; 7 PM</span></div>
+            <a href="tel:+917399868888" class="clink">
+              <div class="clink-ico">📞</div>
+              <div><strong>Call the Owner</strong><span>+91 7399 86 8888 · 7 AM – 7 PM</span></div>
             </a>
-            <a href="mailto:nflyalpy@gmail.com" class="cl">
-              <div class="cl-ico">&#x2709;&#xFE0F;</div>
+            <a href="mailto:nflyalpy@gmail.com" class="clink">
+              <div class="clink-ico">✉️</div>
               <div><strong>Email</strong><span>nflyalpy@gmail.com</span></div>
             </a>
-            <div class="cl" style="cursor:default">
-              <div class="cl-ico">&#x23F0;</div>
-              <div><strong>Operating Hours</strong><span>7:00 AM &ndash; 6:30 PM &middot; Every day of the year</span>
-              </div>
+            <div class="clink" style="cursor:default;">
+              <div class="clink-ico">⏰</div>
+              <div><strong>Operating Hours</strong><span>7:00 AM – 6:30 PM · Every day of the year</span></div>
             </div>
           </div>
         </div>
-        <form class="bform rv-r" onsubmit="handleSubmit(event)">
-          <div class="fh">Book N FLY</div>
-          <p class="fn">/ Fill in your details &mdash; we'll confirm shortly</p>
+        <form class="book-form rv-r" onsubmit="handleSubmit(event)">
+          <div class="form-heading">Book N FLY</div>
+          <p class="form-note">/ Fill in your details — we'll confirm shortly</p>
 
           <div class="frow">
             <div class="fg">
@@ -2930,12 +3328,12 @@
               <label>Ride Package</label>
               <select name="package" required>
                 <option value="">Choose a package...</option>
-                <option>1 Minute Demo Ride</option>
-                <option>10 Minute Speed Thrill</option>
-                <option>30 Minute Lake Explorer</option>
-                <option>1 Hour Village Explorer</option>
-                <option>Sunset Premium Ride</option>
-                <option>Custom Ride Package</option>
+                <option>N FLY Speed Blast — ₹1,200/person</option>
+                <option>Sunset Speed Cruise — ₹2,800/ride</option>
+                <option>Backwater Explorer — ₹3,500/ride</option>
+                <option>Family Lake Ride — ₹800/person</option>
+                <option>N FLY Private Charter — ₹6,000</option>
+                <option>Full Day on N FLY — ₹4,999/person</option>
               </select>
             </div>
 
@@ -2946,17 +3344,20 @@
                 <option>1–2 riders</option>
                 <option>3–4 riders</option>
                 <option>5–6 riders</option>
-                <option>7 riders (max)</option>
+                <option>7–8 riders</option>
+                <option>Large group (9+)</option>
               </select>
             </div>
           </div>
 
           <div class="fg">
             <label>Special Requests</label>
-            <textarea name="message" placeholder="Anniversary setup, GoPro footage, photoshoot, etc..."></textarea>
+            <textarea name="message"
+              placeholder="Anniversary setup, GoPro footage, airport pickup, photoshoot, corporate event..."
+              required></textarea>
           </div>
 
-          <button type="submit" class="fsub">
+          <button type="submit" class="form-submit">
             <span>Send Booking Request →</span>
           </button>
         </form>
@@ -2964,122 +3365,259 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
   <footer>
-    <div class="ft">
-      <div class="fb">
-        <span class="fb-n">N <em>FLY</em></span>
-        <span class="fb-s">Speedboat &middot; Punnamada Lake &middot; Alappuzha</span>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-brand-name">N <em>FLY</em></span>
+        <span class="footer-brand-sub">Speedboat · Punnamada Lake · Alappuzha</span>
         <p>Kerala's most iconic green speedboat, personally operated by its proud owner on the legendary Punnamada Lake
           in the heart of Alappuzha's backwaters.</p>
       </div>
-      <div class="fc">
-        <h5>Navigate</h5>
-        <a href="#about">The Boat</a><a href="#rides">Rides</a><a href="#images">Gallery</a>
-        <a href="#why">Why N FLY</a><a href="#reviews">Reviews</a><a href="#safety">Safety</a><a
-          href="#location">Location</a>
+      <div class="footer-col">
+        <h5>Navigate</h5><a href="#about">The Boat</a><a href="#rides">Rides</a><a href="#videos">Videos</a><a
+          href="#images">Images</a><a href="#why">Why N FLY</a><a href="#reviews">Reviews</a><a
+          href="#safety">Safety</a><a href="#location">Location</a>
       </div>
-      <div class="fc">
-        <h5>Packages</h5>
-        <a href="#rides">Demo Ride</a><a href="#rides">Speed Thrill</a><a href="#rides">Lake Explorer</a>
-        <a href="#rides">Village Tour</a><a href="#rides">Sunset Ride</a><a href="#rides">Custom Package</a>
+      <div class="footer-col">
+        <h5>Packages</h5><a href="#rides">Speed Blast</a><a href="#rides">Sunset Cruise</a><a href="#rides">Backwater
+          Explorer</a><a href="#rides">Family Ride</a><a href="#rides">Private Charter</a><a href="#rides">Full Day
+          Package</a>
       </div>
-      <div class="fc">
-        <h5>Contact</h5>
-        <a href="tel:+917399868888">&#x1F4DE; +91 7399 86 8888</a>
-        <a href="https://wa.me/917399868888">&#x1F4AC; WhatsApp</a>
-        <a href="mailto:nflyalpy@gmail.com">&#x2709;&#xFE0F; nflyalpy@gmail.com</a>
-        <a href="#location">&#x1F4CD; Punnamada, Alappuzha</a>
-        <a href="#book">&#x23F0; 7 AM &ndash; 6:30 PM Daily</a>
+      <div class="footer-col">
+        <h5>Contact</h5><a href="tel:+917399868888">📞 +91 7399 86 8888</a><a href="https://wa.me/917399868888">💬
+          WhatsApp</a><a href="mailto:nflyalpy@gmail.com">✉️ nflyalpy@gmail.com</a><a href="#location">📍 Punnamada,
+          Alappuzha</a><a href="#book">⏰ 7 AM – 6:30 PM Daily</a>
       </div>
     </div>
-    <div class="fd"></div>
-    <div class="fb2">
-      <span>&copy; 2026 N FLY Speedboat, Punnamada Lake, Alappuzha, Kerala. All rights reserved.</span>
-      <span>Made with <span class="heart">&hearts;</span> in Kerala</span>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span>© 2026 N FLY Speedboat, Punnamada Lake, Alappuzha, Kerala. All rights reserved.</span>
+      <span>Made with <span class="heart">♥</span> in Kerala</span>
     </div>
   </footer>
 
-  <a href="#hero" id="btt" aria-label="Back to top">&uarr;</a>
-  <a href="https://wa.me/917399868888" class="wa" target="_blank" rel="noopener" title="WhatsApp N FLY">&#x1F4AC;</a>
+  <a href="#hero" id="btt" aria-label="Back to top">↑</a>
+  <a href="https://wa.me/917399868888" class="wa-float" target="_blank" title="WhatsApp N FLY">💬</a>
 
   <script>
-    !function () {
+    /* ═══════════════════════════════════════════════════
+       VIDEO MANAGER
+       Handles:
+       1. Lazy loading — videos only load when near viewport
+       2. iOS autoplay fix — explicit .play() call with catch
+       3. Pause when out of viewport — saves memory & battery
+       4. Loading shimmer removal when video is ready
+    ═══════════════════════════════════════════════════ */
+    (function () {
       'use strict';
-      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-      // Mark wrap as playing (removes shimmer)
-      function mk(w) { if (w) w.classList.add('playing') }
+      // ── Is iOS / Safari?
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-      // HERO — direct src, just nudge play()
-      var hv = document.getElementById('heroVid'), hw = document.getElementById('heroWrap');
-      if (hv) {
-        hv.muted = true;
-        hv.play().then(function () { mk(hw) }).catch(function () {
-          document.addEventListener('touchstart', function r() { hv.play().then(function () { mk(hw) }).catch(function () { }); document.removeEventListener('touchstart', r) }, { once: true, passive: true });
+      // ── All lazy vid-wraps (those with data-src, not hero)
+      const lazyWraps = document.querySelectorAll('.vid-wrap[data-src]');
+
+      // ── Intersection observer for lazy loading
+      const lazyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const wrap = entry.target;
+          const video = wrap.querySelector('video');
+          if (!video) return;
+
+          if (entry.isIntersecting) {
+            // Inject src if not yet loaded
+            if (!video.src && wrap.dataset.src) {
+              video.src = wrap.dataset.src;
+              video.load();
+            }
+            // Try to play
+            tryPlay(video, wrap);
+          } else {
+            // Pause when off screen to save resources
+            if (!video.paused) {
+              video.pause();
+            }
+          }
         });
-        hv.addEventListener('playing', function () { mk(hw) }, { once: true });
-      }
-
-      // LAZY VIDEOS (About + Interlude) — data-src on <source>
-      var lazys = Array.from(document.querySelectorAll('video')).filter(function (v) {
-        return v !== hv && v.querySelector('source[data-src]');
+      }, {
+        rootMargin: '200px 0px', // Start loading 200px before visible
+        threshold: 0.1
       });
 
-      function activate(v) {
-        var w = v.closest('.vw'), s = v.querySelector('source[data-src]');
-        if (s && !s.src) { s.src = s.dataset.src; v.muted = true; v.load() }
-        v.play().then(function () { mk(w) }).catch(function () { });
-        v.addEventListener('playing', function () { mk(w) }, { once: true });
+      lazyWraps.forEach(wrap => lazyObserver.observe(wrap));
+
+      // ── Play function with iOS-specific handling
+      function tryPlay(video, wrap) {
+        if (!video.src) return;
+
+        // Mark as loaded when enough data available
+        video.addEventListener('canplay', () => {
+          if (wrap) wrap.classList.add('loaded');
+        }, { once: true });
+
+        // iOS Safari sometimes needs a user gesture first.
+        // We use a promise-based approach and fall back gracefully.
+        const playPromise = video.play();
+
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              // Playing — shimmer off
+              if (wrap) wrap.classList.add('loaded');
+            })
+            .catch(err => {
+              // Autoplay blocked (common on iOS without interaction)
+              // Show poster image, add a tap-to-play overlay
+              if (isIOS || isSafari) {
+                addTapToPlay(video, wrap);
+              }
+              console.log('Autoplay prevented:', err.message);
+            });
+        }
       }
 
-      var vObs = new IntersectionObserver(function (es) {
-        es.forEach(function (e) {
-          if (e.isIntersecting) activate(e.target);
-          else if (!e.target.paused) e.target.pause();
-        });
-      }, { rootMargin: '400px 0px', threshold: 0 });
-      lazys.forEach(function (v) { vObs.observe(v) });
+      // ── Tap-to-play overlay for iOS when autoplay fails
+      // function addTapToPlay(video, wrap) {
+      //   if (wrap.querySelector('.tap-play')) return; // Already added
 
-      // Pause on tab hide, resume on show
-      document.addEventListener('visibilitychange', function () {
-        var all = document.querySelectorAll('video');
-        if (document.hidden) { all.forEach(function (v) { if (!v.paused) v.pause() }) }
-        else { all.forEach(function (v) { var r = v.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) v.play().catch(function () { }) }) }
+      //   const overlay = document.createElement('div');
+      //   overlay.className = 'tap-play';
+      //   overlay.innerHTML = '<span>▶</span>';
+      //   overlay.style.cssText = `
+      //   position:absolute;inset:0;z-index:5;
+      //   display:flex;align-items:center;justify-content:center;
+      //   background:rgba(8,12,10,0.4);cursor:pointer;
+      // `;
+      //   overlay.querySelector('span').style.cssText = `
+      //   width:60px;height:60px;border-radius:50%;
+      //   background:rgba(43,197,110,0.8);
+      //   display:flex;align-items:center;justify-content:center;
+      //   font-size:1.4rem;color:white;
+      //   box-shadow:0 4px 24px rgba(0,0,0,0.4);
+      // `;
+      //   overlay.addEventListener('click', () => {
+      //     video.play().then(() => {
+      //       overlay.remove();
+      //       if (wrap) wrap.classList.add('loaded');
+      //     }).catch(() => { });
+      //   }, { once: true });
+      //   wrap.appendChild(overlay);
+      //   if (wrap) wrap.classList.add('loaded'); // Remove shimmer, show poster
+      // }
+
+      // ── Hero video (autoplay=true in HTML, no data-src)
+      // Extra iOS nudge for the hero video
+      const heroVideo = document.querySelector('#heroVid video');
+      const heroWrap = document.querySelector('#heroVid');
+      if (heroVideo) {
+        heroVideo.addEventListener('canplay', () => {
+          if (heroWrap) heroWrap.classList.add('loaded');
+        }, { once: true });
+
+        const heroPromise = heroVideo.play();
+        if (heroPromise !== undefined) {
+          heroPromise.catch(() => {
+            if (isIOS || isSafari) {
+              addTapToPlay(heroVideo, heroWrap);
+            }
+          });
+        }
+      }
+
+      // ── Page visibility — pause all videos when tab hidden
+      document.addEventListener('visibilitychange', () => {
+        const allVideos = document.querySelectorAll('video');
+        if (document.hidden) {
+          allVideos.forEach(v => { if (!v.paused) v.pause(); });
+        } else {
+          // Resume videos that are in viewport
+          allVideos.forEach(v => {
+            const rect = v.getBoundingClientRect();
+            const inView = rect.top < window.innerHeight && rect.bottom > 0;
+            if (inView && v.paused) {
+              v.play().catch(() => { });
+            }
+          });
+        }
       });
+    })();
 
-      // CURSOR
-      var cd = document.getElementById('cDot'), cr = document.getElementById('cRing');
-      if (cd && cr && matchMedia('(hover:hover)').matches) {
-        var mx = 0, my = 0, rx = 0, ry = 0;
-        document.addEventListener('mousemove', function (e) { mx = e.clientX; my = e.clientY; cd.style.left = mx + 'px'; cd.style.top = my + 'px' });
-        (function t() { rx += (mx - rx) * .12; ry += (my - ry) * .12; cr.style.left = rx + 'px'; cr.style.top = ry + 'px'; requestAnimationFrame(t) })();
-        document.addEventListener('mouseleave', function () { cd.style.opacity = '0'; cr.style.opacity = '0' });
-        document.addEventListener('mouseenter', function () { cd.style.opacity = '1'; cr.style.opacity = '1' });
+    /* ═══════════════════════════════════════════════════
+       CUSTOM CURSOR (desktop only)
+    ═══════════════════════════════════════════════════ */
+    const dot = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    if (dot && ring && window.matchMedia('(hover: hover)').matches) {
+      let mx = 0, my = 0, rx = 0, ry = 0;
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+      });
+      function animateCursor() {
+        rx += (mx - rx) * 0.12;
+        ry += (my - ry) * 0.12;
+        ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+        requestAnimationFrame(animateCursor);
       }
+      animateCursor();
+      document.addEventListener('mouseleave', () => { dot.style.opacity = '0'; ring.style.opacity = '0'; });
+      document.addEventListener('mouseenter', () => { dot.style.opacity = '1'; ring.style.opacity = '1'; });
+    }
 
-      // NAV
-      var nav = document.getElementById('nav');
-      window.addEventListener('scroll', function () { nav.classList.toggle('scrolled', scrollY > 50) }, { passive: true });
+    /* ═══════════════════════════════════════════════════
+       NAV SCROLL
+    ═══════════════════════════════════════════════════ */
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', scrollY > 60);
+    }, { passive: true });
 
-      // HAMBURGER
-      var hbg = document.getElementById('hbg'), mob = document.getElementById('mobMenu'), open = false;
-      window.cM = function () { open = false; hbg.classList.remove('active'); mob.classList.remove('open') };
-      hbg.addEventListener('click', function (e) { e.stopPropagation(); open ? (cM()) : (open = true, hbg.classList.add('active'), mob.classList.add('open')) });
-      document.addEventListener('click', function (e) { if (open && !mob.contains(e.target) && !hbg.contains(e.target)) cM() });
-      window.addEventListener('scroll', function () { if (open) cM() }, { passive: true });
+    /* ═══════════════════════════════════════════════════
+       HAMBURGER
+    ═══════════════════════════════════════════════════ */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    let menuOpen = false;
+    function openMenu() { menuOpen = true; hamburger.classList.add('active'); mobileMenu.classList.add('open'); }
+    function closeMenu() { menuOpen = false; hamburger.classList.remove('active'); mobileMenu.classList.remove('open'); }
+    hamburger.addEventListener('click', e => { e.stopPropagation(); menuOpen ? closeMenu() : openMenu(); });
+    document.addEventListener('click', e => { if (menuOpen && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) closeMenu(); });
+    window.addEventListener('scroll', () => { if (menuOpen) closeMenu(); }, { passive: true });
 
-      // SCROLL REVEAL
-      var rvO = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('on'); rvO.unobserve(e.target) } }) }, { threshold: .07, rootMargin: '0px 0px -36px 0px' });
-      document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(function (el, i) { el.style.transitionDelay = (i % 4 * .07) + 's'; rvO.observe(el) });
+    /* ═══════════════════════════════════════════════════
+       REVEAL ON SCROLL
+    ═══════════════════════════════════════════════════ */
+    const revObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('on'); revObserver.unobserve(e.target); }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.rv, .rv-l, .rv-r').forEach((el, i) => {
+      el.style.transitionDelay = (Math.floor(i * 0.5) % 4) * 0.07 + 's';
+      revObserver.observe(el);
+    });
 
-      // BACK TO TOP
-      var btt = document.getElementById('btt');
-      window.addEventListener('scroll', function () { btt.classList.toggle('show', scrollY > 500) }, { passive: true });
+    /* ═══════════════════════════════════════════════════
+       BACK TO TOP
+    ═══════════════════════════════════════════════════ */
+    const btt = document.getElementById('btt');
+    window.addEventListener('scroll', () => btt.classList.toggle('show', scrollY > 500), { passive: true });
 
-      // HERO PARALLAX (skip iOS)
-      if (!isIOS) { var hc = document.querySelector('.hero-content'); if (hc) window.addEventListener('scroll', function () { if (scrollY < innerHeight) hc.style.transform = 'translateY(' + (scrollY * .07) + 'px)' }, { passive: true }) }
-    }();
+    /* ═══════════════════════════════════════════════════
+       SUBTLE HERO PARALLAX
+    ═══════════════════════════════════════════════════ */
+    const heroContent = document.querySelector('.hero-content');
+    if (heroContent && !isIOS) { // Skip on iOS for perf
+      window.addEventListener('scroll', () => {
+        if (scrollY < window.innerHeight) {
+          heroContent.style.transform = `translateY(${scrollY * 0.08}px)`;
+        }
+      }, { passive: true });
+    }
   </script>
 </body>
 
